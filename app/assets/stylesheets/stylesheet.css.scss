@@ -1,0 +1,136 @@
+$text-color: #bbb;
+$dark-text-color: #555;
+$primary-font: "Amatic SC";
+$secondary-font: Raleway; 
+
+/*font-family: 'Sue Ellen Francisco', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Almendra Display', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Londrina Sketch', cursive;
+font-family: 'Bubbler One', sans-serif;*/
+
+/*"Julius Sans One" "Amatic SC" "Reenie Beanie" Delius "Walter Turncoat" "Coming Soon" Raleway   Offside*/
+
+/*===== Global =====*/
+a {
+	text-decoration: none;
+	&:hover {
+		color: lighten($text-color, 10%);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #666;
+	font-family: $secondary-font, sans-serif;
+}
+
+/*===== Navbar =====*/
+.brand {
+	display: inline-block;
+	float: left;
+	font-size: 2em;
+	color: $text-color;
+}
+
+.pull-right {
+	display: inline-block;
+	float: right;
+	color: $text-color;
+	font-family: $secondary-font, sans-serif;
+	li {
+		margin: 0 10px;
+	}
+}
+
+.nav {
+	margin: 0 40px 20px 40px;
+	list-style-type: none;
+	font-family: $primary-font, sans-serif;
+	display: block;
+}
+
+/*===== Main =====*/
+
+body {
+	background-color: #666;
+}
+
+#container {
+	padding-top: 30px;
+	width: 800px;
+	margin: 20px auto;
+	background-color: #ccc;
+	border-radius: 5px;
+	clear: both;
+	padding: 20px 20px 20px 40px;
+	h2 {
+		color: #fff;
+	}
+	a {
+		font-family: $secondary-font;
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+/*===== Flash messages =====*/
+#flash {
+	clear: both;
+	margin: 0 auto;
+	width: 500px;
+	text-align: center;
+	background-color: #ddd;
+	border-radius: 5px;
+	padding: 5px;
+	font-family: $secondary-font,sans-serif;
+
+	#flash_alert {
+		color: $dark-text-color;
+	}
+}
+
+/*===== Forms =====*/
+#form-container {
+	width: 250px;
+	h2 {
+		margin-left: 10px;
+	}
+}
+
+form {
+	color: $dark-text-color;
+	font-family: $secondary-font, sans-serif;
+	input {
+		border: none;
+		font-family: $secondary-font;
+	}
+}
+
+.link_color {
+	color: $dark-text-color;
+	margin: 0 5px;
+	font-family: $secondary-font;
+	font-size: 10pt;
+}
+
+.btn {
+	padding: 5px;
+	margin: 5px 5px 5px 0px;
+	input {
+		min-width: 100px;
+		color: #fff;
+		border-radius: 5px;
+		font-family: $secondary-font;
+		background-color: #999;
+		&:hover {
+			cursor: pointer;
+			background-color: #777;
+		}
+	}
+}
+
+div label {
+	font-size: 10pt;
+}
