@@ -1,0 +1,1 @@
+The beginnings of what will become a glorified cost-of-living calculator
