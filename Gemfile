@@ -7,7 +7,7 @@ gem 'rails', '3.2.11'
 
 gem 'pg'
 gem 'devise'
-
+gem 'thin'
 
 
 # Gems used only for assets and not required
@@ -24,6 +24,19 @@ end
 
 group :development, :test do
 	gem 'rspec-rails'
+  gem 'capybara'	
+  gem 'quiet_assets' 
+  gem 'simplecov', :require => false
+  gem 'shoulda-matchers'
+  gem 'spork-rails'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'debugger'
+  gem 'factory_girl_rails'
+  gem 'faker'
+  gem 'shoulda'
 end
 
 gem 'jquery-rails'
