@@ -1,9 +1,9 @@
 <div id="user_nav">
-	<a class="nav brand" href="<% root_path %>">CAN I SWING IT?</a>
-
+	<%= link_to "CAN I SWING IT?", root_path, :class => "nav brand" %>
 	<ul class="nav">
 		<% if user_signed_in? %>
-			<a href="#" class="pull-right"><li><%= @user.email %></li></a>
+<!-- 		  <#%= link_to @user.email, edit_user_registration_path, :class => "pull-right" %>  -->
+			<a href="users/edit" class="pull-right"><li><%= @user.email %></li></a>
 			<%= link_to "Sign out", destroy_user_session_path, :method => :delete, :class => "pull-right" %> 
 		<% else %>
 			<li><%= link_to "Sign in", new_user_session_path, :class => "pull-right"%></li>
