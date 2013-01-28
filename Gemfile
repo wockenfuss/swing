@@ -8,7 +8,7 @@ gem 'rails', '3.2.11'
 gem 'pg'
 gem 'devise'
 gem 'thin'
-
+gem 'geocoder'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -29,6 +29,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'shoulda-matchers'
   gem 'spork-rails'
+  gem 'httparty', :require => 'httparty'
 end
 
 group :test do

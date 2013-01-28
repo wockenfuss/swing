@@ -3,14 +3,18 @@ $(document).ready(function() {
 		url: '/', 
 		type: 'get',
 		dataType: 'json',
-		success: function(data) {
-			$('#container').css('background-image', 'url(' + locationUrl(data.key) + ')');
-			$('#container').css('background-position', 'center');
+		success: function(result) {
+			var data = result.location.data
+			$('#map').css('background-image', locationUrl(data));
+			$('#map').css('background-position', 'center');
 		}
 	});
 });
 	
-var locationUrl = function(key) {
-	return "http://maps.googleapis.com/maps/api/staticmap?center=40.714728,-73.998672&zoom=11&size=1600x1200&scale=2&maptype=satellite&sensor=false&key=" + key;
+var locationUrl = function(data) {
+	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' + 
+				data.latitude + ',' + data.longitude + 
+				'&zoom=10&size=1600x1200&scale=2&maptype=satellite&sensor=false&key=' +	
+				data.key + ')'
 };
 
