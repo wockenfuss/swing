@@ -59,13 +59,13 @@ body {
 }
 
 #container {
-	padding-top: 30px;
+	/*padding-top: 30px;*/
 	width: 800px;
 	margin: 20px auto;
 	background-color: #ccc;
 	border-radius: 5px;
 	clear: both;
-	padding: 20px 20px 20px 40px;
+	/*padding: 20px 20px 20px 40px;*/
 	h2, h3 {
 		color: #fff;
 	}
@@ -76,6 +76,7 @@ body {
 		}
 	}
 }
+
 
 /*===== Flash messages =====*/
 #flash {
@@ -96,6 +97,7 @@ body {
 /*===== Forms =====*/
 #form-container {
 	width: 250px;
+	padding: 20px 20px 20px 40px;
 	h2 {
 		margin-left: 10px;
 	}
@@ -147,6 +149,12 @@ div label {
 
 div span {
 	font-size: 10pt;
+}
+
+#map {
+	min-height: 300px;
+	border-radius: 5px;
+
 }
 
 
