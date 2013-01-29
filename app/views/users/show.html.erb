@@ -1,6 +1,9 @@
 <div id="map">
 	<div id="form-container">
-		<%= text_field_tag 'location', value = @result.data["city"], :class => 'input-text', :placeholder => "Location" %>
+		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
+		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
+			<%= text_field_tag 'location', value = @city, :class => 'input-text', :placeholder => "Location" %>
+		<!--<#% end %> -->
 	</div>
 
 </div>

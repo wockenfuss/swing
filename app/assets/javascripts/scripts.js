@@ -4,11 +4,21 @@ $(document).ready(function() {
 		type: 'get',
 		dataType: 'json',
 		success: function(result) {
-			var data = result.location.data
-			$('#map').css('background-image', locationUrl(data));
-			$('#map').css('background-position', 'center');
+			updateMap(result);
 		}
 	});
+	// $('input[name="location"]').on('blur', function(e) {
+	// 	newLocation(this);
+	// });
+
+	$('input[name="location"]').keypress(function(e)
+    {
+	    code= (e.keyCode ? e.keyCode : e.which);
+	    if (code == 13) {
+	    	newLocation(this);
+	    }
+    });
+
 });
 	
 var locationUrl = function(data) {
@@ -18,3 +28,23 @@ var locationUrl = function(data) {
 				data.key + ')'
 };
 
+var newLocation = function(input) {
+	var cityName = $(input).val();
+	console.log(cityName);
+	params = { city: cityName }
+	$.ajax({
+		url: '/',
+		type: 'get',
+		dataType: 'json',
+		data: params,
+		success: function(result) {
+			updateMap(result);
+		}
+	});
+};
+
+var updateMap = function(result) {
+	var data = result.location
+	$('#map').css('background-image', locationUrl(data));
+	$('#map').css('background-position', 'center');
+};
