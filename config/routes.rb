@@ -1,9 +1,10 @@
 Swing::Application.routes.draw do
   devise_for :users
 
-  resources :users
+  #resources :users
+  resources :locations
   
-  root :to => 'users#show'
+  root :to => 'locations#show'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
