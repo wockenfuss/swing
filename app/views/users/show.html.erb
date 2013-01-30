@@ -1,9 +1,19 @@
-<div id="map">
+<div id="origin-map">
 	<div id="form-container">
 		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
 		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
-			<%= text_field_tag 'location', value = @city, :class => 'input-text', :placeholder => "Location" %>
+
+		<%= text_field_tag 'origin', value = @city, :class => 'input-text', :placeholder => "Origin" %>
+		<%= text_field_tag 'income', nil, :class => 'input-text', :placeholder => "Current income" %>
+		<br>
+		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination" %><br>
+		<a href="#" id="locationButton" class="arrow"> –> </a><br>
+
+<br>
 		<!--<#% end %> -->
 	</div>
+</div>
+
+<div id="destination-map">
 
 </div>

@@ -96,13 +96,15 @@ body {
 
 /*===== Forms =====*/
 #form-container {
-	width: 250px;
+	/*width: 250px;*/
 	padding: 20px 20px 20px 40px;
 	h2 {
 		margin-left: 10px;
 	}
 	.input-text {
 		font-family: $secondary-font, sans-serif;
+		opacity: .8;
+		border-radius: 3px;
 	}
 }
 
@@ -154,10 +156,33 @@ div span {
 	font-size: 10pt;
 }
 
-#map {
+#origin-map, #destination-map {
 	min-height: 300px;
 	border-radius: 5px;
-
+	float: left;
+	display: inline-block;
+	width: 800px;
+	/*min-width: 800px;*/
 }
+
+#destination-map {
+	width: 0px;
+	display: none;
+}
+
+.field-label {
+	font-family: $secondary-font;
+	color: #fff;
+	font-size: 1em;
+}
+
+.arrow {
+	color: #fff;
+	font-family: $primary-font;
+	font-size: 20pt;
+	width: 200px;
+	margin-left: 50px;
+}
+
 
 
