@@ -32,8 +32,28 @@ $(document).ready(function() {
   	newLocation($('input[name="destination"]')[0]);
   	setTimeout(animateMaps, 750);
   });
+
+
+
+
+  $('#currentSalary').slider({
+    orientation: "horizontal",
+    range: "min",
+    max: 100,
+    value: 100,
+    slide: updateSalary,
+    change: updateSalary
+  });
+	$( "#currentSalary" ).slider( "value", 0 );
 });
 	
+
+var updateSalary = function() {
+	var scalar = $( "#currentSalary" ).slider( "value" );
+	var salary = scalar * 2500;
+	// console.log(salary);
+	$('#salaryDisplay').text(salary);
+};
 // var initialLocation = function() {
 	
 // 	$.ajax({

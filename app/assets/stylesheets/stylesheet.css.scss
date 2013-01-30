@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
 /*===== Main =====*/
 
 body {
-	background-color: #666;
+	background-color: #124222;
 }
 
 #container {
@@ -182,6 +182,47 @@ div span {
 	font-size: 20pt;
 	width: 200px;
 	margin-left: 50px;
+}
+
+#form-container .arrow:hover {
+	color: #ff0;
+}
+
+.numbers {
+	color: #fff;
+	font-family: $primary-font;
+	font-size: 75pt;
+	margin: 0 0 0 60px;
+	clear: left;
+	opacity: .7;
+}
+
+#currentSalary {
+  float: left;
+  clear: left;
+  width: 200px;
+  margin: 50px 0 0 50px;
+  /*background: white;*/
+
+}
+
+.ui-slider {
+	height: 10px;
+	background: transparent;
+}
+
+.ui-slider-range-min {
+	opacity: .5;
+}
+
+.ui-slider-horizontal .ui-slider-handle  {
+	height: 13px;
+	top: -.1em;
+	/*opacity: .5;*/
+}
+
+#scaledSalaryDisplay {
+	margin-top: 150px;
 }
 
 
