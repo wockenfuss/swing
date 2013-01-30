@@ -157,7 +157,7 @@ div span {
 }
 
 #origin-map, #destination-map {
-	min-height: 300px;
+	min-height: 350px;
 	border-radius: 5px;
 	float: left;
 	display: inline-block;
@@ -176,12 +176,26 @@ div span {
 	font-size: 1em;
 }
 
-.arrow {
+/*.arrow {
 	color: #fff;
 	font-family: $primary-font;
 	font-size: 20pt;
 	width: 200px;
 	margin-left: 50px;
+}*/
+
+#arrowButton {
+	background: url(arrow.png) top left no-repeat;
+	min-height: 50px;
+	width: 100px;
+	margin-left: 100px;
+	opacity: .7;
+/*	display: inline-block;
+	float: left;*/
+	&:hover {
+		background: url(arrow.png) bottom left no-repeat;
+		cursor: pointer; 
+	}
 }
 
 #form-container .arrow:hover {
@@ -201,7 +215,7 @@ div span {
   float: left;
   clear: left;
   width: 200px;
-  margin: 50px 0 0 50px;
+  margin: 20px 0 0 50px;
   /*background: white;*/
 
 }
@@ -222,8 +236,15 @@ div span {
 }
 
 #scaledSalaryDisplay {
-	margin-top: 150px;
+	margin: 175px 0 0 100px;
 }
 
+.sliderLabel {
+	font-family: $primary-font;
+	font-size: 30pt;
+	color: #fff;
+	opacity: .7;
+	margin: 0 0 0 60px;
+}
 
 

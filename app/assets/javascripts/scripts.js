@@ -27,7 +27,7 @@ $(document).ready(function() {
   	// }
   });
 
-  $('#locationButton').on('click', function(e) {
+  $('#arrowButton').on('click', function(e) {
   	newLocation($('input[name="origin"]')[0]);
   	newLocation($('input[name="destination"]')[0]);
   	setTimeout(animateMaps, 750);
@@ -47,25 +47,21 @@ $(document).ready(function() {
 	$( "#currentSalary" ).slider( "value", 0 );
 });
 	
+Number.prototype.formatMoney = function(c, d, t){
+var n = this, c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
+   return '$' + s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+ };	
 
 var updateSalary = function() {
 	var scalar = $( "#currentSalary" ).slider( "value" );
 	var salary = scalar * 2500;
 	// console.log(salary);
-	$('#salaryDisplay').text(salary);
+	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
 };
-// var initialLocation = function() {
-	
-// 	$.ajax({
-// 		url: '/', 
-// 		type: 'get',
-// 		dataType: 'json',
-// 		success: function(result) {
-// 			updateMap(result);
-// 		}
-// 	});
 
-// }
+// var dollarify = function(number) {
+
+// };
 	
 var locationUrl = function(data) {
 	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' + 

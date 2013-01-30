@@ -5,11 +5,14 @@
 
 		<%= text_field_tag 'origin', value = @city, :class => 'input-text', :placeholder => "Origin" %>
 <!-- 		<#%= text_field_tag 'income', nil, :class => 'input-text', :placeholder => "Current income" %> -->
-		<br>
 		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination" %><br>
-		<a href="#" id="locationButton" class="arrow"> –> </a><br>
+		<!-- <a href="#" id="locationButton" class="arrow"> –> </a><br> -->
+		<div id="arrowButton">
+
+		</div>
+		<div class="sliderLabel">Current Salary: </div>
 		<div id="currentSalary"></div>
-		<p id="salaryDisplay" class="numbers">$40,000</p>
+		<p id="salaryDisplay" class="numbers"></p>
 		<!--<#% end %> -->
 	</div>
 </div>
