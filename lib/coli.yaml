@@ -1,0 +1,3251 @@
+---
+- Urban Area:
+    city: Anniston Calhoun County
+    state: AL
+  Composite Index: '91.2'
+  Grocery Items: '101.2'
+  Housing: '74.8'
+  Utilities: '111.2'
+  Transportation: '88.8'
+  Health Care: '89.3'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Akron
+    state: OH
+  Composite Index: '100.2'
+  Grocery Items: '105.1'
+  Housing: '99.7'
+  Utilities: '107.9'
+  Transportation: '107.1'
+  Health Care: '86.8'
+  Miscellaneous Goods and Services: '96.0'
+- Urban Area:
+    city: Albany
+    state: GA
+  Composite Index: '90.1'
+  Grocery Items: '108.7'
+  Housing: '74.8'
+  Utilities: '82.0'
+  Transportation: '96.6'
+  Health Care: '89.8'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Albany
+    state: NY
+  Composite Index: '108.1'
+  Grocery Items: '105.0'
+  Housing: '112.6'
+  Utilities: '101.0'
+  Transportation: '102.8'
+  Health Care: '111.7'
+  Miscellaneous Goods and Services: '108.6'
+- Urban Area:
+    city: Alexandria
+    state: LA
+  Composite Index: '95.1'
+  Grocery Items: '96.0'
+  Housing: '92.7'
+  Utilities: '89.9'
+  Transportation: '97.2'
+  Health Care: '92.9'
+  Miscellaneous Goods and Services: '98.2'
+- Urban Area:
+    city: Amarillo
+    state: TX
+  Composite Index: '89.5'
+  Grocery Items: '89.9'
+  Housing: '89.4'
+  Utilities: '80.4'
+  Transportation: '92.1'
+  Health Care: '95.2'
+  Miscellaneous Goods and Services: '90.8'
+- Urban Area:
+    city: Americus
+    state: GA
+  Composite Index: '88.3'
+  Grocery Items: '105.5'
+  Housing: '71.0'
+  Utilities: '88.2'
+  Transportation: '99.8'
+  Health Care: '103.7'
+  Miscellaneous Goods and Services: '91.3'
+- Urban Area:
+    city: Ames
+    state: IA
+  Composite Index: '96.8'
+  Grocery Items: '93.7'
+  Housing: '104.8'
+  Utilities: '82.3'
+  Transportation: '101.8'
+  Health Care: '98.4'
+  Miscellaneous Goods and Services: '93.7'
+- Urban Area:
+    city: Anchorage
+    state: AK
+  Composite Index: '128.4'
+  Grocery Items: '134.5'
+  Housing: '142.9'
+  Utilities: '94.1'
+  Transportation: '122.0'
+  Health Care: '135.7'
+  Miscellaneous Goods and Services: '124.8'
+- Urban Area:
+    city: Anderson
+    state: SC
+  Composite Index: '91.8'
+  Grocery Items: '103.4'
+  Housing: '77.0'
+  Utilities: '101.6'
+  Transportation: '92.3'
+  Health Care: '99.7'
+  Miscellaneous Goods and Services: '95.9'
+- Urban Area:
+    city: Appleton
+    state: WI
+  Composite Index: '93.3'
+  Grocery Items: '93.0'
+  Housing: '81.8'
+  Utilities: '102.3'
+  Transportation: '104.4'
+  Health Care: '104.7'
+  Miscellaneous Goods and Services: '96.0'
+- Urban Area:
+    city: Ardmore
+    state: OK
+  Composite Index: '87.3'
+  Grocery Items: '92.9'
+  Housing: '77.3'
+  Utilities: '84.8'
+  Transportation: '101.3'
+  Health Care: '93.7'
+  Miscellaneous Goods and Services: '89.8'
+- Urban Area:
+    city: Arlington
+    state: TX
+  Composite Index: '99.3'
+  Grocery Items: '94.4'
+  Housing: '89.4'
+  Utilities: '109.9'
+  Transportation: '98.3'
+  Health Care: '105.4'
+  Miscellaneous Goods and Services: '106.4'
+- Urban Area:
+    city: Asheville
+    state: NC
+  Composite Index: '101.1'
+  Grocery Items: '104.6'
+  Housing: '97.8'
+  Utilities: '113.1'
+  Transportation: '94.2'
+  Health Care: '104.7'
+  Miscellaneous Goods and Services: '100.6'
+- Urban Area:
+    city: Ashland
+    state: OH
+  Composite Index: '88.5'
+  Grocery Items: '100.7'
+  Housing: '72.1'
+  Utilities: '92.1'
+  Transportation: '98.2'
+  Health Care: '88.8'
+  Miscellaneous Goods and Services: '94.2'
+- Urban Area:
+    city: Atlanta
+    state: GA
+  Composite Index: '95.6'
+  Grocery Items: '96.2'
+  Housing: '90.7'
+  Utilities: '86.3'
+  Transportation: '99.3'
+  Health Care: '103.3'
+  Miscellaneous Goods and Services: '100.3'
+- Urban Area:
+    city: Auburn Opelika
+    state: AL
+  Composite Index: '98.9'
+  Grocery Items: '104.6'
+  Housing: '90.2'
+  Utilities: '101.3'
+  Transportation: '92.9'
+  Health Care: '88.4'
+  Miscellaneous Goods and Services: '106.5'
+- Urban Area:
+    city: Augusta Aiken GA
+    state: SC
+  Composite Index: '93.2'
+  Grocery Items: '106.0'
+  Housing: '79.4'
+  Utilities: '92.1'
+  Transportation: '93.9'
+  Health Care: '101.4'
+  Miscellaneous Goods and Services: '99.4'
+- Urban Area:
+    city: Austin
+    state: TX
+  Composite Index: '95.5'
+  Grocery Items: '89.3'
+  Housing: '85.1'
+  Utilities: '110.7'
+  Transportation: '100.2'
+  Health Care: '100.3'
+  Miscellaneous Goods and Services: '100.4'
+- Urban Area:
+    city: Bakersfield
+    state: CA
+  Composite Index: '103.4'
+  Grocery Items: '107.6'
+  Housing: '98.4'
+  Utilities: '104.3'
+  Transportation: '111.3'
+  Health Care: '107.2'
+  Miscellaneous Goods and Services: '103.1'
+- Urban Area:
+    city: Baltimore
+    state: MD
+  Composite Index: '119.4'
+  Grocery Items: '110.8'
+  Housing: '155.4'
+  Utilities: '112.5'
+  Transportation: '105.3'
+  Health Care: '97.9'
+  Miscellaneous Goods and Services: '100.0'
+- Urban Area:
+    city: Baton Rouge
+    state: LA
+  Composite Index: '96.1'
+  Grocery Items: '100.4'
+  Housing: '102.2'
+  Utilities: '78.2'
+  Transportation: '90.4'
+  Health Care: '97.7'
+  Miscellaneous Goods and Services: '95.8'
+- Urban Area:
+    city: Beaufort
+    state: SC
+  Composite Index: '105.2'
+  Grocery Items: '106.9'
+  Housing: '103.5'
+  Utilities: '114.3'
+  Transportation: '99.6'
+  Health Care: '95.7'
+  Miscellaneous Goods and Services: '106.0'
+- Urban Area:
+    city: Beaumont
+    state: TX
+  Composite Index: '95.7'
+  Grocery Items: '87.1'
+  Housing: '95.9'
+  Utilities: '92.5'
+  Transportation: '100.4'
+  Health Care: '98.7'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Bellingham
+    state: WA
+  Composite Index: '113.0'
+  Grocery Items: '114.9'
+  Housing: '135.9'
+  Utilities: '83.8'
+  Transportation: '113.2'
+  Health Care: '115.3'
+  Miscellaneous Goods and Services: '100.8'
+- Urban Area:
+    city: Bergen Passaic
+    state: NJ
+  Composite Index: '131.3'
+  Grocery Items: '112.1'
+  Housing: '174.0'
+  Utilities: '128.9'
+  Transportation: '102.4'
+  Health Care: '106.3'
+  Miscellaneous Goods and Services: '113.8'
+- Urban Area:
+    city: Bethesda Gaithersburg Frederick
+    state: MD
+  Composite Index: '130.5'
+  Grocery Items: '108.5'
+  Housing: '184.2'
+  Utilities: '120.6'
+  Transportation: '110.1'
+  Health Care: '104.0'
+  Miscellaneous Goods and Services: '104.4'
+- Urban Area:
+    city: Binghamton
+    state: NY
+  Composite Index: '98.4'
+  Grocery Items: '92.4'
+  Housing: '92.6'
+  Utilities: '112.8'
+  Transportation: '104.4'
+  Health Care: '114.3'
+  Miscellaneous Goods and Services: '97.7'
+- Urban Area:
+    city: Birmingham
+    state: AL
+  Composite Index: '90.8'
+  Grocery Items: '93.5'
+  Housing: '73.2'
+  Utilities: '105.7'
+  Transportation: '93.5'
+  Health Care: '87.9'
+  Miscellaneous Goods and Services: '100.3'
+- Urban Area:
+    city: Bismarck Mandan
+    state: ND
+  Composite Index: '95.3'
+  Grocery Items: '105.9'
+  Housing: '91.5'
+  Utilities: '70.1'
+  Transportation: '102.6'
+  Health Care: '100.5'
+  Miscellaneous Goods and Services: '99.4'
+- Urban Area:
+    city: Blacksburg
+    state: VA
+  Composite Index: '95.0'
+  Grocery Items: '91.5'
+  Housing: '94.9'
+  Utilities: '102.3'
+  Transportation: '91.1'
+  Health Care: '97.5'
+  Miscellaneous Goods and Services: '95.1'
+- Urban Area:
+    city: Boise
+    state: ID
+  Composite Index: '97.2'
+  Grocery Items: '98.5'
+  Housing: '84.0'
+  Utilities: '99.6'
+  Transportation: '108.0'
+  Health Care: '106.6'
+  Miscellaneous Goods and Services: '103.3'
+- Urban Area:
+    city: Boston
+    state: MA
+  Composite Index: '132.5'
+  Grocery Items: '116.7'
+  Housing: '152.7'
+  Utilities: '138.6'
+  Transportation: '104.5'
+  Health Care: '123.5'
+  Miscellaneous Goods and Services: '128.6'
+- Urban Area:
+    city: Bowling Green
+    state: KY
+  Composite Index: '90.7'
+  Grocery Items: '93.3'
+  Housing: '78.2'
+  Utilities: '104.3'
+  Transportation: '96.7'
+  Health Care: '95.8'
+  Miscellaneous Goods and Services: '94.0'
+- Urban Area:
+    city: Bozeman
+    state: MT
+  Composite Index: '102.0'
+  Grocery Items: '107.3'
+  Housing: '101.8'
+  Utilities: '89.1'
+  Transportation: '101.6'
+  Health Care: '102.4'
+  Miscellaneous Goods and Services: '104.0'
+- Urban Area:
+    city: Bradenton
+    state: FL
+  Composite Index: '95.8'
+  Grocery Items: '106.6'
+  Housing: '90.2'
+  Utilities: '90.4'
+  Transportation: '101.3'
+  Health Care: '98.8'
+  Miscellaneous Goods and Services: '96.1'
+- Urban Area:
+    city: Brazoria County
+    state: TX
+  Composite Index: '89.3'
+  Grocery Items: '87.9'
+  Housing: '75.8'
+  Utilities: '100.8'
+  Transportation: '96.0'
+  Health Care: '95.6'
+  Miscellaneous Goods and Services: '95.6'
+- Urban Area:
+    city: Brownsville
+    state: TX
+  Composite Index: '85.8'
+  Grocery Items: '88.6'
+  Housing: '71.0'
+  Utilities: '93.1'
+  Transportation: '95.0'
+  Health Care: '96.5'
+  Miscellaneous Goods and Services: '91.4'
+- Urban Area:
+    city: Buffalo
+    state: NY
+  Composite Index: '95.8'
+  Grocery Items: '91.8'
+  Housing: '97.4'
+  Utilities: '115.6'
+  Transportation: '104.8'
+  Health Care: '92.0'
+  Miscellaneous Goods and Services: '87.6'
+- Urban Area:
+    city: Burlington
+    state: IA
+  Composite Index: '97.0'
+  Grocery Items: '93.8'
+  Housing: '94.6'
+  Utilities: '108.6'
+  Transportation: '98.6'
+  Health Care: '89.9'
+  Miscellaneous Goods and Services: '97.1'
+- Urban Area:
+    city: Burlington
+    state: NC
+  Composite Index: '94.6'
+  Grocery Items: '98.6'
+  Housing: '86.0'
+  Utilities: '82.3'
+  Transportation: '97.5'
+  Health Care: '102.5'
+  Miscellaneous Goods and Services: '102.5'
+- Urban Area:
+    city: Burlington Chittenden Co
+    state: VT
+  Composite Index: '120.5'
+  Grocery Items: '112.9'
+  Housing: '138.7'
+  Utilities: '122.2'
+  Transportation: '102.5'
+  Health Care: '104.6'
+  Miscellaneous Goods and Services: '114.2'
+- Urban Area:
+    city: Camden
+    state: SC
+  Composite Index: '97.4'
+  Grocery Items: '103.4'
+  Housing: '87.8'
+  Utilities: '107.5'
+  Transportation: '86.0'
+  Health Care: '93.1'
+  Miscellaneous Goods and Services: '104.3'
+- Urban Area:
+    city: Cape Coral Fort Myers
+    state: FL
+  Composite Index: '95.6'
+  Grocery Items: '107.9'
+  Housing: '87.5'
+  Utilities: '83.7'
+  Transportation: '103.0'
+  Health Care: '98.7'
+  Miscellaneous Goods and Services: '98.9'
+- Urban Area:
+    city: Carlsbad
+    state: NM
+  Composite Index: '95.4'
+  Grocery Items: '102.6'
+  Housing: '86.6'
+  Utilities: '99.3'
+  Transportation: '95.3'
+  Health Care: '96.0'
+  Miscellaneous Goods and Services: '98.9'
+- Urban Area:
+    city: Cedar City
+    state: UT
+  Composite Index: '88.7'
+  Grocery Items: '102.5'
+  Housing: '73.9'
+  Utilities: '83.7'
+  Transportation: '97.8'
+  Health Care: '85.5'
+  Miscellaneous Goods and Services: '95.5'
+- Urban Area:
+    city: Cedar Rapids
+    state: IA
+  Composite Index: '92.0'
+  Grocery Items: '94.8'
+  Housing: '79.1'
+  Utilities: '101.6'
+  Transportation: '97.1'
+  Health Care: '94.4'
+  Miscellaneous Goods and Services: '97.5'
+- Urban Area:
+    city: Champaign Urbana
+    state: IL
+  Composite Index: '96.9'
+  Grocery Items: '98.5'
+  Housing: '90.8'
+  Utilities: '97.1'
+  Transportation: '98.2'
+  Health Care: '100.5'
+  Miscellaneous Goods and Services: '100.7'
+- Urban Area:
+    city: Chapel Hill
+    state: NC
+  Composite Index: '113.0'
+  Grocery Items: '100.9'
+  Housing: '127.0'
+  Utilities: '85.7'
+  Transportation: '122.8'
+  Health Care: '105.8'
+  Miscellaneous Goods and Services: '112.1'
+- Urban Area:
+    city: Charleston
+    state: WV
+  Composite Index: '92.7'
+  Grocery Items: '88.8'
+  Housing: '89.3'
+  Utilities: '96.7'
+  Transportation: '102.9'
+  Health Care: '93.9'
+  Miscellaneous Goods and Services: '92.9'
+- Urban Area:
+    city: Charleston N Charleston
+    state: SC
+  Composite Index: '98.3'
+  Grocery Items: '105.7'
+  Housing: '92.6'
+  Utilities: '96.6'
+  Transportation: '93.9'
+  Health Care: '104.4'
+  Miscellaneous Goods and Services: '101.5'
+- Urban Area:
+    city: Charlotte
+    state: NC
+  Composite Index: '93.2'
+  Grocery Items: '97.1'
+  Housing: '79.5'
+  Utilities: '91.2'
+  Transportation: '95.7'
+  Health Care: '110.3'
+  Miscellaneous Goods and Services: '101.4'
+- Urban Area:
+    city: Charlottesville
+    state: VA
+  Composite Index: '107.0'
+  Grocery Items: '101.2'
+  Housing: '122.6'
+  Utilities: '100.8'
+  Transportation: '90.6'
+  Health Care: '94.5'
+  Miscellaneous Goods and Services: '104.0'
+- Urban Area:
+    city: Chattanooga
+    state: TN
+  Composite Index: '91.1'
+  Grocery Items: '97.4'
+  Housing: '84.0'
+  Utilities: '82.5'
+  Transportation: '96.4'
+  Health Care: '93.3'
+  Miscellaneous Goods and Services: '95.7'
+- Urban Area:
+    city: Cheyenne
+    state: WY
+  Composite Index: '100.5'
+  Grocery Items: '101.7'
+  Housing: '107.9'
+  Utilities: '96.3'
+  Transportation: '95.0'
+  Health Care: '98.3'
+  Miscellaneous Goods and Services: '96.5'
+- Urban Area:
+    city: Chicago
+    state: IL
+  Composite Index: '116.9'
+  Grocery Items: '111.2'
+  Housing: '134.8'
+  Utilities: '117.3'
+  Transportation: '116.5'
+  Health Care: '108.5'
+  Miscellaneous Goods and Services: '104.4'
+- Urban Area:
+    city: Cincinnati
+    state: OH
+  Composite Index: '93.8'
+  Grocery Items: '96.4'
+  Housing: '81.9'
+  Utilities: '103.8'
+  Transportation: '98.0'
+  Health Care: '95.8'
+  Miscellaneous Goods and Services: '98.7'
+- Urban Area:
+    city: Clarksburg
+    state: WV
+  Composite Index: '95.0'
+  Grocery Items: '95.2'
+  Housing: '93.1'
+  Utilities: '92.2'
+  Transportation: '103.8'
+  Health Care: '89.5'
+  Miscellaneous Goods and Services: '95.5'
+- Urban Area:
+    city: Clarksville
+    state: TN
+  Composite Index: '93.0'
+  Grocery Items: '87.9'
+  Housing: '86.0'
+  Utilities: '86.5'
+  Transportation: '93.9'
+  Health Care: '98.7'
+  Miscellaneous Goods and Services: '102.3'
+- Urban Area:
+    city: Cleveland
+    state: OH
+  Composite Index: '101.0'
+  Grocery Items: '108.1'
+  Housing: '93.3'
+  Utilities: '109.0'
+  Transportation: '101.4'
+  Health Care: '104.3'
+  Miscellaneous Goods and Services: '102.1'
+- Urban Area:
+    city: Cleveland
+    state: TN
+  Composite Index: '93.4'
+  Grocery Items: '101.6'
+  Housing: '87.7'
+  Utilities: '103.4'
+  Transportation: '91.9'
+  Health Care: '91.3'
+  Miscellaneous Goods and Services: '92.9'
+- Urban Area:
+    city: Colorado Springs
+    state: CO
+  Composite Index: '92.8'
+  Grocery Items: '95.4'
+  Housing: '92.0'
+  Utilities: '86.8'
+  Transportation: '96.2'
+  Health Care: '102.3'
+  Miscellaneous Goods and Services: '92.1'
+- Urban Area:
+    city: Columbia
+    state: MO
+  Composite Index: '91.8'
+  Grocery Items: '92.6'
+  Housing: '81.4'
+  Utilities: '90.4'
+  Transportation: '96.3'
+  Health Care: '96.4'
+  Miscellaneous Goods and Services: '99.1'
+- Urban Area:
+    city: Columbia
+    state: SC
+  Composite Index: '100.4'
+  Grocery Items: '105.2'
+  Housing: '82.3'
+  Utilities: '109.0'
+  Transportation: '102.0'
+  Health Care: '106.2'
+  Miscellaneous Goods and Services: '110.6'
+- Urban Area:
+    city: Columbus
+    state: OH
+  Composite Index: '92.0'
+  Grocery Items: '91.6'
+  Housing: '86.2'
+  Utilities: '100.2'
+  Transportation: '99.1'
+  Health Care: '107.7'
+  Miscellaneous Goods and Services: '90.6'
+- Urban Area:
+    city: Conroe
+    state: TX
+  Composite Index: '91.4'
+  Grocery Items: '89.4'
+  Housing: '80.1'
+  Utilities: '96.1'
+  Transportation: '93.8'
+  Health Care: '95.0'
+  Miscellaneous Goods and Services: '99.7'
+- Urban Area:
+    city: Conway
+    state: AR
+  Composite Index: '86.6'
+  Grocery Items: '97.9'
+  Housing: '78.8'
+  Utilities: '92.0'
+  Transportation: '96.6'
+  Health Care: '89.8'
+  Miscellaneous Goods and Services: '84.0'
+- Urban Area:
+    city: Cookeville
+    state: TN
+  Composite Index: '85.7'
+  Grocery Items: '86.7'
+  Housing: '71.4'
+  Utilities: '82.9'
+  Transportation: '87.5'
+  Health Care: '87.1'
+  Miscellaneous Goods and Services: '98.2'
+- Urban Area:
+    city: Corpus Christi
+    state: TX
+  Composite Index: '90.8'
+  Grocery Items: '82.4'
+  Housing: '79.6'
+  Utilities: '113.5'
+  Transportation: '93.3'
+  Health Care: '92.8'
+  Miscellaneous Goods and Services: '96.0'
+- Urban Area:
+    city: Covington
+    state: KY
+  Composite Index: '87.8'
+  Grocery Items: '86.0'
+  Housing: '76.8'
+  Utilities: '100.2'
+  Transportation: '99.9'
+  Health Care: '90.6'
+  Miscellaneous Goods and Services: '90.3'
+- Urban Area:
+    city: Dallas
+    state: TX
+  Composite Index: '91.9'
+  Grocery Items: '96.2'
+  Housing: '70.7'
+  Utilities: '105.5'
+  Transportation: '100.9'
+  Health Care: '103.8'
+  Miscellaneous Goods and Services: '100.4'
+- Urban Area:
+    city: Danville
+    state: IL
+  Composite Index: '91.1'
+  Grocery Items: '94.6'
+  Housing: '74.2'
+  Utilities: '116.4'
+  Transportation: '109.3'
+  Health Care: '95.8'
+  Miscellaneous Goods and Services: '90.7'
+- Urban Area:
+    city: Dare County
+    state: NC
+  Composite Index: '107.3'
+  Grocery Items: '111.7'
+  Housing: '116.7'
+  Utilities: '92.9'
+  Transportation: '110.2'
+  Health Care: '111.7'
+  Miscellaneous Goods and Services: '100.4'
+- Urban Area:
+    city: Davenport Moline Rock Is IA
+    state: IL
+  Composite Index: '96.8'
+  Grocery Items: '98.7'
+  Housing: '98.7'
+  Utilities: '81.4'
+  Transportation: '104.3'
+  Health Care: '97.9'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Dayton
+    state: OH
+  Composite Index: '91.4'
+  Grocery Items: '89.2'
+  Housing: '74.5'
+  Utilities: '106.1'
+  Transportation: '103.1'
+  Health Care: '93.2'
+  Miscellaneous Goods and Services: '99.0'
+- Urban Area:
+    city: Decatur
+    state: IL
+  Composite Index: '91.4'
+  Grocery Items: '89.1'
+  Housing: '88.2'
+  Utilities: '92.2'
+  Transportation: '96.7'
+  Health Care: '91.9'
+  Miscellaneous Goods and Services: '93.3'
+- Urban Area:
+    city: Decatur Hartselle
+    state: AL
+  Composite Index: '89.2'
+  Grocery Items: '98.5'
+  Housing: '74.2'
+  Utilities: '90.6'
+  Transportation: '96.7'
+  Health Care: '85.5'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Denver
+    state: CO
+  Composite Index: '103.2'
+  Grocery Items: '101.0'
+  Housing: '107.5'
+  Utilities: '101.9'
+  Transportation: '95.4'
+  Health Care: '105.9'
+  Miscellaneous Goods and Services: '102.7'
+- Urban Area:
+    city: Des Moines
+    state: IA
+  Composite Index: '90.9'
+  Grocery Items: '90.9'
+  Housing: '89.6'
+  Utilities: '90.2'
+  Transportation: '95.9'
+  Health Care: '90.8'
+  Miscellaneous Goods and Services: '90.9'
+- Urban Area:
+    city: Detroit
+    state: MI
+  Composite Index: '99.4'
+  Grocery Items: '92.7'
+  Housing: '95.2'
+  Utilities: '129.5'
+  Transportation: '101.3'
+  Health Care: '94.2'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Dodge City
+    state: KS
+  Composite Index: '89.3'
+  Grocery Items: '90.0'
+  Housing: '77.6'
+  Utilities: '85.5'
+  Transportation: '95.6'
+  Health Care: '89.9'
+  Miscellaneous Goods and Services: '98.5'
+- Urban Area:
+    city: Dothan
+    state: AL
+  Composite Index: '89.8'
+  Grocery Items: '100.3'
+  Housing: '80.1'
+  Utilities: '79.7'
+  Transportation: '91.8'
+  Health Care: '81.7'
+  Miscellaneous Goods and Services: '97.9'
+- Urban Area:
+    city: Douglas
+    state: GA
+  Composite Index: '88.6'
+  Grocery Items: '104.1'
+  Housing: '68.5'
+  Utilities: '97.9'
+  Transportation: '89.3'
+  Health Care: '91.3'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Dover
+    state: DE
+  Composite Index: '99.7'
+  Grocery Items: '110.4'
+  Housing: '90.9'
+  Utilities: '108.8'
+  Transportation: '97.5'
+  Health Care: '103.0'
+  Miscellaneous Goods and Services: '100.7'
+- Urban Area:
+    city: Dubuque
+    state: IA
+  Composite Index: '95.9'
+  Grocery Items: '98.1'
+  Housing: '86.5'
+  Utilities: '105.2'
+  Transportation: '99.5'
+  Health Care: '96.5'
+  Miscellaneous Goods and Services: '99.5'
+- Urban Area:
+    city: Durham
+    state: NC
+  Composite Index: '96.6'
+  Grocery Items: '97.9'
+  Housing: '86.8'
+  Utilities: '96.3'
+  Transportation: '105.5'
+  Health Care: '108.5'
+  Miscellaneous Goods and Services: '100.6'
+- Urban Area:
+    city: Dutchess County
+    state: NY
+  Composite Index: '120.4'
+  Grocery Items: '109.8'
+  Housing: '141.3'
+  Utilities: '118.8'
+  Transportation: '109.3'
+  Health Care: '110.4'
+  Miscellaneous Goods and Services: '111.1'
+- Urban Area:
+    city: Dyersburg
+    state: TN
+  Composite Index: '88.6'
+  Grocery Items: '93.4'
+  Housing: '73.8'
+  Utilities: '95.2'
+  Transportation: '92.9'
+  Health Care: '86.3'
+  Miscellaneous Goods and Services: '96.7'
+- Urban Area:
+    city: Eau Claire
+    state: WI
+  Composite Index: '93.7'
+  Grocery Items: '97.6'
+  Housing: '90.5'
+  Utilities: '84.8'
+  Transportation: '103.1'
+  Health Care: '105.5'
+  Miscellaneous Goods and Services: '93.5'
+- Urban Area:
+    city: Edmond
+    state: OK
+  Composite Index: '91.6'
+  Grocery Items: '88.7'
+  Housing: '82.8'
+  Utilities: '90.2'
+  Transportation: '97.7'
+  Health Care: '94.3'
+  Miscellaneous Goods and Services: '98.9'
+- Urban Area:
+    city: El Paso
+    state: TX
+  Composite Index: '90.4'
+  Grocery Items: '99.9'
+  Housing: '86.0'
+  Utilities: '88.1'
+  Transportation: '97.0'
+  Health Care: '95.4'
+  Miscellaneous Goods and Services: '88.5'
+- Urban Area:
+    city: Elkhart Goshen
+    state: IN
+  Composite Index: '94.0'
+  Grocery Items: '91.4'
+  Housing: '92.7'
+  Utilities: '84.5'
+  Transportation: '99.7'
+  Health Care: '92.8'
+  Miscellaneous Goods and Services: '97.5'
+- Urban Area:
+    city: Enid
+    state: OK
+  Composite Index: '93.6'
+  Grocery Items: '103.5'
+  Housing: '77.4'
+  Utilities: '96.1'
+  Transportation: '99.5'
+  Health Care: '99.5'
+  Miscellaneous Goods and Services: '100.7'
+- Urban Area:
+    city: Erie
+    state: PA
+  Composite Index: '92.1'
+  Grocery Items: '96.4'
+  Housing: '91.1'
+  Utilities: '96.0'
+  Transportation: '98.4'
+  Health Care: '91.2'
+  Miscellaneous Goods and Services: '88.4'
+- Urban Area:
+    city: Eugene
+    state: OR
+  Composite Index: '109.8'
+  Grocery Items: '93.8'
+  Housing: '132.3'
+  Utilities: '85.3'
+  Transportation: '110.0'
+  Health Care: '118.2'
+  Miscellaneous Goods and Services: '102.9'
+- Urban Area:
+    city: Evansville
+    state: IN
+  Composite Index: '96.2'
+  Grocery Items: '97.9'
+  Housing: '86.3'
+  Utilities: '120.0'
+  Transportation: '97.1'
+  Health Care: '97.4'
+  Miscellaneous Goods and Services: '96.4'
+- Urban Area:
+    city: Everett
+    state: WA
+  Composite Index: '111.3'
+  Grocery Items: '112.0'
+  Housing: '128.1'
+  Utilities: '85.4'
+  Transportation: '110.4'
+  Health Care: '129.1'
+  Miscellaneous Goods and Services: '102.1'
+- Urban Area:
+    city: Fairbanks
+    state: AK
+  Composite Index: '137.4'
+  Grocery Items: '127.9'
+  Housing: '148.5'
+  Utilities: '193.1'
+  Transportation: '118.7'
+  Health Care: '144.9'
+  Miscellaneous Goods and Services: '118.8'
+- Urban Area:
+    city: Fargo Moorhead ND
+    state: MN
+  Composite Index: '92.7'
+  Grocery Items: '99.8'
+  Housing: '87.4'
+  Utilities: '78.7'
+  Transportation: '95.8'
+  Health Care: '102.4'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Farmington
+    state: NM
+  Composite Index: '97.0'
+  Grocery Items: '101.8'
+  Housing: '97.1'
+  Utilities: '87.1'
+  Transportation: '96.4'
+  Health Care: '98.6'
+  Miscellaneous Goods and Services: '98.2'
+- Urban Area:
+    city: Fayetteville
+    state: AR
+  Composite Index: '92.1'
+  Grocery Items: '95.3'
+  Housing: '77.3'
+  Utilities: '99.8'
+  Transportation: '95.2'
+  Health Care: '92.7'
+  Miscellaneous Goods and Services: '100.6'
+- Urban Area:
+    city: Fayetteville
+    state: NC
+  Composite Index: '95.2'
+  Grocery Items: '105.1'
+  Housing: '82.5'
+  Utilities: '92.8'
+  Transportation: '96.0'
+  Health Care: '117.9'
+  Miscellaneous Goods and Services: '100.1'
+- Urban Area:
+    city: Findlay
+    state: OH
+  Composite Index: '94.3'
+  Grocery Items: '102.3'
+  Housing: '77.0'
+  Utilities: '95.8'
+  Transportation: '100.6'
+  Health Care: '91.2'
+  Miscellaneous Goods and Services: '104.3'
+- Urban Area:
+    city: Fitchburg Leominster
+    state: MA
+  Composite Index: '103.3'
+  Grocery Items: '99.3'
+  Housing: '97.1'
+  Utilities: '140.6'
+  Transportation: '99.9'
+  Health Care: '112.3'
+  Miscellaneous Goods and Services: '98.6'
+- Urban Area:
+    city: Flagstaff
+    state: AZ
+  Composite Index: '114.9'
+  Grocery Items: '106.6'
+  Housing: '149.3'
+  Utilities: '92.5'
+  Transportation: '105.5'
+  Health Care: '100.0'
+  Miscellaneous Goods and Services: '99.5'
+- Urban Area:
+    city: Florence
+    state: AL
+  Composite Index: '90.2'
+  Grocery Items: '96.6'
+  Housing: '79.6'
+  Utilities: '91.0'
+  Transportation: '94.5'
+  Health Care: '84.1'
+  Miscellaneous Goods and Services: '96.3'
+- Urban Area:
+    city: Fort Lauderdale
+    state: FL
+  Composite Index: '115.7'
+  Grocery Items: '112.5'
+  Housing: '144.0'
+  Utilities: '92.5'
+  Transportation: '106.3'
+  Health Care: '102.4'
+  Miscellaneous Goods and Services: '103.7'
+- Urban Area:
+    city: Fort Smith
+    state: AR
+  Composite Index: '86.1'
+  Grocery Items: '92.5'
+  Housing: '74.5'
+  Utilities: '90.5'
+  Transportation: '87.9'
+  Health Care: '87.5'
+  Miscellaneous Goods and Services: '91.7'
+- Urban Area:
+    city: Fort Wayne Allen County
+    state: IN
+  Composite Index: '94.4'
+  Grocery Items: '93.3'
+  Housing: '89.3'
+  Utilities: '87.3'
+  Transportation: '106.9'
+  Health Care: '93.4'
+  Miscellaneous Goods and Services: '98.0'
+- Urban Area:
+    city: Fort Worth
+    state: TX
+  Composite Index: '91.1'
+  Grocery Items: '89.8'
+  Housing: '78.0'
+  Utilities: '106.2'
+  Transportation: '97.6'
+  Health Care: '93.8'
+  Miscellaneous Goods and Services: '96.1'
+- Urban Area:
+    city: Framingham Natick
+    state: MA
+  Composite Index: '134.5'
+  Grocery Items: '109.4'
+  Housing: '177.2'
+  Utilities: '131.9'
+  Transportation: '105.0'
+  Health Care: '116.1'
+  Miscellaneous Goods and Services: '118.8'
+- Urban Area:
+    city: Fresno
+    state: CA
+  Composite Index: '117.3'
+  Grocery Items: '115.8'
+  Housing: '131.2'
+  Utilities: '123.6'
+  Transportation: '114.5'
+  Health Care: '106.8'
+  Miscellaneous Goods and Services: '105.9'
+- Urban Area:
+    city: Gainesville
+    state: FL
+  Composite Index: '99.8'
+  Grocery Items: '106.3'
+  Housing: '101.8'
+  Utilities: '99.2'
+  Transportation: '103.3'
+  Health Care: '92.7'
+  Miscellaneous Goods and Services: '95.5'
+- Urban Area:
+    city: Galesburg
+    state: IL
+  Composite Index: '93.0'
+  Grocery Items: '99.7'
+  Housing: '80.0'
+  Utilities: '103.1'
+  Transportation: '96.1'
+  Health Care: '97.3'
+  Miscellaneous Goods and Services: '97.2'
+- Urban Area:
+    city: Garden City
+    state: KS
+  Composite Index: '89.7'
+  Grocery Items: '91.2'
+  Housing: '79.9'
+  Utilities: '86.5'
+  Transportation: '94.0'
+  Health Care: '89.6'
+  Miscellaneous Goods and Services: '97.5'
+- Urban Area:
+    city: Glens Falls
+    state: NY
+  Composite Index: '112.3'
+  Grocery Items: '105.4'
+  Housing: '105.9'
+  Utilities: '128.0'
+  Transportation: '107.0'
+  Health Care: '97.3'
+  Miscellaneous Goods and Services: '119.3'
+- Urban Area:
+    city: Glenwood Springs
+    state: CO
+  Composite Index: '124.0'
+  Grocery Items: '103.3'
+  Housing: '169.0'
+  Utilities: '89.0'
+  Transportation: '110.9'
+  Health Care: '112.0'
+  Miscellaneous Goods and Services: '108.7'
+- Urban Area:
+    city: Grand Junction
+    state: CO
+  Composite Index: '98.3'
+  Grocery Items: '101.9'
+  Housing: '105.4'
+  Utilities: '86.4'
+  Transportation: '99.1'
+  Health Care: '103.8'
+  Miscellaneous Goods and Services: '93.1'
+- Urban Area:
+    city: Grand Rapids
+    state: MI
+  Composite Index: '90.7'
+  Grocery Items: '102.7'
+  Housing: '77.6'
+  Utilities: '100.6'
+  Transportation: '103.7'
+  Health Care: '94.4'
+  Miscellaneous Goods and Services: '90.0'
+- Urban Area:
+    city: Green Bay
+    state: WI
+  Composite Index: '95.1'
+  Grocery Items: '88.8'
+  Housing: '83.5'
+  Utilities: '118.6'
+  Transportation: '100.2'
+  Health Care: '105.9'
+  Miscellaneous Goods and Services: '97.7'
+- Urban Area:
+    city: Greenville
+    state: NC
+  Composite Index: '98.5'
+  Grocery Items: '105.9'
+  Housing: '84.4'
+  Utilities: '108.5'
+  Transportation: '97.6'
+  Health Care: '113.5'
+  Miscellaneous Goods and Services: '103.3'
+- Urban Area:
+    city: Greenville
+    state: SC
+  Composite Index: '90.3'
+  Grocery Items: '102.7'
+  Housing: '72.9'
+  Utilities: '90.1'
+  Transportation: '97.1'
+  Health Care: '98.2'
+  Miscellaneous Goods and Services: '97.7'
+- Urban Area:
+    city: Gunnison
+    state: CO
+  Composite Index: '110.0'
+  Grocery Items: '110.6'
+  Housing: '134.5'
+  Utilities: '85.7'
+  Transportation: '99.0'
+  Health Care: '97.3'
+  Miscellaneous Goods and Services: '100.6'
+- Urban Area:
+    city: Hammond
+    state: LA
+  Composite Index: '95.9'
+  Grocery Items: '99.0'
+  Housing: '95.8'
+  Utilities: '84.8'
+  Transportation: '93.0'
+  Health Care: '97.4'
+  Miscellaneous Goods and Services: '98.9'
+- Urban Area:
+    city: Hampton Roads SE Virginia
+    state: VA
+  Composite Index: '111.7'
+  Grocery Items: '106.6'
+  Housing: '121.9'
+  Utilities: '108.4'
+  Transportation: '104.1'
+  Health Care: '109.6'
+  Miscellaneous Goods and Services: '108.4'
+- Urban Area:
+    city: Harlingen
+    state: TX
+  Composite Index: '82.8'
+  Grocery Items: '81.5'
+  Housing: '75.8'
+  Utilities: '105.6'
+  Transportation: '88.7'
+  Health Care: '95.2'
+  Miscellaneous Goods and Services: '79.1'
+- Urban Area:
+    city: Harrisburg
+    state: PA
+  Composite Index: '99.7'
+  Grocery Items: '97.8'
+  Housing: '91.5'
+  Utilities: '110.5'
+  Transportation: '100.2'
+  Health Care: '93.8'
+  Miscellaneous Goods and Services: '105.1'
+- Urban Area:
+    city: Harrisonburg
+    state: VA
+  Composite Index: '97.0'
+  Grocery Items: '97.5'
+  Housing: '96.8'
+  Utilities: '96.8'
+  Transportation: '90.4'
+  Health Care: '100.8'
+  Miscellaneous Goods and Services: '98.6'
+- Urban Area:
+    city: Hartford
+    state: CT
+  Composite Index: '121.8'
+  Grocery Items: '120.7'
+  Housing: '137.8'
+  Utilities: '120.7'
+  Transportation: '109.0'
+  Health Care: '113.0'
+  Miscellaneous Goods and Services: '113.5'
+- Urban Area:
+    city: Hastings
+    state: NE
+  Composite Index: '93.4'
+  Grocery Items: '103.7'
+  Housing: '89.1'
+  Utilities: '94.0'
+  Transportation: '87.6'
+  Health Care: '85.8'
+  Miscellaneous Goods and Services: '95.6'
+- Urban Area:
+    city: Hattiesburg
+    state: MS
+  Composite Index: '91.9'
+  Grocery Items: '100.5'
+  Housing: '74.6'
+  Utilities: '110.3'
+  Transportation: '96.9'
+  Health Care: '95.4'
+  Miscellaneous Goods and Services: '96.2'
+- Urban Area:
+    city: Hays
+    state: KS
+  Composite Index: '89.4'
+  Grocery Items: '92.0'
+  Housing: '78.8'
+  Utilities: '92.4'
+  Transportation: '97.5'
+  Health Care: '90.7'
+  Miscellaneous Goods and Services: '94.2'
+- Urban Area:
+    city: Hickory
+    state: NC
+  Composite Index: '92.9'
+  Grocery Items: '101.1'
+  Housing: '91.3'
+  Utilities: '92.3'
+  Transportation: '86.5'
+  Health Care: '93.8'
+  Miscellaneous Goods and Services: '93.0'
+- Urban Area:
+    city: Hilton Head Island
+    state: SC
+  Composite Index: '114.1'
+  Grocery Items: '111.4'
+  Housing: '119.8'
+  Utilities: '100.4'
+  Transportation: '101.6'
+  Health Care: '110.7'
+  Miscellaneous Goods and Services: '118.5'
+- Urban Area:
+    city: Honolulu
+    state: HI
+  Composite Index: '165.7'
+  Grocery Items: '160.1'
+  Housing: '249.0'
+  Utilities: '146.6'
+  Transportation: '126.2'
+  Health Care: '120.0'
+  Miscellaneous Goods and Services: '117.9'
+- Urban Area:
+    city: Hot Springs
+    state: AR
+  Composite Index: '93.8'
+  Grocery Items: '97.3'
+  Housing: '85.3'
+  Utilities: '95.7'
+  Transportation: '85.6'
+  Health Care: '84.8'
+  Miscellaneous Goods and Services: '102.9'
+- Urban Area:
+    city: Houston
+    state: TX
+  Composite Index: '92.2'
+  Grocery Items: '85.1'
+  Housing: '82.0'
+  Utilities: '97.7'
+  Transportation: '99.2'
+  Health Care: '94.6'
+  Miscellaneous Goods and Services: '99.9'
+- Urban Area:
+    city: Huntsville
+    state: AL
+  Composite Index: '91.2'
+  Grocery Items: '94.9'
+  Housing: '78.7'
+  Utilities: '86.1'
+  Transportation: '99.7'
+  Health Care: '92.0'
+  Miscellaneous Goods and Services: '99.8'
+- Urban Area:
+    city: Hutchinson
+    state: KS
+  Composite Index: '94.0'
+  Grocery Items: '89.0'
+  Housing: '92.3'
+  Utilities: '84.4'
+  Transportation: '96.5'
+  Health Care: '94.2'
+  Miscellaneous Goods and Services: '99.6'
+- Urban Area:
+    city: Idaho Falls
+    state: ID
+  Composite Index: '90.6'
+  Grocery Items: '99.5'
+  Housing: '78.0'
+  Utilities: '84.9'
+  Transportation: '102.1'
+  Health Care: '93.2'
+  Miscellaneous Goods and Services: '96.3'
+- Urban Area:
+    city: Indiana County
+    state: PA
+  Composite Index: '93.3'
+  Grocery Items: '99.7'
+  Housing: '84.2'
+  Utilities: '97.7'
+  Transportation: '97.7'
+  Health Care: '91.1'
+  Miscellaneous Goods and Services: '96.4'
+- Urban Area:
+    city: Indianapolis
+    state: IN
+  Composite Index: '87.2'
+  Grocery Items: '91.4'
+  Housing: '73.4'
+  Utilities: '86.7'
+  Transportation: '100.5'
+  Health Care: '93.6'
+  Miscellaneous Goods and Services: '93.1'
+- Urban Area:
+    city: Iowa City
+    state: IA
+  Composite Index: '96.2'
+  Grocery Items: '94.9'
+  Housing: '97.3'
+  Utilities: '80.1'
+  Transportation: '102.8'
+  Health Care: '95.4'
+  Miscellaneous Goods and Services: '99.0'
+- Urban Area:
+    city: Ithaca
+    state: NY
+  Composite Index: '102.8'
+  Grocery Items: '102.9'
+  Housing: '104.4'
+  Utilities: '110.4'
+  Transportation: '104.7'
+  Health Care: '106.6'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Jackson
+    state: MS
+  Composite Index: '96.9'
+  Grocery Items: '93.0'
+  Housing: '94.0'
+  Utilities: '118.1'
+  Transportation: '92.0'
+  Health Care: '95.7'
+  Miscellaneous Goods and Services: '96.1'
+- Urban Area:
+    city: Jackson Madison County
+    state: TN
+  Composite Index: '90.2'
+  Grocery Items: '91.1'
+  Housing: '74.2'
+  Utilities: '98.9'
+  Transportation: '100.0'
+  Health Care: '91.5'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Jacksonville
+    state: FL
+  Composite Index: '92.9'
+  Grocery Items: '102.8'
+  Housing: '80.0'
+  Utilities: '91.9'
+  Transportation: '103.6'
+  Health Care: '94.5'
+  Miscellaneous Goods and Services: '97.3'
+- Urban Area:
+    city: Jacksonville
+    state: NC
+  Composite Index: '96.5'
+  Grocery Items: '103.2'
+  Housing: '88.0'
+  Utilities: '99.2'
+  Transportation: '97.8'
+  Health Care: '101.2'
+  Miscellaneous Goods and Services: '99.6'
+- Urban Area:
+    city: Janesville
+    state: WI
+  Composite Index: '96.2'
+  Grocery Items: '95.0'
+  Housing: '91.3'
+  Utilities: '99.3'
+  Transportation: '99.3'
+  Health Care: '103.1'
+  Miscellaneous Goods and Services: '98.2'
+- Urban Area:
+    city: Jefferson City
+    state: MO
+  Composite Index: '92.9'
+  Grocery Items: '93.9'
+  Housing: '78.5'
+  Utilities: '97.6'
+  Transportation: '93.3'
+  Health Care: '95.0'
+  Miscellaneous Goods and Services: '103.4'
+- Urban Area:
+    city: Johnson City
+    state: TN
+  Composite Index: '86.7'
+  Grocery Items: '92.3'
+  Housing: '74.4'
+  Utilities: '89.1'
+  Transportation: '91.7'
+  Health Care: '91.5'
+  Miscellaneous Goods and Services: '92.6'
+- Urban Area:
+    city: Johnstown
+    state: PA
+  Composite Index: '92.9'
+  Grocery Items: '97.7'
+  Housing: '79.4'
+  Utilities: '101.0'
+  Transportation: '101.6'
+  Health Care: '90.4'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Joliet Will County
+    state: IL
+  Composite Index: '102.2'
+  Grocery Items: '100.9'
+  Housing: '102.3'
+  Utilities: '116.1'
+  Transportation: '111.3'
+  Health Care: '106.5'
+  Miscellaneous Goods and Services: '95.2'
+- Urban Area:
+    city: Jonesboro
+    state: AR
+  Composite Index: '88.9'
+  Grocery Items: '97.5'
+  Housing: '75.1'
+  Utilities: '91.1'
+  Transportation: '88.8'
+  Health Care: '85.9'
+  Miscellaneous Goods and Services: '97.3'
+- Urban Area:
+    city: Joplin
+    state: MO
+  Composite Index: '88.8'
+  Grocery Items: '92.2'
+  Housing: '75.9'
+  Utilities: '108.1'
+  Transportation: '91.8'
+  Health Care: '89.5'
+  Miscellaneous Goods and Services: '92.0'
+- Urban Area:
+    city: Juneau
+    state: AK
+  Composite Index: '136.5'
+  Grocery Items: '133.1'
+  Housing: '165.7'
+  Utilities: '135.1'
+  Transportation: '121.2'
+  Health Care: '144.4'
+  Miscellaneous Goods and Services: '116.1'
+- Urban Area:
+    city: Kalamazoo
+    state: MI
+  Composite Index: '91.2'
+  Grocery Items: '95.6'
+  Housing: '81.3'
+  Utilities: '101.8'
+  Transportation: '99.4'
+  Health Care: '92.5'
+  Miscellaneous Goods and Services: '92.4'
+- Urban Area:
+    city: Kalispell
+    state: MT
+  Composite Index: '98.8'
+  Grocery Items: '116.3'
+  Housing: '95.5'
+  Utilities: '82.0'
+  Transportation: '103.6'
+  Health Care: '104.8'
+  Miscellaneous Goods and Services: '97.8'
+- Urban Area:
+    city: Kansas City MO
+    state: KS
+  Composite Index: '97.8'
+  Grocery Items: '94.8'
+  Housing: '89.2'
+  Utilities: '99.8'
+  Transportation: '100.8'
+  Health Care: '97.2'
+  Miscellaneous Goods and Services: '105.1'
+- Urban Area:
+    city: Kennewick Richland Pasco
+    state: WA
+  Composite Index: '92.6'
+  Grocery Items: '90.9'
+  Housing: '85.9'
+  Utilities: '85.1'
+  Transportation: '106.1'
+  Health Care: '109.9'
+  Miscellaneous Goods and Services: '95.2'
+- Urban Area:
+    city: Kinston
+    state: NC
+  Composite Index: '93.8'
+  Grocery Items: '102.5'
+  Housing: '76.1'
+  Utilities: '108.8'
+  Transportation: '96.7'
+  Health Care: '102.9'
+  Miscellaneous Goods and Services: '99.3'
+- Urban Area:
+    city: Knoxville
+    state: TN
+  Composite Index: '89.4'
+  Grocery Items: '91.4'
+  Housing: '82.0'
+  Utilities: '95.1'
+  Transportation: '84.2'
+  Health Care: '88.4'
+  Miscellaneous Goods and Services: '95.1'
+- Urban Area:
+    city: Kodiak
+    state: AK
+  Composite Index: '128.7'
+  Grocery Items: '149.4'
+  Housing: '127.8'
+  Utilities: '131.9'
+  Transportation: '143.4'
+  Health Care: '130.7'
+  Miscellaneous Goods and Services: '115.4'
+- Urban Area:
+    city: Lafayette
+    state: IN
+  Composite Index: '98.2'
+  Grocery Items: '95.6'
+  Housing: '82.4'
+  Utilities: '116.5'
+  Transportation: '106.2'
+  Health Care: '116.3'
+  Miscellaneous Goods and Services: '102.7'
+- Urban Area:
+    city: Lafayette
+    state: LA
+  Composite Index: '99.2'
+  Grocery Items: '93.5'
+  Housing: '110.1'
+  Utilities: '81.2'
+  Transportation: '104.0'
+  Health Care: '88.8'
+  Miscellaneous Goods and Services: '97.3'
+- Urban Area:
+    city: Lake Charles
+    state: LA
+  Composite Index: '97.4'
+  Grocery Items: '99.8'
+  Housing: '103.4'
+  Utilities: '89.5'
+  Transportation: '97.1'
+  Health Care: '84.4'
+  Miscellaneous Goods and Services: '95.4'
+- Urban Area:
+    city: Lake Havasu City
+    state: AZ
+  Composite Index: '111.8'
+  Grocery Items: '107.0'
+  Housing: '139.3'
+  Utilities: '95.9'
+  Transportation: '93.5'
+  Health Care: '98.0'
+  Miscellaneous Goods and Services: '101.7'
+- Urban Area:
+    city: Lancaster
+    state: PA
+  Composite Index: '106.8'
+  Grocery Items: '101.3'
+  Housing: '118.4'
+  Utilities: '111.0'
+  Transportation: '99.7'
+  Health Care: '95.1'
+  Miscellaneous Goods and Services: '100.9'
+- Urban Area:
+    city: Laramie
+    state: WY
+  Composite Index: '97.0'
+  Grocery Items: '105.1'
+  Housing: '102.3'
+  Utilities: '90.5'
+  Transportation: '91.6'
+  Health Care: '97.5'
+  Miscellaneous Goods and Services: '92.7'
+- Urban Area:
+    city: Las Cruces
+    state: NM
+  Composite Index: '100.6'
+  Grocery Items: '103.7'
+  Housing: '104.4'
+  Utilities: '93.7'
+  Transportation: '99.0'
+  Health Care: '96.5'
+  Miscellaneous Goods and Services: '99.1'
+- Urban Area:
+    city: Las Vegas
+    state: NV
+  Composite Index: '101.9'
+  Grocery Items: '106.8'
+  Housing: '94.1'
+  Utilities: '97.7'
+  Transportation: '104.9'
+  Health Care: '109.0'
+  Miscellaneous Goods and Services: '106.2'
+- Urban Area:
+    city: Lawrence
+    state: KS
+  Composite Index: '94.6'
+  Grocery Items: '89.1'
+  Housing: '96.0'
+  Utilities: '91.9'
+  Transportation: '96.2'
+  Health Care: '97.5'
+  Miscellaneous Goods and Services: '95.6'
+- Urban Area:
+    city: Lawton
+    state: OK
+  Composite Index: '93.8'
+  Grocery Items: '96.3'
+  Housing: '87.0'
+  Utilities: '87.5'
+  Transportation: '106.9'
+  Health Care: '96.2'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Lexington
+    state: KY
+  Composite Index: '92.8'
+  Grocery Items: '86.9'
+  Housing: '88.7'
+  Utilities: '93.9'
+  Transportation: '97.6'
+  Health Care: '93.7'
+  Miscellaneous Goods and Services: '97.1'
+- Urban Area:
+    city: Lexington Buena Vista Rockbridge
+    state: VA
+  Composite Index: '93.7'
+  Grocery Items: '92.1'
+  Housing: '97.8'
+  Utilities: '94.3'
+  Transportation: '91.2'
+  Health Care: '90.7'
+  Miscellaneous Goods and Services: '91.7'
+- Urban Area:
+    city: Lima
+    state: OH
+  Composite Index: '93.1'
+  Grocery Items: '101.9'
+  Housing: '69.8'
+  Utilities: '102.5'
+  Transportation: '100.7'
+  Health Care: '107.7'
+  Miscellaneous Goods and Services: '103.2'
+- Urban Area:
+    city: Little Rock North Little Rock
+    state: AR
+  Composite Index: '96.5'
+  Grocery Items: '92.9'
+  Housing: '92.2'
+  Utilities: '104.1'
+  Transportation: '94.0'
+  Health Care: '93.5'
+  Miscellaneous Goods and Services: '100.4'
+- Urban Area:
+    city: Logan
+    state: UT
+  Composite Index: '95.6'
+  Grocery Items: '104.7'
+  Housing: '68.4'
+  Utilities: '85.3'
+  Transportation: '113.6'
+  Health Care: '97.2'
+  Miscellaneous Goods and Services: '113.7'
+- Urban Area:
+    city: Los Alamos
+    state: NM
+  Composite Index: '109.7'
+  Grocery Items: '97.1'
+  Housing: '128.1'
+  Utilities: '91.2'
+  Transportation: '110.7'
+  Health Care: '102.6'
+  Miscellaneous Goods and Services: '104.7'
+- Urban Area:
+    city: Los Angeles Long Beach
+    state: CA
+  Composite Index: '136.4'
+  Grocery Items: '106.0'
+  Housing: '207.1'
+  Utilities: '101.7'
+  Transportation: '113.6'
+  Health Care: '109.1'
+  Miscellaneous Goods and Services: '107.0'
+- Urban Area:
+    city: Louisville
+    state: KY
+  Composite Index: '87.7'
+  Grocery Items: '81.6'
+  Housing: '78.7'
+  Utilities: '99.1'
+  Transportation: '96.9'
+  Health Care: '87.2'
+  Miscellaneous Goods and Services: '91.9'
+- Urban Area:
+    city: Loveland
+    state: CO
+  Composite Index: '91.0'
+  Grocery Items: '102.7'
+  Housing: '79.3'
+  Utilities: '89.6'
+  Transportation: '91.4'
+  Health Care: '100.3'
+  Miscellaneous Goods and Services: '95.7'
+- Urban Area:
+    city: Lubbock
+    state: TX
+  Composite Index: '89.1'
+  Grocery Items: '90.0'
+  Housing: '80.4'
+  Utilities: '74.8'
+  Transportation: '97.6'
+  Health Care: '98.3'
+  Miscellaneous Goods and Services: '97.1'
+- Urban Area:
+    city: Lufkin
+    state: TX
+  Composite Index: '92.4'
+  Grocery Items: '87.8'
+  Housing: '83.4'
+  Utilities: '98.7'
+  Transportation: '94.0'
+  Health Care: '105.5'
+  Miscellaneous Goods and Services: '98.3'
+- Urban Area:
+    city: Lynchburg
+    state: VA
+  Composite Index: '95.1'
+  Grocery Items: '90.7'
+  Housing: '92.7'
+  Utilities: '109.7'
+  Transportation: '88.8'
+  Health Care: '100.1'
+  Miscellaneous Goods and Services: '95.8'
+- Urban Area:
+    city: Manchester
+    state: NH
+  Composite Index: '116.8'
+  Grocery Items: '102.3'
+  Housing: '117.0'
+  Utilities: '124.5'
+  Transportation: '100.1'
+  Health Care: '116.1'
+  Miscellaneous Goods and Services: '125.0'
+- Urban Area:
+    city: Manhattan
+    state: KS
+  Composite Index: '95.0'
+  Grocery Items: '92.5'
+  Housing: '98.7'
+  Utilities: '86.9'
+  Transportation: '99.0'
+  Health Care: '91.6'
+  Miscellaneous Goods and Services: '94.4'
+- Urban Area:
+    city: Mankato
+    state: MN
+  Composite Index: '93.0'
+  Grocery Items: '93.8'
+  Housing: '76.5'
+  Utilities: '113.5'
+  Transportation: '103.1'
+  Health Care: '104.3'
+  Miscellaneous Goods and Services: '96.4'
+- Urban Area:
+    city: Marietta
+    state: GA
+  Composite Index: '94.8'
+  Grocery Items: '96.8'
+  Housing: '84.7'
+  Utilities: '90.3'
+  Transportation: '97.1'
+  Health Care: '107.9'
+  Miscellaneous Goods and Services: '101.9'
+- Urban Area:
+    city: Marion McDowell County
+    state: NC
+  Composite Index: '92.1'
+  Grocery Items: '103.1'
+  Housing: '87.9'
+  Utilities: '94.0'
+  Transportation: '89.5'
+  Health Care: '96.3'
+  Miscellaneous Goods and Services: '90.9'
+- Urban Area:
+    city: Marshfield
+    state: WI
+  Composite Index: '94.2'
+  Grocery Items: '95.3'
+  Housing: '92.2'
+  Utilities: '99.9'
+  Transportation: '96.8'
+  Health Care: '103.6'
+  Miscellaneous Goods and Services: '91.7'
+- Urban Area:
+    city: Martinsburg Berkeley County
+    state: WV
+  Composite Index: '89.6'
+  Grocery Items: '91.5'
+  Housing: '82.7'
+  Utilities: '85.9'
+  Transportation: '103.9'
+  Health Care: '99.9'
+  Miscellaneous Goods and Services: '90.6'
+- Urban Area:
+    city: Martinsville Henry County
+    state: VA
+  Composite Index: '87.1'
+  Grocery Items: '94.0'
+  Housing: '77.6'
+  Utilities: '89.1'
+  Transportation: '82.9'
+  Health Care: '87.6'
+  Miscellaneous Goods and Services: '93.2'
+- Urban Area:
+    city: Mason City
+    state: IA
+  Composite Index: '89.1'
+  Grocery Items: '89.4'
+  Housing: '73.1'
+  Utilities: '105.6'
+  Transportation: '99.5'
+  Health Care: '94.8'
+  Miscellaneous Goods and Services: '94.2'
+- Urban Area:
+    city: McAllen
+    state: TX
+  Composite Index: '85.0'
+  Grocery Items: '79.8'
+  Housing: '77.6'
+  Utilities: '103.1'
+  Transportation: '92.4'
+  Health Care: '97.9'
+  Miscellaneous Goods and Services: '84.3'
+- Urban Area:
+    city: Memphis
+    state: TN
+  Composite Index: '88.2'
+  Grocery Items: '92.7'
+  Housing: '76.2'
+  Utilities: '86.9'
+  Transportation: '91.5'
+  Health Care: '98.6'
+  Miscellaneous Goods and Services: '95.2'
+- Urban Area:
+    city: Miami Dade County
+    state: FL
+  Composite Index: '106.0'
+  Grocery Items: '110.9'
+  Housing: '107.7'
+  Utilities: '91.9'
+  Transportation: '108.8'
+  Health Care: '105.7'
+  Miscellaneous Goods and Services: '106.2'
+- Urban Area:
+    city: Middlesex Monmouth
+    state: NJ
+  Composite Index: '124.8'
+  Grocery Items: '108.9'
+  Housing: '154.1'
+  Utilities: '128.6'
+  Transportation: '103.9'
+  Health Care: '108.9'
+  Miscellaneous Goods and Services: '112.2'
+- Urban Area:
+    city: Midland
+    state: TX
+  Composite Index: '93.2'
+  Grocery Items: '89.7'
+  Housing: '89.2'
+  Utilities: '93.4'
+  Transportation: '95.7'
+  Health Care: '98.7'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Milwaukee Waukesha
+    state: WI
+  Composite Index: '101.9'
+  Grocery Items: '98.1'
+  Housing: '112.7'
+  Utilities: '98.6'
+  Transportation: '99.2'
+  Health Care: '108.1'
+  Miscellaneous Goods and Services: '94.8'
+- Urban Area:
+    city: Minneapolis
+    state: MN
+  Composite Index: '111.0'
+  Grocery Items: '111.6'
+  Housing: '116.8'
+  Utilities: '104.7'
+  Transportation: '103.7'
+  Health Care: '105.4'
+  Miscellaneous Goods and Services: '110.4'
+- Urban Area:
+    city: Minot
+    state: ND
+  Composite Index: '99.9'
+  Grocery Items: '99.3'
+  Housing: '95.9'
+  Utilities: '73.5'
+  Transportation: '98.2'
+  Health Care: '91.0'
+  Miscellaneous Goods and Services: '113.6'
+- Urban Area:
+    city: Missoula
+    state: MT
+  Composite Index: '99.4'
+  Grocery Items: '110.2'
+  Housing: '92.2'
+  Utilities: '98.3'
+  Transportation: '102.2'
+  Health Care: '107.2'
+  Miscellaneous Goods and Services: '100.1'
+- Urban Area:
+    city: Mobile
+    state: AL
+  Composite Index: '92.7'
+  Grocery Items: '102.7'
+  Housing: '80.4'
+  Utilities: '104.4'
+  Transportation: '93.0'
+  Health Care: '86.5'
+  Miscellaneous Goods and Services: '96.7'
+- Urban Area:
+    city: Monroe
+    state: LA
+  Composite Index: '92.7'
+  Grocery Items: '95.8'
+  Housing: '83.0'
+  Utilities: '89.1'
+  Transportation: '97.5'
+  Health Care: '96.0'
+  Miscellaneous Goods and Services: '99.3'
+- Urban Area:
+    city: Montgomery
+    state: AL
+  Composite Index: '99.2'
+  Grocery Items: '102.9'
+  Housing: '96.0'
+  Utilities: '108.4'
+  Transportation: '99.6'
+  Health Care: '88.0'
+  Miscellaneous Goods and Services: '99.1'
+- Urban Area:
+    city: Morgantown
+    state: WV
+  Composite Index: '100.6'
+  Grocery Items: '93.9'
+  Housing: '111.9'
+  Utilities: '89.9'
+  Transportation: '100.7'
+  Health Care: '96.1'
+  Miscellaneous Goods and Services: '97.1'
+- Urban Area:
+    city: Morristown
+    state: TN
+  Composite Index: '90.9'
+  Grocery Items: '91.6'
+  Housing: '81.5'
+  Utilities: '80.5'
+  Transportation: '93.9'
+  Health Care: '90.1'
+  Miscellaneous Goods and Services: '101.4'
+- Urban Area:
+    city: Muncie
+    state: IN
+  Composite Index: '91.0'
+  Grocery Items: '91.0'
+  Housing: '80.3'
+  Utilities: '98.5'
+  Transportation: '94.5'
+  Health Care: '87.4'
+  Miscellaneous Goods and Services: '97.6'
+- Urban Area:
+    city: Murfreesboro Smyrna
+    state: TN
+  Composite Index: '88.2'
+  Grocery Items: '94.3'
+  Housing: '76.2'
+  Utilities: '81.0'
+  Transportation: '92.7'
+  Health Care: '95.8'
+  Miscellaneous Goods and Services: '96.2'
+- Urban Area:
+    city: Muskogee
+    state: OK
+  Composite Index: '86.0'
+  Grocery Items: '98.0'
+  Housing: '68.3'
+  Utilities: '97.5'
+  Transportation: '80.8'
+  Health Care: '96.7'
+  Miscellaneous Goods and Services: '93.5'
+- Urban Area:
+    city: Myrtle Beach
+    state: SC
+  Composite Index: '95.2'
+  Grocery Items: '105.7'
+  Housing: '78.4'
+  Utilities: '104.5'
+  Transportation: '94.7'
+  Health Care: '100.4'
+  Miscellaneous Goods and Services: '102.4'
+- Urban Area:
+    city: Nacogdoches
+    state: TX
+  Composite Index: '92.5'
+  Grocery Items: '91.0'
+  Housing: '83.3'
+  Utilities: '97.7'
+  Transportation: '93.8'
+  Health Care: '102.6'
+  Miscellaneous Goods and Services: '98.0'
+- Urban Area:
+    city: Nashville Franklin
+    state: TN
+  Composite Index: '88.9'
+  Grocery Items: '91.7'
+  Housing: '71.3'
+  Utilities: '82.6'
+  Transportation: '92.5'
+  Health Care: '87.3'
+  Miscellaneous Goods and Services: '104.5'
+- Urban Area:
+    city: Nassau County
+    state: NY
+  Composite Index: '145.7'
+  Grocery Items: '123.0'
+  Housing: '206.7'
+  Utilities: '140.7'
+  Transportation: '113.1'
+  Health Care: '119.7'
+  Miscellaneous Goods and Services: '115.3'
+- Urban Area:
+    city: New Haven
+    state: CT
+  Composite Index: '122.1'
+  Grocery Items: '117.9'
+  Housing: '134.9'
+  Utilities: '123.5'
+  Transportation: '106.3'
+  Health Care: '112.7'
+  Miscellaneous Goods and Services: '117.9'
+- Urban Area:
+    city: New York (Brooklyn)
+    state: NY
+  Composite Index: '181.7'
+  Grocery Items: '130.6'
+  Housing: '317.8'
+  Utilities: '165.0'
+  Transportation: '103.0'
+  Health Care: '111.5'
+  Miscellaneous Goods and Services: '119.5'
+- Urban Area:
+    city: New York (Manhattan)
+    state: NY
+  Composite Index: '216.7'
+  Grocery Items: '154.3'
+  Housing: '386.7'
+  Utilities: '169.6'
+  Transportation: '120.3'
+  Health Care: '130.2'
+  Miscellaneous Goods and Services: '145.7'
+- Urban Area:
+    city: New York (Queens)
+    state: NY
+  Composite Index: '159.0'
+  Grocery Items: '128.3'
+  Housing: '230.8'
+  Utilities: '172.0'
+  Transportation: '108.8'
+  Health Care: '118.0'
+  Miscellaneous Goods and Services: '123.9'
+- Urban Area:
+    city: Newark Elizabeth
+    state: NJ
+  Composite Index: '129.7'
+  Grocery Items: '111.6'
+  Housing: '168.5'
+  Utilities: '129.2'
+  Transportation: '103.9'
+  Health Care: '103.1'
+  Miscellaneous Goods and Services: '113.9'
+- Urban Area:
+    city: Norman
+    state: OK
+  Composite Index: '94.4'
+  Grocery Items: '95.3'
+  Housing: '88.7'
+  Utilities: '91.6'
+  Transportation: '104.0'
+  Health Care: '96.6'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Oakland
+    state: CA
+  Composite Index: '139.1'
+  Grocery Items: '116.8'
+  Housing: '198.8'
+  Utilities: '94.7'
+  Transportation: '113.6'
+  Health Care: '119.9'
+  Miscellaneous Goods and Services: '119.0'
+- Urban Area:
+    city: Odessa
+    state: TX
+  Composite Index: '90.9'
+  Grocery Items: '91.2'
+  Housing: '88.1'
+  Utilities: '88.8'
+  Transportation: '93.6'
+  Health Care: '96.6'
+  Miscellaneous Goods and Services: '92.4'
+- Urban Area:
+    city: Oklahoma City
+    state: OK
+  Composite Index: '91.7'
+  Grocery Items: '92.9'
+  Housing: '86.0'
+  Utilities: '88.1'
+  Transportation: '92.6'
+  Health Care: '99.4'
+  Miscellaneous Goods and Services: '96.2'
+- Urban Area:
+    city: Olympia
+    state: WA
+  Composite Index: '104.1'
+  Grocery Items: '107.4'
+  Housing: '102.2'
+  Utilities: '82.1'
+  Transportation: '114.9'
+  Health Care: '120.5'
+  Miscellaneous Goods and Services: '106.0'
+- Urban Area:
+    city: Omaha
+    state: NE
+  Composite Index: '88.3'
+  Grocery Items: '92.0'
+  Housing: '79.3'
+  Utilities: '89.9'
+  Transportation: '100.0'
+  Health Care: '96.8'
+  Miscellaneous Goods and Services: '89.7'
+- Urban Area:
+    city: Orange County
+    state: CA
+  Composite Index: '146.4'
+  Grocery Items: '104.5'
+  Housing: '242.8'
+  Utilities: '103.2'
+  Transportation: '114.6'
+  Health Care: '111.6'
+  Miscellaneous Goods and Services: '105.2'
+- Urban Area:
+    city: Orlando
+    state: FL
+  Composite Index: '97.8'
+  Grocery Items: '97.8'
+  Housing: '85.4'
+  Utilities: '108.5'
+  Transportation: '101.8'
+  Health Care: '95.5'
+  Miscellaneous Goods and Services: '104.5'
+- Urban Area:
+    city: Paducah
+    state: KY
+  Composite Index: '87.3'
+  Grocery Items: '94.8'
+  Housing: '75.8'
+  Utilities: '96.5'
+  Transportation: '86.6'
+  Health Care: '90.3'
+  Miscellaneous Goods and Services: '91.3'
+- Urban Area:
+    city: Palm Springs
+    state: CA
+  Composite Index: '121.8'
+  Grocery Items: '111.5'
+  Housing: '154.2'
+  Utilities: '112.7'
+  Transportation: '110.2'
+  Health Care: '100.8'
+  Miscellaneous Goods and Services: '106.1'
+- Urban Area:
+    city: Panama City
+    state: FL
+  Composite Index: '99.4'
+  Grocery Items: '93.7'
+  Housing: '101.5'
+  Utilities: '99.7'
+  Transportation: '108.8'
+  Health Care: '94.5'
+  Miscellaneous Goods and Services: '97.6'
+- Urban Area:
+    city: Paris
+    state: TX
+  Composite Index: '88.9'
+  Grocery Items: '93.6'
+  Housing: '80.0'
+  Utilities: '87.4'
+  Transportation: '94.1'
+  Health Care: '94.0'
+  Miscellaneous Goods and Services: '93.0'
+- Urban Area:
+    city: Pascagoula
+    state: MS
+  Composite Index: '92.3'
+  Grocery Items: '101.0'
+  Housing: '84.3'
+  Utilities: '91.4'
+  Transportation: '97.4'
+  Health Care: '91.6'
+  Miscellaneous Goods and Services: '94.6'
+- Urban Area:
+    city: Peoria
+    state: IL
+  Composite Index: '96.3'
+  Grocery Items: '93.4'
+  Housing: '95.0'
+  Utilities: '97.2'
+  Transportation: '101.4'
+  Health Care: '95.8'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Philadelphia
+    state: PA
+  Composite Index: '126.5'
+  Grocery Items: '124.9'
+  Housing: '141.3'
+  Utilities: '135.9'
+  Transportation: '105.8'
+  Health Care: '108.2'
+  Miscellaneous Goods and Services: '119.6'
+- Urban Area:
+    city: Phoenix
+    state: AZ
+  Composite Index: '100.7'
+  Grocery Items: '108.1'
+  Housing: '90.4'
+  Utilities: '96.6'
+  Transportation: '108.9'
+  Health Care: '108.8'
+  Miscellaneous Goods and Services: '104.6'
+- Urban Area:
+    city: Pittsburgh
+    state: PA
+  Composite Index: '91.5'
+  Grocery Items: '104.1'
+  Housing: '74.4'
+  Utilities: '97.0'
+  Transportation: '105.9'
+  Health Care: '90.1'
+  Miscellaneous Goods and Services: '95.8'
+- Urban Area:
+    city: Pittsfield
+    state: MA
+  Composite Index: '110.6'
+  Grocery Items: '115.0'
+  Housing: '96.2'
+  Utilities: '161.9'
+  Transportation: '98.9'
+  Health Care: '105.0'
+  Miscellaneous Goods and Services: '110.0'
+- Urban Area:
+    city: Plano
+    state: TX
+  Composite Index: '97.4'
+  Grocery Items: '101.3'
+  Housing: '85.2'
+  Utilities: '103.9'
+  Transportation: '101.8'
+  Health Care: '102.9'
+  Miscellaneous Goods and Services: '102.6'
+- Urban Area:
+    city: Plattsburgh
+    state: NY
+  Composite Index: '100.1'
+  Grocery Items: '98.9'
+  Housing: '95.1'
+  Utilities: '119.4'
+  Transportation: '105.5'
+  Health Care: '113.0'
+  Miscellaneous Goods and Services: '95.9'
+- Urban Area:
+    city: Ponca City
+    state: OK
+  Composite Index: '90.0'
+  Grocery Items: '94.8'
+  Housing: '76.6'
+  Utilities: '93.0'
+  Transportation: '94.4'
+  Health Care: '94.4'
+  Miscellaneous Goods and Services: '97.0'
+- Urban Area:
+    city: Portland
+    state: ME
+  Composite Index: '116.5'
+  Grocery Items: '101.8'
+  Housing: '143.0'
+  Utilities: '102.9'
+  Transportation: '111.8'
+  Health Care: '109.7'
+  Miscellaneous Goods and Services: '105.5'
+- Urban Area:
+    city: Portland
+    state: OR
+  Composite Index: '111.3'
+  Grocery Items: '105.8'
+  Housing: '130.8'
+  Utilities: '87.1'
+  Transportation: '105.8'
+  Health Care: '113.6'
+  Miscellaneous Goods and Services: '105.1'
+- Urban Area:
+    city: Prescott Prescott Valley
+    state: AZ
+  Composite Index: '103.7'
+  Grocery Items: '95.2'
+  Housing: '118.1'
+  Utilities: '91.8'
+  Transportation: '100.3'
+  Health Care: '97.8'
+  Miscellaneous Goods and Services: '99.7'
+- Urban Area:
+    city: Providence
+    state: RI
+  Composite Index: '123.3'
+  Grocery Items: '113.4'
+  Housing: '129.0'
+  Utilities: '129.0'
+  Transportation: '102.5'
+  Health Care: '113.2'
+  Miscellaneous Goods and Services: '128.1'
+- Urban Area:
+    city: Pryor Creek
+    state: OK
+  Composite Index: '84.5'
+  Grocery Items: '95.0'
+  Housing: '71.5'
+  Utilities: '82.7'
+  Transportation: '86.6'
+  Health Care: '86.0'
+  Miscellaneous Goods and Services: '91.5'
+- Urban Area:
+    city: Pueblo
+    state: CO
+  Composite Index: '85.6'
+  Grocery Items: '100.5'
+  Housing: '71.5'
+  Utilities: '80.1'
+  Transportation: '93.8'
+  Health Care: '94.1'
+  Miscellaneous Goods and Services: '90.1'
+- Urban Area:
+    city: Quincy
+    state: IL
+  Composite Index: '95.5'
+  Grocery Items: '97.4'
+  Housing: '94.5'
+  Utilities: '95.5'
+  Transportation: '94.2'
+  Health Care: '99.8'
+  Miscellaneous Goods and Services: '95.5'
+- Urban Area:
+    city: Raleigh
+    state: NC
+  Composite Index: '98.2'
+  Grocery Items: '104.2'
+  Housing: '88.8'
+  Utilities: '105.6'
+  Transportation: '96.7'
+  Health Care: '101.0'
+  Miscellaneous Goods and Services: '101.9'
+- Urban Area:
+    city: Reno Sparks
+    state: NV
+  Composite Index: '101.1'
+  Grocery Items: '105.4'
+  Housing: '101.5'
+  Utilities: '91.2'
+  Transportation: '107.3'
+  Health Care: '101.8'
+  Miscellaneous Goods and Services: '100.0'
+- Urban Area:
+    city: Richmond
+    state: IN
+  Composite Index: '90.8'
+  Grocery Items: '83.3'
+  Housing: '84.6'
+  Utilities: '106.4'
+  Transportation: '98.4'
+  Health Care: '95.1'
+  Miscellaneous Goods and Services: '91.7'
+- Urban Area:
+    city: Richmond
+    state: VA
+  Composite Index: '104.5'
+  Grocery Items: '103.6'
+  Housing: '103.2'
+  Utilities: '113.9'
+  Transportation: '100.8'
+  Health Care: '112.6'
+  Miscellaneous Goods and Services: '103.2'
+- Urban Area:
+    city: Rio Rancho
+    state: NM
+  Composite Index: '95.1'
+  Grocery Items: '92.0'
+  Housing: '90.5'
+  Utilities: '88.6'
+  Transportation: '94.7'
+  Health Care: '100.2'
+  Miscellaneous Goods and Services: '101.8'
+- Urban Area:
+    city: Riverside City
+    state: CA
+  Composite Index: '112.5'
+  Grocery Items: '104.9'
+  Housing: '136.3'
+  Utilities: '99.9'
+  Transportation: '113.4'
+  Health Care: '104.4'
+  Miscellaneous Goods and Services: '99.1'
+- Urban Area:
+    city: Roanoke
+    state: VA
+  Composite Index: '94.1'
+  Grocery Items: '89.7'
+  Housing: '92.2'
+  Utilities: '104.1'
+  Transportation: '91.1'
+  Health Care: '97.9'
+  Miscellaneous Goods and Services: '94.8'
+- Urban Area:
+    city: Rochester
+    state: MN
+  Composite Index: '99.2'
+  Grocery Items: '89.6'
+  Housing: '91.1'
+  Utilities: '104.8'
+  Transportation: '106.3'
+  Health Care: '109.5'
+  Miscellaneous Goods and Services: '105.0'
+- Urban Area:
+    city: Rochester
+    state: NY
+  Composite Index: '100.0'
+  Grocery Items: '94.6'
+  Housing: '94.2'
+  Utilities: '114.4'
+  Transportation: '108.7'
+  Health Care: '99.7'
+  Miscellaneous Goods and Services: '100.2'
+- Urban Area:
+    city: Rockford
+    state: IL
+  Composite Index: '92.4'
+  Grocery Items: '92.6'
+  Housing: '74.7'
+  Utilities: '111.2'
+  Transportation: '105.8'
+  Health Care: '103.3'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Roswell
+    state: NM
+  Composite Index: '95.9'
+  Grocery Items: '105.6'
+  Housing: '82.9'
+  Utilities: '104.3'
+  Transportation: '97.5'
+  Health Care: '101.2'
+  Miscellaneous Goods and Services: '99.9'
+- Urban Area:
+    city: Round Rock
+    state: TX
+  Composite Index: '89.7'
+  Grocery Items: '81.9'
+  Housing: '78.0'
+  Utilities: '107.0'
+  Transportation: '87.6'
+  Health Care: '96.6'
+  Miscellaneous Goods and Services: '97.6'
+- Urban Area:
+    city: Sacramento
+    state: CA
+  Composite Index: '116.2'
+  Grocery Items: '114.7'
+  Housing: '135.7'
+  Utilities: '109.6'
+  Transportation: '114.4'
+  Health Care: '110.8'
+  Miscellaneous Goods and Services: '102.8'
+- Urban Area:
+    city: Salina
+    state: KS
+  Composite Index: '86.9'
+  Grocery Items: '86.9'
+  Housing: '76.0'
+  Utilities: '87.0'
+  Transportation: '94.7'
+  Health Care: '94.9'
+  Miscellaneous Goods and Services: '93.1'
+- Urban Area:
+    city: Salt Lake City
+    state: UT
+  Composite Index: '100.6'
+  Grocery Items: '100.1'
+  Housing: '108.0'
+  Utilities: '72.5'
+  Transportation: '102.1'
+  Health Care: '98.8'
+  Miscellaneous Goods and Services: '102.9'
+- Urban Area:
+    city: San Angelo
+    state: TX
+  Composite Index: '92.4'
+  Grocery Items: '89.3'
+  Housing: '84.0'
+  Utilities: '106.0'
+  Transportation: '97.6'
+  Health Care: '96.7'
+  Miscellaneous Goods and Services: '94.9'
+- Urban Area:
+    city: San Antonio
+    state: TX
+  Composite Index: '95.7'
+  Grocery Items: '84.9'
+  Housing: '95.3'
+  Utilities: '82.8'
+  Transportation: '100.7'
+  Health Care: '99.9'
+  Miscellaneous Goods and Services: '102.2'
+- Urban Area:
+    city: San Diego
+    state: CA
+  Composite Index: '132.3'
+  Grocery Items: '105.5'
+  Housing: '194.4'
+  Utilities: '101.9'
+  Transportation: '113.1'
+  Health Care: '111.5'
+  Miscellaneous Goods and Services: '105.8'
+- Urban Area:
+    city: San Francisco
+    state: CA
+  Composite Index: '164.0'
+  Grocery Items: '111.9'
+  Housing: '281.0'
+  Utilities: '94.5'
+  Transportation: '113.0'
+  Health Care: '117.0'
+  Miscellaneous Goods and Services: '124.3'
+- Urban Area:
+    city: San Jose
+    state: CA
+  Composite Index: '156.1'
+  Grocery Items: '115.3'
+  Housing: '260.3'
+  Utilities: '137.2'
+  Transportation: '114.0'
+  Health Care: '119.0'
+  Miscellaneous Goods and Services: '103.6'
+- Urban Area:
+    city: San Marcos
+    state: TX
+  Composite Index: '94.8'
+  Grocery Items: '88.7'
+  Housing: '100.1'
+  Utilities: '86.8'
+  Transportation: '90.1'
+  Health Care: '92.6'
+  Miscellaneous Goods and Services: '96.8'
+- Urban Area:
+    city: Sarasota
+    state: FL
+  Composite Index: '101.5'
+  Grocery Items: '107.7'
+  Housing: '102.9'
+  Utilities: '97.4'
+  Transportation: '102.5'
+  Health Care: '105.2'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Savannah
+    state: GA
+  Composite Index: '93.5'
+  Grocery Items: '94.7'
+  Housing: '84.0'
+  Utilities: '94.0'
+  Transportation: '98.4'
+  Health Care: '99.0'
+  Miscellaneous Goods and Services: '99.1'
+- Urban Area:
+    city: Seattle
+    state: WA
+  Composite Index: '121.4'
+  Grocery Items: '115.1'
+  Housing: '140.3'
+  Utilities: '85.7'
+  Transportation: '118.8'
+  Health Care: '119.9'
+  Miscellaneous Goods and Services: '119.1'
+- Urban Area:
+    city: Seguin
+    state: TX
+  Composite Index: '90.7'
+  Grocery Items: '90.7'
+  Housing: '78.5'
+  Utilities: '103.8'
+  Transportation: '95.6'
+  Health Care: '96.9'
+  Miscellaneous Goods and Services: '95.1'
+- Urban Area:
+    city: Sheboygan
+    state: WI
+  Composite Index: '101.4'
+  Grocery Items: '94.3'
+  Housing: '97.5'
+  Utilities: '117.3'
+  Transportation: '105.9'
+  Health Care: '105.5'
+  Miscellaneous Goods and Services: '100.8'
+- Urban Area:
+    city: Shreveport Bossier City
+    state: LA
+  Composite Index: '95.3'
+  Grocery Items: '95.2'
+  Housing: '93.5'
+  Utilities: '89.4'
+  Transportation: '93.4'
+  Health Care: '93.1'
+  Miscellaneous Goods and Services: '99.6'
+- Urban Area:
+    city: Sierra Vista
+    state: AZ
+  Composite Index: '97.9'
+  Grocery Items: '96.5'
+  Housing: '99.7'
+  Utilities: '97.2'
+  Transportation: '104.0'
+  Health Care: '96.1'
+  Miscellaneous Goods and Services: '95.5'
+- Urban Area:
+    city: Sioux Falls
+    state: SD
+  Composite Index: '94.1'
+  Grocery Items: '91.5'
+  Housing: '86.6'
+  Utilities: '101.6'
+  Transportation: '86.9'
+  Health Care: '102.2'
+  Miscellaneous Goods and Services: '100.6'
+- Urban Area:
+    city: Slidell St. Tammany Parish
+    state: LA
+  Composite Index: '97.0'
+  Grocery Items: '95.1'
+  Housing: '101.0'
+  Utilities: '82.2'
+  Transportation: '96.2'
+  Health Care: '93.4'
+  Miscellaneous Goods and Services: '99.4'
+- Urban Area:
+    city: South Bend
+    state: IN
+  Composite Index: '91.9'
+  Grocery Items: '91.3'
+  Housing: '84.2'
+  Utilities: '92.3'
+  Transportation: '95.4'
+  Health Care: '96.3'
+  Miscellaneous Goods and Services: '97.3'
+- Urban Area:
+    city: Spokane
+    state: WA
+  Composite Index: '93.9'
+  Grocery Items: '92.4'
+  Housing: '85.7'
+  Utilities: '89.5'
+  Transportation: '109.1'
+  Health Care: '110.0'
+  Miscellaneous Goods and Services: '96.5'
+- Urban Area:
+    city: Springfield
+    state: IL
+  Composite Index: '85.8'
+  Grocery Items: '89.7'
+  Housing: '70.1'
+  Utilities: '79.8'
+  Transportation: '104.5'
+  Health Care: '106.5'
+  Miscellaneous Goods and Services: '91.7'
+- Urban Area:
+    city: Springfield
+    state: MO
+  Composite Index: '88.0'
+  Grocery Items: '93.2'
+  Housing: '76.8'
+  Utilities: '83.2'
+  Transportation: '96.8'
+  Health Care: '95.3'
+  Miscellaneous Goods and Services: '93.8'
+- Urban Area:
+    city: St. Cloud
+    state: MN
+  Composite Index: '98.3'
+  Grocery Items: '101.7'
+  Housing: '80.7'
+  Utilities: '117.2'
+  Transportation: '99.9'
+  Health Care: '102.0'
+  Miscellaneous Goods and Services: '105.8'
+- Urban Area:
+    city: St. George
+    state: UT
+  Composite Index: '95.9'
+  Grocery Items: '99.9'
+  Housing: '94.2'
+  Utilities: '85.9'
+  Transportation: '100.4'
+  Health Care: '87.8'
+  Miscellaneous Goods and Services: '98.4'
+- Urban Area:
+    city: St. Joseph
+    state: MO
+  Composite Index: '92.3'
+  Grocery Items: '95.4'
+  Housing: '86.5'
+  Utilities: '93.7'
+  Transportation: '90.1'
+  Health Care: '94.9'
+  Miscellaneous Goods and Services: '96.0'
+- Urban Area:
+    city: St. Louis MO
+    state: IL
+  Composite Index: '90.4'
+  Grocery Items: '98.4'
+  Housing: '74.6'
+  Utilities: '92.9'
+  Transportation: '99.0'
+  Health Care: '100.8'
+  Miscellaneous Goods and Services: '96.5'
+- Urban Area:
+    city: St. Paul
+    state: MN
+  Composite Index: '110.0'
+  Grocery Items: '107.0'
+  Housing: '112.9'
+  Utilities: '106.8'
+  Transportation: '103.4'
+  Health Care: '106.7'
+  Miscellaneous Goods and Services: '112.2'
+- Urban Area:
+    city: Stamford
+    state: CT
+  Composite Index: '146.9'
+  Grocery Items: '121.8'
+  Housing: '212.6'
+  Utilities: '121.3'
+  Transportation: '110.0'
+  Health Care: '113.3'
+  Miscellaneous Goods and Services: '122.1'
+- Urban Area:
+    city: Staunton Augusta County
+    state: VA
+  Composite Index: '96.2'
+  Grocery Items: '98.3'
+  Housing: '93.7'
+  Utilities: '100.0'
+  Transportation: '94.5'
+  Health Care: '98.1'
+  Miscellaneous Goods and Services: '96.6'
+- Urban Area:
+    city: Stillwater
+    state: OK
+  Composite Index: '90.1'
+  Grocery Items: '95.5'
+  Housing: '81.2'
+  Utilities: '97.9'
+  Transportation: '88.8'
+  Health Care: '95.7'
+  Miscellaneous Goods and Services: '93.1'
+- Urban Area:
+    city: Sumter
+    state: SC
+  Composite Index: '96.3'
+  Grocery Items: '103.4'
+  Housing: '90.2'
+  Utilities: '108.4'
+  Transportation: '97.8'
+  Health Care: '91.3'
+  Miscellaneous Goods and Services: '95.3'
+- Urban Area:
+    city: Syracuse
+    state: NY
+  Composite Index: '101.5'
+  Grocery Items: '98.6'
+  Housing: '91.4'
+  Utilities: '118.4'
+  Transportation: '108.3'
+  Health Care: '97.8'
+  Miscellaneous Goods and Services: '104.8'
+- Urban Area:
+    city: Tacoma
+    state: WA
+  Composite Index: '109.5'
+  Grocery Items: '111.3'
+  Housing: '116.6'
+  Utilities: '83.1'
+  Transportation: '109.0'
+  Health Care: '115.1'
+  Miscellaneous Goods and Services: '110.2'
+- Urban Area:
+    city: Tampa
+    state: FL
+  Composite Index: '92.4'
+  Grocery Items: '96.3'
+  Housing: '84.7'
+  Utilities: '93.8'
+  Transportation: '103.3'
+  Health Care: '98.4'
+  Miscellaneous Goods and Services: '93.4'
+- Urban Area:
+    city: Temple
+    state: TX
+  Composite Index: '87.4'
+  Grocery Items: '83.7'
+  Housing: '71.8'
+  Utilities: '107.6'
+  Transportation: '97.9'
+  Health Care: '91.2'
+  Miscellaneous Goods and Services: '92.8'
+- Urban Area:
+    city: Thomasville Lexington
+    state: NC
+  Composite Index: '89.2'
+  Grocery Items: '105.5'
+  Housing: '77.2'
+  Utilities: '80.7'
+  Transportation: '88.8'
+  Health Care: '109.1'
+  Miscellaneous Goods and Services: '93.5'
+- Urban Area:
+    city: Topeka
+    state: KS
+  Composite Index: '91.8'
+  Grocery Items: '92.9'
+  Housing: '84.0'
+  Utilities: '85.8'
+  Transportation: '97.4'
+  Health Care: '93.2'
+  Miscellaneous Goods and Services: '98.1'
+- Urban Area:
+    city: Troy Miami County
+    state: OH
+  Composite Index: '95.4'
+  Grocery Items: '96.4'
+  Housing: '83.9'
+  Utilities: '123.3'
+  Transportation: '99.2'
+  Health Care: '89.2'
+  Miscellaneous Goods and Services: '96.2'
+- Urban Area:
+    city: Truckee Nevada County
+    state: CA
+  Composite Index: '146.9'
+  Grocery Items: '132.2'
+  Housing: '208.3'
+  Utilities: '114.3'
+  Transportation: '121.5'
+  Health Care: '112.0'
+  Miscellaneous Goods and Services: '120.5'
+- Urban Area:
+    city: Tucson
+    state: AZ
+  Composite Index: '96.5'
+  Grocery Items: '97.2'
+  Housing: '91.9'
+  Utilities: '86.7'
+  Transportation: '104.6'
+  Health Care: '99.2'
+  Miscellaneous Goods and Services: '100.5'
+- Urban Area:
+    city: Tulsa
+    state: OK
+  Composite Index: '88.4'
+  Grocery Items: '91.9'
+  Housing: '66.5'
+  Utilities: '95.2'
+  Transportation: '99.1'
+  Health Care: '94.6'
+  Miscellaneous Goods and Services: '100.5'
+- Urban Area:
+    city: Tupelo
+    state: MS
+  Composite Index: '88.1'
+  Grocery Items: '91.1'
+  Housing: '72.3'
+  Utilities: '110.1'
+  Transportation: '93.8'
+  Health Care: '86.6'
+  Miscellaneous Goods and Services: '92.7'
+- Urban Area:
+    city: Tuscaloosa
+    state: AL
+  Composite Index: '94.6'
+  Grocery Items: '104.9'
+  Housing: '80.6'
+  Utilities: '105.9'
+  Transportation: '102.8'
+  Health Care: '90.2'
+  Miscellaneous Goods and Services: '97.4'
+- Urban Area:
+    city: Twin Falls
+    state: ID
+  Composite Index: '91.5'
+  Grocery Items: '95.5'
+  Housing: '81.4'
+  Utilities: '97.0'
+  Transportation: '99.2'
+  Health Care: '93.3'
+  Miscellaneous Goods and Services: '94.6'
+- Urban Area:
+    city: Tyler
+    state: TX
+  Composite Index: '96.3'
+  Grocery Items: '92.7'
+  Housing: '91.5'
+  Utilities: '102.1'
+  Transportation: '100.2'
+  Health Care: '93.1'
+  Miscellaneous Goods and Services: '99.3'
+- Urban Area:
+    city: Valdosta
+    state: GA
+  Composite Index: '94.1'
+  Grocery Items: '111.8'
+  Housing: '85.3'
+  Utilities: '89.0'
+  Transportation: '96.7'
+  Health Care: '102.2'
+  Miscellaneous Goods and Services: '94.5'
+- Urban Area:
+    city: Vancouver
+    state: WA
+  Composite Index: '94.8'
+  Grocery Items: '96.9'
+  Housing: '82.2'
+  Utilities: '91.8'
+  Transportation: '106.1'
+  Health Care: '114.3'
+  Miscellaneous Goods and Services: '100.1'
+- Urban Area:
+    city: Vero Beach Indian River
+    state: FL
+  Composite Index: '97.4'
+  Grocery Items: '109.1'
+  Housing: '83.5'
+  Utilities: '104.5'
+  Transportation: '97.8'
+  Health Care: '97.7'
+  Miscellaneous Goods and Services: '102.5'
+- Urban Area:
+    city: Waco
+    state: TX
+  Composite Index: '88.9'
+  Grocery Items: '81.8'
+  Housing: '88.5'
+  Utilities: '85.3'
+  Transportation: '97.6'
+  Health Care: '90.9'
+  Miscellaneous Goods and Services: '90.5'
+- Urban Area:
+    city: Washington Arlington Alexandria DC
+    state: VA
+  Composite Index: '140.1'
+  Grocery Items: '107.9'
+  Housing: '226.4'
+  Utilities: '97.3'
+  Transportation: '109.3'
+  Health Care: '103.4'
+  Miscellaneous Goods and Services: '103.7'
+- Urban Area:
+    city: Waterloo Cedar Falls
+    state: IA
+  Composite Index: '91.7'
+  Grocery Items: '89.5'
+  Housing: '89.6'
+  Utilities: '88.2'
+  Transportation: '99.4'
+  Health Care: '95.9'
+  Miscellaneous Goods and Services: '92.8'
+- Urban Area:
+    city: Wausau
+    state: WI
+  Composite Index: '96.5'
+  Grocery Items: '100.0'
+  Housing: '89.6'
+  Utilities: '98.4'
+  Transportation: '97.5'
+  Health Care: '101.3'
+  Miscellaneous Goods and Services: '99.7'
+- Urban Area:
+    city: Weatherford
+    state: TX
+  Composite Index: '91.4'
+  Grocery Items: '95.9'
+  Housing: '79.7'
+  Utilities: '107.4'
+  Transportation: '96.2'
+  Health Care: '93.1'
+  Miscellaneous Goods and Services: '93.3'
+- Urban Area:
+    city: Wichita Falls
+    state: TX
+  Composite Index: '86.5'
+  Grocery Items: '91.9'
+  Housing: '84.0'
+  Utilities: '84.4'
+  Transportation: '82.5'
+  Health Care: '94.5'
+  Miscellaneous Goods and Services: '87.4'
+- Urban Area:
+    city: Wichita
+    state: KS
+  Composite Index: '91.8'
+  Grocery Items: '90.5'
+  Housing: '83.6'
+  Utilities: '89.7'
+  Transportation: '100.6'
+  Health Care: '96.7'
+  Miscellaneous Goods and Services: '97.1'
+- Urban Area:
+    city: Williamsport Lycoming Co
+    state: PA
+  Composite Index: '100.7'
+  Grocery Items: '103.5'
+  Housing: '96.3'
+  Utilities: '127.7'
+  Transportation: '91.8'
+  Health Care: '92.6'
+  Miscellaneous Goods and Services: '98.9'
+- Urban Area:
+    city: Wilmington
+    state: DE
+  Composite Index: '105.2'
+  Grocery Items: '108.1'
+  Housing: '102.0'
+  Utilities: '115.4'
+  Transportation: '98.6'
+  Health Care: '108.7'
+  Miscellaneous Goods and Services: '105.2'
+- Urban Area:
+    city: Wilmington
+    state: NC
+  Composite Index: '98.8'
+  Grocery Items: '108.0'
+  Housing: '89.7'
+  Utilities: '108.5'
+  Transportation: '97.6'
+  Health Care: '100.1'
+  Miscellaneous Goods and Services: '100.3'
+- Urban Area:
+    city: Winchester VA
+    state: WV
+  Composite Index: '102.3'
+  Grocery Items: '104.6'
+  Housing: '94.5'
+  Utilities: '98.2'
+  Transportation: '96.8'
+  Health Care: '105.0'
+  Miscellaneous Goods and Services: '110.9'
+- Urban Area:
+    city: Winston Salem
+    state: NC
+  Composite Index: '92.4'
+  Grocery Items: '98.5'
+  Housing: '82.9'
+  Utilities: '88.5'
+  Transportation: '83.3'
+  Health Care: '99.3'
+  Miscellaneous Goods and Services: '101.5'
+- Urban Area:
+    city: Wooster
+    state: OH
+  Composite Index: '92.6'
+  Grocery Items: '99.5'
+  Housing: '72.1'
+  Utilities: '123.4'
+  Transportation: '103.0'
+  Health Care: '94.6'
+  Miscellaneous Goods and Services: '95.2'
+- Urban Area:
+    city: Yakima
+    state: WA
+  Composite Index: '95.8'
+  Grocery Items: '99.8'
+  Housing: '86.9'
+  Utilities: '86.8'
+  Transportation: '105.5'
+  Health Care: '117.1'
+  Miscellaneous Goods and Services: '99.2'
+- Urban Area:
+    city: York County
+    state: PA
+  Composite Index: '102.1'
+  Grocery Items: '98.4'
+  Housing: '106.0'
+  Utilities: '102.6'
+  Transportation: '97.7'
+  Health Care: '96.8'
+  Miscellaneous Goods and Services: '102.0'
+- Urban Area:
+    city: Youngstown Warren
+    state: OH
+  Composite Index: '90.4'
+  Grocery Items: '92.6'
+  Housing: '77.7'
+  Utilities: '110.2'
+  Transportation: '92.4'
+  Health Care: '86.9'
+  Miscellaneous Goods and Services: '94.4'
+- Urban Area:
+    city: Yuma
+    state: AZ
+  Composite Index: '101.2'
+  Grocery Items: '107.4'
+  Housing: '96.4'
+  Utilities: '112.2'
+  Transportation: '104.6'
+  Health Care: '107.8'
+  Miscellaneous Goods and Services: '97.6'
