@@ -157,11 +157,12 @@ div span {
 }
 
 #origin-map, #destination-map {
-	min-height: 350px;
+	min-height: 500px;
 	border-radius: 5px;
 	float: left;
 	display: inline-block;
 	width: 800px;
+	margin: auto;
 	/*min-width: 800px;*/
 }
 
@@ -176,22 +177,12 @@ div span {
 	font-size: 1em;
 }
 
-/*.arrow {
-	color: #fff;
-	font-family: $primary-font;
-	font-size: 20pt;
-	width: 200px;
-	margin-left: 50px;
-}*/
-
 #arrowButton {
 	background: url(arrow.png) top left no-repeat;
 	min-height: 50px;
 	width: 100px;
-	margin-left: 100px;
+	margin: 20px 0 0 100px;
 	opacity: .7;
-/*	display: inline-block;
-	float: left;*/
 	&:hover {
 		background: url(arrow.png) bottom left no-repeat;
 		cursor: pointer; 
@@ -215,9 +206,7 @@ div span {
   float: left;
   clear: left;
   width: 200px;
-  margin: 20px 0 0 50px;
-  /*background: white;*/
-
+  margin: 10px 0 0 50px;
 }
 
 .ui-slider {
@@ -235,16 +224,26 @@ div span {
 	/*opacity: .5;*/
 }
 
-#scaledSalaryDisplay {
-	margin: 175px 0 0 100px;
+#compSalaryDisplay {
+	margin: 20px 0 0 100px;
 }
 
-.sliderLabel {
+.salaryLabel {
 	font-family: $primary-font;
 	font-size: 30pt;
 	color: #fff;
 	opacity: .7;
-	margin: 0 0 0 60px;
+	margin: 10px 0 0 60px;
 }
 
+.compSalaryLabel {
+	font-family: $primary-font;
+	font-size: 30pt;
+	color: #fff;
+	opacity: .7;
+	margin: 130px 0 0 85px;
+}
 
+#compSalary {
+	display: none;
+}

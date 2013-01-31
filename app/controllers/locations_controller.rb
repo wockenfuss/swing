@@ -13,6 +13,9 @@ def show
 		# 	puts "not saved"
 		# end
 		# city = params[:city] || request_ip
+
+
+
 		if params[:city]
 			@location = Location.location_from_city(params[:city])
 		else
@@ -20,7 +23,6 @@ def show
 		end
 		@city = @location["city"]
 		@location[:key] = File.read(static_map_path)
-
 		respond_to do |format|
 			format.html
 			format.json { render :json => { :location => @location } }

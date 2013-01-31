@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(function() {
 	newLocation($('input[name="origin"]')[0]);
 
 	$('input[name="origin"]').on({
@@ -45,6 +45,9 @@ $(document).ready(function() {
     change: updateSalary
   });
 	$( "#currentSalary" ).slider( "value", 0 );
+
+
+
 });
 	
 Number.prototype.formatMoney = function(c, d, t){
@@ -58,10 +61,6 @@ var updateSalary = function() {
 	// console.log(salary);
 	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
 };
-
-// var dollarify = function(number) {
-
-// };
 	
 var locationUrl = function(data) {
 	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' + 
@@ -103,7 +102,7 @@ var animateMaps = function() {
   $('#destination-map').animate({
     width: '400px',
   }, 1000, function() {
-    // Animation complete.
+    $('#compSalary').fadeIn('slow');
   });
 };
 
