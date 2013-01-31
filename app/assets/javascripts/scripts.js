@@ -60,8 +60,13 @@ var updateSalary = function() {
 	var salary = scalar * 2500;
 	// console.log(salary);
 	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
+	$('#compSalaryDisplay').text(relativeSalary(salary));
 };
 	
+var relativeSalary = function(salary) {
+	return (salary * 1).formatMoney(0, '.', ',');
+};
+
 var locationUrl = function(data) {
 	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' + 
 				data.latitude + ',' + data.longitude + 
