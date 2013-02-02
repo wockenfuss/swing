@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130130022639) do
+ActiveRecord::Schema.define(:version => 20130201041654) do
+
+  create_table "cost_indices", :force => true do |t|
+    t.float    "composite",      :null => false
+    t.float    "grocery"
+    t.float    "housing"
+    t.float    "utilities"
+    t.float    "transportation"
+    t.float    "health"
+    t.float    "misc"
+    t.integer  "location_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
 
   create_table "locations", :force => true do |t|
     t.string   "city",       :default => "", :null => false
@@ -24,12 +37,15 @@ ActiveRecord::Schema.define(:version => 20130130022639) do
     t.float    "longitude",                  :null => false
   end
 
-  create_table "locations_users", :id => false, :force => true do |t|
-    t.integer "user_id"
-    t.integer "location_id"
+  create_table "null_users", :force => true do |t|
+    t.string   "email",              :default => "none", :null => false
+    t.string   "encrypted_password", :default => "none", :null => false
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
   create_table "users", :force => true do |t|
+    t.integer  "location_id"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.string   "email",                  :default => "", :null => false
