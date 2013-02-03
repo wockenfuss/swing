@@ -23,4 +23,10 @@ FactoryGirl.define do
   factory :null_user do
     email "none"
   end
+
+  factory :location do
+    city { "#{Faker::Address.city} #{Faker::Address.state_abbr}" }
+    latitude { (rand * 40 + 80).round(2) }
+    longitude { (rand * 40 + 80).round(2) }
+  end
 end
