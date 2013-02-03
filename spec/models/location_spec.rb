@@ -1,7 +1,10 @@
 require 'spec_helper'
 
 describe Location do
-	subject { FactoryGirl.create(:location) }
+	subject do 
+		CostIndex.stub(:from_location)
+		FactoryGirl.create(:location) 
+	end
 
 	it { should validate_presence_of :city }
 	it { should have_many :users }
@@ -11,13 +14,23 @@ describe Location do
 		it { should respond_to attr }
 	end
 
-	# describe ".from_ip" do
-	# 	let(:ip_location) { FactoryGirl.create(:location) }
-		
-	# 	it "returns an object corresponding to the current ip location" do
-	# 		Geography.stub!(:city_state).and_return(ip_location.city)
-	# 		Location.from_ip.should eq ip_location 
-	# 	end
-	# end
+	describe '.from_ip_or_city' do
+		it 'creates a location object from a city name' do
+			Geography.stub(:city_from_city).and_return("San Francisco CA")
+			location = Location.from_ip_or_city("San Francisco")
+			location.city.should include "San Francisco"
+		end
+
+		it 'creates a location object from an ip address' do
+			Location.stub(:request_ip)
+			Geography.stub(:city_from_ip).and_return("San Francisco CA")
+			location = Location.from_ip_or_city
+			location.city.should include "San Francisco"
+		end
+
+		it 'does not create a location object if one already exists' do
+			pending
+		end
+	end
 
 end

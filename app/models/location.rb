@@ -12,18 +12,10 @@ class Location < ActiveRecord::Base
 	after_validation :geocode, :if => :city_changed?
 	after_save { self.cost_index = CostIndex.from_location(self) }
 
-	def self.from_ip
-		@city_state = Geography::city_state(request_ip)
-		@location = Location.find_by_city(@city_state) || Location.create(:city => @city_state)
+	def self.from_ip_or_city(city = nil)
+		@city = city ? Geography::city_from_city(city) : Geography::city_from_ip(request_ip)
+		Location.find_by_city(@city) || Location.create(:city => @city)
 	end
-
- #  def self.location_from_city(city)
- #  	result = Hash.new
-	# 	latitude, longitude = Geocoder.coordinates(city)
-	# 	result["latitude"] = latitude
-	# 	result["longitude"] = longitude
-	# 	return result
- #  end
 
   private
   def self.request_ip
