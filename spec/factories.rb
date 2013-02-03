@@ -19,4 +19,8 @@ FactoryGirl.define do
   	health { (rand * 40 + 80).round(2) }
   	misc { (rand * 40 + 80).round(2) }
   end
+
+  factory :null_user do
+    email "none"
+  end
 end
