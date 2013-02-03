@@ -64,7 +64,13 @@ var updateSalary = function() {
 };
 	
 var relativeSalary = function(salary) {
-	return (salary * 1).formatMoney(0, '.', ',');
+	return (salary * salaryRatio()).formatMoney(0, '.', ',');
+};
+
+var salaryRatio = function() {
+	var origin = $('#origin-map').data().index;
+	var destination = $('#destination-map').data().index;
+	return destination / origin;
 };
 
 var locationUrl = function(data) {
@@ -77,7 +83,6 @@ var locationUrl = function(data) {
 var newLocation = function(input) {
 	var objectId = '#' + input.id + '-map';
 	var cityName = $(input).val();
-	console.log(objectId);
 	params = { city: cityName }
 	$.ajax({
 		url: '/',
@@ -85,13 +90,22 @@ var newLocation = function(input) {
 		dataType: 'json',
 		data: params,
 		success: function(result) {
+			$(objectId).data( {index: result.location.cost_index.composite} );
+			// $.data(objectId, "costIndex", result.location.cost_index.composite )
+			updateText(result, objectId);
+			// $('#origin-index').text(result.location.cost_index.composite)
 			updateMap(result, objectId);
 		}
 	});
 };
 
+var updateText = function(result, objectId) {
+	var name = '#' + objectId.slice(1,-4);
+	$(name).val(result.location.city);
+	$(objectId + ' .costIndex').text("Cost of living index: " + result.location.cost_index.composite);
+};
+
 var updateMap = function(result, objectId) {
-	c = result.location;
 	var data = result.location
 	$(objectId).css('background-image', locationUrl(data));
 	$(objectId).css('background-position', 'center');
