@@ -10,10 +10,10 @@ describe CostIndex do
 		it { should respond_to attr }
 	end
 
-	describe ".coli_database" do 
-		it "returns a list of indices" do
-			index = CostIndex.coli_database
-			index.first["Urban Area"]["city"].should eq "Anniston Calhoun County"
+	describe ".from_location" do
+		it "creates a CostIndex instance from a location object" do
+			pending "need to create database module"
 		end
 	end
+
 end
