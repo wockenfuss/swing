@@ -3,18 +3,23 @@ require 'spec_helper'
 describe "Navigation" do
 	include Warden::Test::Helpers
 	let(:logo) { "CAN I SWING IT?" } 
-	let(:root_content) { "Something here." }
+	let(:root_content) { "Current Salary:" }
 
 	context "root path" do
-		
-		it "displays a link to the root path" do
-			visit root_path
-			page.should have_link(logo, root_path)
-			page.should have_content(root_content)
+		before(:each) do 
+			Location.stub(:request_ip)
+			Location.stub(:from_ip_or_city).and_return(Location.new({:city => "San Francisco CA"}))
 		end
 
 		context "When no one is logged in" do
+			let(:user) { NullUser.new }
 			before(:each) { visit root_path }
+
+
+			it "displays a link to the root path" do
+				page.should have_link(logo, root_path)
+				page.should have_content(root_content)
+			end
 
 			it "displays a sign in link that links to the sign in page" do 
 				page.should have_link("Sign in", new_user_session_path)
@@ -50,7 +55,11 @@ describe "Navigation" do
 	end
 
 	context "sign in path" do
-		before(:each) { visit new_user_session_path }
+		before(:each) do 
+			Location.stub(:request_ip)
+			Location.stub(:from_ip_or_city).and_return(Location.new({:city => "San Francisco CA"}))
+			visit new_user_session_path
+		end
 
 		it "displays a link to the root path" do
 			page.should have_link(logo, root_path)
