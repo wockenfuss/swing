@@ -4,7 +4,7 @@ class NullUser < ActiveRecord::Base
   validates :email, :presence => true
 
   def home_location
-		Location.from_ip_or_city
+		location ||= Location.from_ip_or_city
   end
 
 end
