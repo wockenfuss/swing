@@ -1,5 +1,6 @@
 $(function() {
 	newLocation($('input[name="origin"]')[0]);
+	$( document ).tooltip();
 
 	$('input[name="origin"]').on({
 		// 'blur': function(e) {
@@ -17,7 +18,7 @@ $(function() {
 		'keypress': function(e) {
 			code = (e.keyCode ? e.keyCode : e.which);
 			if (code == 13) {
-				animateMaps();
+				// animateMaps();
 				newLocation(this);
 			}
 		}
@@ -30,7 +31,7 @@ $(function() {
   $('#arrowButton').on('click', function(e) {
 		newLocation($('input[name="origin"]')[0]);
 		newLocation($('input[name="destination"]')[0]);
-		setTimeout(animateMaps, 750);
+		// setTimeout(animateMaps, 750);
   });
 
 
@@ -88,10 +89,14 @@ var newLocation = function(input) {
 		dataType: 'json',
 		data: params,
 		success: function(result) {
-			$(objectId).data( {index: result.cost_index.composite} );
-			updateText(result, objectId);
-			updateMap(result, objectId);
-			updateSalary();
+			if (!!result.location) {
+				$(objectId).data( {index: result.cost_index.composite} );
+				updateText(result, objectId);
+				updateMap(result, objectId);
+				updateSalary();	
+			} else {
+				$(input).val('City not found');			
+			}
 		}
 	});
 };
@@ -99,8 +104,15 @@ var newLocation = function(input) {
 var updateText = function(result, objectId) {
 	var name = '#' + objectId.slice(1,-4);
 	$(name).val(result.location.city);
-	var cost = (result.cost_index.composite === 0.0) ? "N/A" : result.cost_index.composite;
+	var indices = result.cost_index;
+	var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
 	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
+	$(objectId + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
+								'<p>Housing: ' + indices.housing + '</p>' +
+								'<p>Utilities: ' + indices.utilities + '</p>' + 
+								'<p>Transportation: ' + indices.transportation + '</p>' + 
+								'<p>Health Care: ' + indices.health + '</p>' + 
+								'<p>Miscellaneous: ' + indices.misc + '</p>');
 };
 
 var updateMap = function(result, objectId) {
@@ -108,17 +120,4 @@ var updateMap = function(result, objectId) {
 	$(objectId).css('background-position', 'center');
 };
 
-var animateMaps = function() {
-	$('#origin-map').animate({
-    width: '400px'
-  }, 1000, function() {
-    // Animation complete.
-  });
-  $('#destination-map').css('display', 'inline-block');
-  $('#destination-map').animate({
-    width: '400px'
-  }, 1000, function() {
-    $('#compSalary').fadeIn('slow');
-  });
-};
 
