@@ -13,8 +13,8 @@ module Geography
 	def self.city_from_city(city)
 		result = Geocoder.search(city)[0]
 		if result
-			names = result.data["address_components"]
-			return "#{names[0]["long_name"]} #{names[2]["short_name"]}"
+			names = result.data["formatted_address"].split(',')
+			return names.join if names.pop.lstrip == "USA"
 		else
 			return nil
 		end
