@@ -1,27 +1,41 @@
 <div id="origin-map">
-	<div id="form-container">
+	<div class="form-container">
 		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
 		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
+		<% if user_signed_in? %>
+			<div class="btn">
+				<%= submit_tag 'Make home location' %>
+			</div>
+		<% end %>
+		<%= text_field_tag 'origin', nil, :class => 'input-text', :placeholder => "Origin", :title => "Enter a U.S. city" %>
 
-		<%= text_field_tag 'origin', nil, :class => 'input-text', :placeholder => "Origin" %>
-<!-- 		<#%= text_field_tag 'income', nil, :class => 'input-text', :placeholder => "Current income" %> -->
-		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination" %><br>
+
 		<!-- <a href="#" id="locationButton" class="arrow"> –> </a><br> -->
-		<div id="arrowButton">
+<!-- 		<div id="arrowButton">
 
-		</div>
+		</div> -->
 		<div class="salaryLabel"><%= "Current Salary: "%></div>
 		<div id="currentSalary"></div>
 		<p id="salaryDisplay" class="numbers"></p>
 		<p class="costIndex"></p>
+		<div class="secondaryIndices"></div>
 		<!--<#% end %> -->
 	</div>
 </div>
 
 <div id="destination-map">
-	<div id="compSalary">
-		<p class="compSalaryLabel"><%= "Comparable Salary: "%></p>
-		<p id="compSalaryDisplay" class="numbers">$40,000</p>
-		<p class="costIndex"></p>
+	<div class="form-container">
+		<% if user_signed_in? %>
+			<div class="btn">
+				<%= submit_tag 'Make home location' %>
+			</div>
+		<% end %>
+		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination", :title => "Enter a U.S. city"%><br>
+		<div id="compSalary">
+			<p class="compSalaryLabel"><%= "Comparable Salary: "%></p>
+			<p id="compSalaryDisplay" class="numbers">$40,000</p>
+			<p class="costIndex"></p>
+			<div class="secondaryIndices"></div>
+		</div>
 	</div>
 </div>
