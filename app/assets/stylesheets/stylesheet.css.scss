@@ -95,16 +95,27 @@ body {
 }
 
 /*===== Forms =====*/
-#form-container {
+.form-container {
 	/*width: 250px;*/
 	padding: 20px 20px 20px 40px;
+	background: url('grey.png');
+	min-height: 550px;
 	h2 {
 		margin-left: 10px;
 	}
 	.input-text {
 		font-family: $secondary-font, sans-serif;
-		opacity: .8;
+		/*opacity: .8;*/
 		border-radius: 3px;
+		margin-bottom: 30px;
+		margin-left: 40px;
+		border: 0;
+		outline: 0;
+		border-bottom: 2px solid white;
+		background: transparent;
+		font-size: 14pt;
+		color: white;
+		text-align: center;
 	}
 }
 
@@ -157,19 +168,19 @@ div span {
 }
 
 #origin-map, #destination-map {
-	min-height: 500px;
+	/*min-height: 800px;*/
 	border-radius: 5px;
 	float: left;
 	display: inline-block;
-	width: 800px;
+	width: 400px;
 	margin: auto;
 	/*min-width: 800px;*/
 }
 
-#destination-map {
+/*#destination-map {
 	width: 0px;
 	display: none;
-}
+}*/
 
 .field-label {
 	font-family: $secondary-font;
@@ -177,17 +188,18 @@ div span {
 	font-size: 1em;
 }
 
-#arrowButton {
+/*#arrowButton {
 	background: url(arrow.png) top left no-repeat;
 	min-height: 50px;
 	width: 100px;
 	margin: 20px 0 0 100px;
 	opacity: .7;
+	display: inline-block;
 	&:hover {
 		background: url(arrow.png) bottom left no-repeat;
 		cursor: pointer; 
 	}
-}
+}*/
 
 #form-container .arrow:hover {
 	color: #ff0;
@@ -224,8 +236,11 @@ div span {
 	/*opacity: .5;*/
 }
 
+#salaryDisplay {
+	margin-left: 40px;
+}
 #compSalaryDisplay {
-	margin: 20px 0 0 100px;
+	margin: 20px 0 0 50px;
 }
 
 .salaryLabel {
@@ -241,12 +256,12 @@ div span {
 	font-size: 30pt;
 	color: #fff;
 	opacity: .7;
-	margin: 130px 0 0 85px;
+	margin: 10px 0 0 60px;
 }
 
-#compSalary {
+/*#compSalary {
 	display: none;
-}
+}*/
 
 .costIndex {
 	font-family: $primary-font;
@@ -255,3 +270,44 @@ div span {
 	opacity: .7;
 	margin: 10px 0 0 20px;
 }
+
+.ui-tooltip {
+	font-family: $secondary-font;
+	font-size: 8pt;
+	padding: 5px;
+	box-shadow: none;
+	/*opacity: .8;*/
+	background: transparent;
+	color: white;
+	min-width: 200px;
+	text-align: center;
+	border: white solid 1px;
+}
+
+.secondaryIndices {
+	text-align: right;
+	font-family: $secondary-font;
+	font-size: 15pt;
+	color: #fff;
+	opacity: .7;
+	margin: 0 50px 0 20px;
+	p {
+		margin-top: .5ex;
+		margin-bottom: .5ex;
+	}
+}
+
+/*
+.ui-widget {
+	top: -50px;
+	left: 800px;
+}
+
+.ui-corner-all {
+	top: -50px;
+	left: 800px;
+}
+.ui-widget-content {
+	top: -50px;
+	left: 800px;
+}*/
