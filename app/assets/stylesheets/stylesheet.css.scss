@@ -2,6 +2,7 @@ $text-color: #bbb;
 $dark-text-color: #555;
 $primary-font: "Amatic SC";
 $secondary-font: Raleway; 
+$background-color: #124222;
 
 /*font-family: 'Sue Ellen Francisco', cursive;
 font-family: 'Poiret One', cursive;
@@ -15,9 +16,9 @@ font-family: 'Bubbler One', sans-serif;*/
 /*===== Global =====*/
 a {
 	text-decoration: none;
-	color: #555;
+	color: lighten($background-color, 40%);
 	&:hover {
-		color: lighten($text-color, 10%);
+		color: #fff;
 	}
 }
 
@@ -32,13 +33,12 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	float: left;
 	font-size: 2em;
-	color: $text-color;
+	color: lighten($background-color, 40%);
 }
 
 .pull-right {
 	display: inline-block;
 	float: right;
-	color: $text-color;
 	font-family: $secondary-font, sans-serif;
 	li {
 		margin: 0 10px;
@@ -55,22 +55,21 @@ h1, h2, h3, h4, h5, h6 {
 /*===== Main =====*/
 
 body {
-	background-color: #124222;
+	background-color: $background-color;
 }
 
 #container {
-	/*padding-top: 30px;*/
 	width: 800px;
 	margin: 20px auto;
-	background-color: #ccc;
+	background-color: lighten($background-color, 40%);
 	border-radius: 5px;
 	clear: both;
-	/*padding: 20px 20px 20px 40px;*/
 	h2, h3 {
 		color: #fff;
 	}
 	a {
 		font-family: $secondary-font;
+		color: $background-color;
 		&:hover {
 			color: #fff;
 		}
@@ -95,32 +94,16 @@ body {
 }
 
 /*===== Forms =====*/
-.form-container {
-	/*width: 250px;*/
+#form-container {
+	width: 250px;
 	padding: 20px 20px 20px 40px;
-	background: url('grey.png');
-	min-height: 550px;
 	h2 {
 		margin-left: 10px;
-	}
-	.input-text {
-		font-family: $secondary-font, sans-serif;
-		/*opacity: .8;*/
-		border-radius: 3px;
-		margin-bottom: 30px;
-		margin-left: 40px;
-		border: 0;
-		outline: 0;
-		border-bottom: 2px solid white;
-		background: transparent;
-		font-size: 14pt;
-		color: white;
-		text-align: center;
 	}
 }
 
 form {
-	color: $dark-text-color;
+	color: $background-color;
 	font-family: $secondary-font, sans-serif;
 	input {
 		border: none;
@@ -146,10 +129,10 @@ form {
 		color: #fff;
 		border-radius: 5px;
 		font-family: $secondary-font;
-		background-color: #999;
+		background-color: lighten($background-color, 20%);
 		&:hover {
 			cursor: pointer;
-			background-color: #777;
+			background-color: $background-color;
 		}
 	}
 	p {
@@ -165,6 +148,50 @@ div label {
 
 div span {
 	font-size: 10pt;
+}
+/*===== locations =====*/
+.location-container {
+	/*width: 250px;*/
+	padding: 20px 20px 20px 40px;
+	background: url('grey.png');
+	min-height: 550px;
+	h2 {
+		margin-left: 10px;
+	}
+	.input-text {
+		font-family: $secondary-font, sans-serif;
+		/*opacity: .8;*/
+		border-radius: 3px;
+		margin-bottom: 30px;
+		margin-left: 40px;
+		border: 0;
+		outline: 0;
+		border-bottom: 2px solid white;
+		background: transparent;
+		font-size: 14pt;
+		color: white;
+		text-align: center;
+	}
+}
+
+.locationButton {
+	margin: 5px 5px 10px 80px;
+	/*background-color: #fff;*/
+	input {
+		text-align: center;
+		padding: 10px;
+		border: 0;
+		min-width: 100px;
+		color: #000;
+		border-radius: 5px;
+		font-family: $secondary-font;
+		background-color: #fff;
+		opacity: .7;
+		&:hover {
+			cursor: pointer;
+			background-color: lighten($background-color, 50%);
+		}
+	}
 }
 
 #origin-map, #destination-map {

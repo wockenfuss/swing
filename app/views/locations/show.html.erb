@@ -1,9 +1,15 @@
+<% content_for :head do %>
+  <script type="text/javascript">
+    <%= render :partial => "locations.js" %>
+  </script>
+<% end %>
+
 <div id="origin-map">
-	<div class="form-container">
+	<div class="location-container">
 		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
 		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
 		<% if user_signed_in? %>
-			<div class="btn">
+			<div class="locationButton">
 				<%= submit_tag 'Make home location' %>
 			</div>
 		<% end %>
@@ -24,9 +30,9 @@
 </div>
 
 <div id="destination-map">
-	<div class="form-container">
+	<div class="location-container">
 		<% if user_signed_in? %>
-			<div class="btn">
+			<div class="locationButton">
 				<%= submit_tag 'Make home location' %>
 			</div>
 		<% end %>
