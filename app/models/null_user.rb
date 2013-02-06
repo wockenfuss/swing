@@ -3,8 +3,11 @@ class NullUser < ActiveRecord::Base
 
   validates :email, :presence => true
 
-  def home_location
+  def location
 		location ||= Location.from_ip_or_city
   end
 
+  def salary
+  	0
+  end
 end

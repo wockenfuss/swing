@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   attr_accessible :email, :password, :password_confirmation, 
-  								:remember_me
+  								:remember_me, :location, :salary
 
-  belongs_to :home_location, :class_name => "Location"
+  belongs_to :location
 
 end

@@ -1,19 +1,28 @@
-<div id="origin-map">
-	<div id="form-container">
-		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
-		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
+<% content_for :head do %>
+  <script type="text/javascript">
+    <%= render :partial => "users.js" %>
+  </script>
+<% end %>
 
-		<%= text_field_tag 'origin', value = @city, :class => 'input-text', :placeholder => "Origin" %>
-		<%= text_field_tag 'income', nil, :class => 'input-text', :placeholder => "Current income" %>
-		<br>
-		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination" %><br>
-		<a href="#" id="locationButton" class="arrow"> –> </a><br>
+<div id="user-background">
+	<div class="user-container ">
+		<h2><%= @user.email %></h2>
+		<p>Current Location: 
+			<!--<#%= text_field_tag 'user-location', @user.location.city, :class => 'user-input', :placeholder => 'None set' %>-->
+			<span><%= @user.location ? @user.location.city : "None set." %></span>
+		</p>
+		<!-- <p> -->
+		<%= form_tag(user_path(@user), { :method => :put, :remote => true}) do %>
 
-<br>
-		<!--<#% end %> -->
+
+			<p>Current Salary: 
+			<%= text_field_tag 'salary', @user.salary, :class => 'user-input', :placeholder => 'None set' %>
+<!-- 			<span class="updateButton"><#%= submit_tag 'Update', { :url => user_path(@user), :method => :put, :remote => true } %></span> -->
+<%= button_tag('Update', :class => 'updateButton') %></p>
+
+
+		<% end %>
+		<!-- </p> -->
 	</div>
 </div>
 
-<div id="destination-map">
-
-</div>

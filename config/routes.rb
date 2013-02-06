@@ -1,8 +1,8 @@
 Swing::Application.routes.draw do
 
-  devise_for :users
+  devise_for :users, :except => [:show]
 
-  #resources :users
+  resources :users
   resources :locations
 
   resources :cost_indices, :only => [:create, :new, :index]
