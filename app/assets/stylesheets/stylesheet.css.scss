@@ -16,9 +16,9 @@ font-family: 'Bubbler One', sans-serif;*/
 /*===== Global =====*/
 a {
 	text-decoration: none;
-	color: lighten($background-color, 40%);
+	color: #fff;
 	&:hover {
-		color: #fff;
+		color: lighten($background-color, 60%);
 	}
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	float: left;
 	font-size: 2em;
-	color: lighten($background-color, 40%);
+	color: #fff;
 }
 
 .pull-right {
@@ -50,6 +50,9 @@ h1, h2, h3, h4, h5, h6 {
 	list-style-type: none;
 	font-family: $primary-font, sans-serif;
 	display: block;
+	a {
+		margin: 0 5px;
+	}
 }
 
 /*===== Main =====*/
@@ -154,7 +157,7 @@ div span {
 	/*width: 250px;*/
 	padding: 20px 20px 20px 40px;
 	background: url('grey.png');
-	min-height: 550px;
+	min-height: 600px;
 	h2 {
 		margin-left: 10px;
 	}
@@ -204,29 +207,12 @@ div span {
 	/*min-width: 800px;*/
 }
 
-/*#destination-map {
-	width: 0px;
-	display: none;
-}*/
 
 .field-label {
 	font-family: $secondary-font;
 	color: #fff;
 	font-size: 1em;
 }
-
-/*#arrowButton {
-	background: url(arrow.png) top left no-repeat;
-	min-height: 50px;
-	width: 100px;
-	margin: 20px 0 0 100px;
-	opacity: .7;
-	display: inline-block;
-	&:hover {
-		background: url(arrow.png) bottom left no-repeat;
-		cursor: pointer; 
-	}
-}*/
 
 #form-container .arrow:hover {
 	color: #ff0;
@@ -324,17 +310,52 @@ div span {
 	}
 }
 
-/*
-.ui-widget {
-	top: -50px;
-	left: 800px;
+/*===== users show page =====*/
+.user-container {
+	/*margin-left: 175px;*/
+	padding: 20px 20px 20px 210px;
+	font-family: $secondary-font;
+	color: #fff;
+	min-height: 300px;
+	background: url('grey.png') left top;
+	h2 {
+		font-family: $primary-font;
+		font-size: 26pt;
+		color: #fff;
+	}
+	p {
+		color: #fff;
+	}
 }
 
-.ui-corner-all {
-	top: -50px;
-	left: 800px;
+.user-input {
+	font-family: $secondary-font, sans-serif;
+	margin-left: 10px;
+	border: 0;
+	background-color: #fff;
+	font-size: 12pt;
+	color: $background-color;
+	text-align: center;	
+	width: 100px;
 }
-.ui-widget-content {
-	top: -50px;
-	left: 800px;
-}*/
+
+p > span {
+	margin: 0 15px;
+}
+
+.updateButton {
+		display: inline;
+		text-align: center;
+		padding: 5px;
+		border: 0;
+		min-width: 75px;
+		color: #fff;
+		border-radius: 5px;
+		font-family: $secondary-font;
+		background-color: lighten($background-color, 20%);
+		&:hover {
+			cursor: pointer;
+			background-color: lighten($background-color, 10%);
+		}
+	
+}
