@@ -3,10 +3,9 @@
 	<ul class="nav">
 		<% if user_signed_in? %>
 
-
 			<div class="pull-right">
 			<a href="#" data-dropdown="#dropdown-1"><%= @user.email %></a>
-			<div id="dropdown-1" class="dropdown dropdown-tip">
+			<div id="dropdown-1" class="dropdown dropdown-tip dropdown-anchor-right">
 			    <ul class="dropdown-menu">
 			        <li><%= link_to "My Settings", user_path(@user)%></li>
 			        <li><%= link_to "My Account", edit_user_registration_path(@user)%></li>
@@ -16,8 +15,6 @@
 			</div>
 			</div>
 
-		  <!--<#%= link_to @user.email, user_path(@user), :class => "pull-right" %> -->
-			 
 		<% else %>
 			<li><%= link_to "Sign in", new_user_session_path, :class => "pull-right"%></li>
 		<% end %>

@@ -1,6 +1,5 @@
 $(function() {
 	parseLocation($('input[name="origin"]')[0]);
-	// newLocation($('input[name="origin"]');
 
 	$( document ).tooltip();
 
@@ -12,7 +11,6 @@ $(function() {
 			code = (e.keyCode ? e.keyCode : e.which);
 				if (code == 13) {
 				parseLocation(this);
-				// newLocation(this);
 			}
 		}
 	});
@@ -22,7 +20,6 @@ $(function() {
 			code = (e.keyCode ? e.keyCode : e.which);
 			if (code == 13) {
 				parseLocation(this);
-				// newLocation(this);
 			}
 		}
 		// 'blur': function(e) {
@@ -35,9 +32,7 @@ $(function() {
     orientation: "horizontal",
     range: "min",
     max: 100,
-    // value: 50,
-    slide: updateSalary,
-    // change: updateSalary
+    slide: updateSalary
   });
 	$( "#currentSalary" ).slider( "value", 0 );
 

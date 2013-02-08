@@ -6,15 +6,21 @@ class UsersController < ApplicationController
 		@user = current_user
 		if params[:location]
 			@location = Location.find_by_city(params[:location])
-			@user.update_attributes(:location => @location)
-			redirect_to root_path, :notice => "Location saved."
+			update_params = { :location => @location }
+			notice = "Location saved."
 		else
-			@user.update_attributes(:salary => params[:salary])
-			# redirect_to user_path(@user)
-			respond_to do |format|
-				format.js
-			end
+			update_params = { :salary => params[:salary] }
+			notice = "Salary updated."
 		end
+		if @user.update_attributes( update_params )
+			notice = notice
+		else
+			notice = "Something went wrong."
+		end
+		respond_to do |format|
+			format.js { render "shared/messages", :locals => { :notice => notice } }
+		end
+
 	end
 
 	def show
