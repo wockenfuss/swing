@@ -81,19 +81,25 @@ body {
 
 
 /*===== Flash messages =====*/
-#flash {
-	clear: both;
+#flash_error, #flash_notice, #flash_alert, #alerts {
+	/*clear: both;*/
 	margin: 0 auto;
 	width: 500px;
 	text-align: center;
 	background-color: #ddd;
 	border-radius: 5px;
-	padding: 5px;
+	/*padding: 5px;*/
 	font-family: $secondary-font,sans-serif;
+	/*display: none;*/
 
-	#flash_alert {
-		color: $dark-text-color;
-	}
+}
+
+#flash_alert {
+	color: $dark-text-color;
+}
+
+#alerts {
+	display: none;
 }
 
 /*===== Forms =====*/
@@ -192,7 +198,8 @@ div span {
 		opacity: .7;
 		&:hover {
 			cursor: pointer;
-			background-color: lighten($background-color, 50%);
+			opacity: 1;
+			/*background-color: lighten($background-color, 50%);*/
 		}
 	}
 }

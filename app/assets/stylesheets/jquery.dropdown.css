@@ -86,7 +86,7 @@
 
 .dropdown .dropdown-menu LI > A:hover,
 .dropdown .dropdown-menu LABEL:hover {
-	background-color: #08C;
+	background-color: #346444;
 	color: #FFF;
 	cursor: pointer;
 }
@@ -96,6 +96,11 @@
 	border-top: solid 1px #E5E5E5;
 	padding: 0;
 	margin: 5px 0;
+}
+
+.dropdown-anchor-right {
+	font-size: 10pt;
+	text-align: right;
 }
 
 /* Icon Examples - icons courtesy of http://p.yusukekamiyamane.com/ */
@@ -111,3 +116,4 @@
 .dropdown .copy A { background-image: url(icons/document-copy.png); }
 .dropdown .paste A { background-image: url(icons/clipboard.png); }
 .dropdown .delete A { background-image: url(icons/cross-script.png); }
+
