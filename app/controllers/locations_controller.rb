@@ -9,7 +9,11 @@ def show
 			location = @user.location || Location.from_ip(request_ip)
 		end
 
-		key = File.read(static_map_path)
+		if Rails.env.production?
+			key = ENV['SM_KEY']
+		else
+			key = File.read(static_map_path)
+		end
 		cost_index = location.cost_index if location
 		salary = @user.salary
 
