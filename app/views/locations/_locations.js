@@ -34,7 +34,6 @@ $(function() {
     max: 100,
     slide: updateSalary
   });
-	$( "#currentSalary" ).slider( "value", 0 );
 
 	$('.locationButton').on('click', function(e) {
 		city = $(this).next().val();

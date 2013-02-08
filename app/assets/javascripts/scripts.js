@@ -46,6 +46,7 @@ var newLocation = function(cityName, objectId) {
 				updateSalary();
 				updateText(result, objectId);
 			} else {
+				console.log("City not found");
 				//flash alert
 				// $(input).val('City not found');
 			}
@@ -66,13 +67,14 @@ var updateText = function(result, objectId) {
 	var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
 	if ($('#salaryDisplay').text() === "$0" ) {
 		$('#salaryDisplay').text(result.salary.formatMoney(0, '.', ','));
+		$('#currentSalary').slider("value", (result.salary / 2500 ));
 	}
 	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
 	$(objectId + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
 								'<p>Housing: ' + indices.housing + '</p>' +
-								'<p>Utilities: ' + indices.utilities + '</p>' + 
-								'<p>Transportation: ' + indices.transportation + '</p>' + 
-								'<p>Health Care: ' + indices.health + '</p>' + 
+								'<p>Utilities: ' + indices.utilities + '</p>' +
+								'<p>Transportation: ' + indices.transportation + '</p>' +
+								'<p>Health Care: ' + indices.health + '</p>' +
 								'<p>Miscellaneous: ' + indices.misc + '</p>');
 };
 

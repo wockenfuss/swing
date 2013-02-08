@@ -14,7 +14,8 @@ class Location < ActiveRecord::Base
 	def self.from_ip(ip_address)
 		@city = Geography::city_from_ip(ip_address)
 		if @city
-			return Location.find_by_city(@city) || Location.create(:city => @city)
+			# return Location.find_by_city(@city) || Location.create(:city => @city)
+			return Location.find_or_create_by_city(@city)
 		else
 			return nil
 		end
@@ -23,7 +24,8 @@ class Location < ActiveRecord::Base
 	def self.from_city(city)
 		@city = Geography::city_from_city(city)
 		if @city
-			return Location.find_by_city(@city) || Location.create(:city => @city)
+			# return Location.find_by_city(@city) || Location.create(:city => @city)
+			return Location.find_or_create_by_city(@city)
 		else
 			return nil
 		end
