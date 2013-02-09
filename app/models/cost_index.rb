@@ -16,6 +16,7 @@ class CostIndex < ActiveRecord::Base
 		end
 	end
 
+	private
 	def self.null_object
 		CostIndex.create( {:composite => 0.0} )
 	end
