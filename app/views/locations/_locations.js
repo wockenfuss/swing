@@ -5,7 +5,7 @@ $(function() {
 
 	$('input[name="origin"]').on({
 		// 'blur': function(e) {
-		//	newLocation(this);
+		//	parseLocation(this);
 		// },
 		'keypress': function(e) {
 			code = (e.keyCode ? e.keyCode : e.which);
@@ -15,6 +15,10 @@ $(function() {
 		}
 	});
 
+	// $('input[name="destination"], input[name="origin"]').on('focus', function() {
+	// 	$(this).val('');
+	// });
+
 	$('input[name="destination"]').on({
 		'keypress': function(e) {
 			code = (e.keyCode ? e.keyCode : e.which);
@@ -23,8 +27,7 @@ $(function() {
 			}
 		}
 		// 'blur': function(e) {
-		//	animateMaps();
-		//	newLocation(this);
+		//	parseLocation(this);
 		// }
   });
 
@@ -42,16 +45,12 @@ $(function() {
 			$.ajax({
 				url: '/users/update',
 				type: 'put',
-				dataType: 'json',
-				data: params,
-				success: function(result) {
-					console.log("success");
-				}
+				dataType: 'script',
+				data: params
 			});
 		} else {
-			$(this).next().val("Please enter a city");
+			alertDisplay("Please enter a city");
 		}
 	});
-
 });
 	

@@ -88,9 +88,7 @@ body {
 	text-align: center;
 	background-color: #ddd;
 	border-radius: 5px;
-	/*padding: 5px;*/
 	font-family: $secondary-font,sans-serif;
-	/*display: none;*/
 
 }
 
@@ -160,7 +158,6 @@ div span {
 }
 /*===== locations =====*/
 .location-container {
-	/*width: 250px;*/
 	padding: 20px 20px 20px 40px;
 	background: url('grey.png');
 	min-height: 600px;
@@ -169,7 +166,6 @@ div span {
 	}
 	.input-text {
 		font-family: $secondary-font, sans-serif;
-		/*opacity: .8;*/
 		border-radius: 3px;
 		margin-bottom: 30px;
 		margin-left: 40px;
@@ -185,7 +181,6 @@ div span {
 
 .locationButton {
 	margin: 5px 5px 10px 80px;
-	/*background-color: #fff;*/
 	input {
 		text-align: center;
 		padding: 10px;
@@ -199,19 +194,16 @@ div span {
 		&:hover {
 			cursor: pointer;
 			opacity: 1;
-			/*background-color: lighten($background-color, 50%);*/
 		}
 	}
 }
 
 #origin-map, #destination-map {
-	/*min-height: 800px;*/
 	border-radius: 5px;
 	float: left;
 	display: inline-block;
 	width: 400px;
 	margin: auto;
-	/*min-width: 800px;*/
 }
 
 
@@ -279,10 +271,6 @@ div span {
 	margin: 10px 0 0 60px;
 }
 
-/*#compSalary {
-	display: none;
-}*/
-
 .costIndex {
 	font-family: $primary-font;
 	font-size: 30pt;
@@ -296,7 +284,6 @@ div span {
 	font-size: 8pt;
 	padding: 5px;
 	box-shadow: none;
-	/*opacity: .8;*/
 	background: transparent;
 	color: white;
 	min-width: 200px;
@@ -319,7 +306,6 @@ div span {
 
 /*===== users show page =====*/
 .user-container {
-	/*margin-left: 175px;*/
 	padding: 20px 20px 20px 210px;
 	font-family: $secondary-font;
 	color: #fff;

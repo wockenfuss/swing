@@ -1,32 +1,21 @@
-<% content_for :head do %>
-  <script type="text/javascript">
-    <%= render :partial => "locations.js" %>
-  </script>
-<% end %>
+<%= javascript_tag render(:partial => 'locations', :formats => [:js]) %>
 
 <div id="origin-map">
 	<div class="messages"></div>
 	<div class="location-container">
-		<!-- :url => { :controller => 'questions', :action => 'update'}) -->
-		<!--<#%= form_tag(new_location_path(:city => @city), :method => 'get') do %> -->
 		<% if user_signed_in? %>
 			<div class="locationButton">
 				<%= submit_tag 'Make home location' %>
 			</div>
 		<% end %>
-		<%= text_field_tag 'origin', nil, :class => 'input-text', :placeholder => "Origin", :title => "Enter a U.S. city" %>
+		<%= text_field_tag 'origin', nil, :class => 'input-text', :placeholder => "Origin", :title => "Enter a U.S. city"%>
 
-
-		<!-- <a href="#" id="locationButton" class="arrow"> –> </a><br> -->
-<!-- 		<div id="arrowButton">
-
-		</div> -->
 		<div class="salaryLabel"><%= "Current Salary: "%></div>
 		<div id="currentSalary"></div>
 		<p id="salaryDisplay" class="numbers"></p>
 		<p class="costIndex"></p>
 		<div class="secondaryIndices"></div>
-		<!--<#% end %> -->
+
 	</div>
 </div>
 

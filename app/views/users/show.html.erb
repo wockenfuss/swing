@@ -1,8 +1,4 @@
-<% content_for :head do %>
-  <script type="text/javascript">
-    <%= render :partial => "users.js" %>
-  </script>
-<% end %>
+<%= javascript_tag render(:partial => 'users', :formats => [:js]) %>
 
 <div id="user-background">
 	<div class="user-container ">
@@ -17,8 +13,7 @@
 
 			<p>Current Salary: 
 			<%= text_field_tag 'salary', @user.salary, :class => 'user-input', :placeholder => 'None set' %>
-<!-- 			<span class="updateButton"><#%= submit_tag 'Update', { :url => user_path(@user), :method => :put, :remote => true } %></span> -->
-<%= button_tag('Update', :class => 'updateButton') %></p>
+			<%= button_tag('Update', :class => 'updateButton') %></p>
 
 
 		<% end %>

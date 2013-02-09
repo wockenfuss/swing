@@ -14,5 +14,12 @@ class ApplicationController < ActionController::Base
 	     request.remote_ip
 	   end 
 	end
+
+	def js_redirect_to(path)
+  	render js: %(window.location.href='#{path}') and return
+	end
   
+  def js_alert(message)
+  	render "shared/messages", :locals => { :notice => message }
+  end
 end

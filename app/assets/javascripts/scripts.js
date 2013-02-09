@@ -45,12 +45,25 @@ var newLocation = function(cityName, objectId) {
 				updateMap(result, objectId);
 				updateSalary();
 				updateText(result, objectId);
+				// updateLocationButton(result, objectId);
 			} else {
-				console.log("City not found");
-				//flash alert
-				// $(input).val('City not found');
+				var name = '#' + objectId.slice(1,-4);
+				$(name).val('');
+				alertDisplay('City not found.');
 			}
 		}
+	});
+};
+
+// var updateLocationButton = function(result, objectId) {
+// 	if ( objectId === "#destination-map" ) {
+// 		$('.locationButton').css('display', 'inline-block');
+// 	}
+// };
+
+var alertDisplay = function(message) {
+	$('#alerts').html("").append('<p>' + message + '</p>').fadeIn('slow', function() {
+	$(this).fadeOut(2000);
 	});
 };
 
@@ -70,12 +83,15 @@ var updateText = function(result, objectId) {
 		$('#currentSalary').slider("value", (result.salary / 2500 ));
 	}
 	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
-	$(objectId + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
+	if ( cost !== "N/A") {
+		$(objectId + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
 								'<p>Housing: ' + indices.housing + '</p>' +
 								'<p>Utilities: ' + indices.utilities + '</p>' +
 								'<p>Transportation: ' + indices.transportation + '</p>' +
 								'<p>Health Care: ' + indices.health + '</p>' +
 								'<p>Miscellaneous: ' + indices.misc + '</p>');
+	}
+	
 };
 
 var updateMap = function(result, objectId) {
