@@ -3,11 +3,11 @@
 <div id="origin-map">
 	<div class="messages"></div>
 	<div class="location-container">
-		<% if user_signed_in? %>
+<!-- 		<#% if user_signed_in? %>
 			<div class="locationButton">
-				<%= submit_tag 'Make home location' %>
+				<#%= submit_tag 'Make home location' %>
 			</div>
-		<% end %>
+		<#% end %> -->
 		<%= text_field_tag 'origin', nil, :class => 'input-text', :placeholder => "Origin", :title => "Enter a U.S. city"%>
 
 		<div class="salaryLabel"><%= "Current Salary: "%></div>
@@ -22,11 +22,16 @@
 <div id="destination-map">
 	<div class="location-container">
 		<% if user_signed_in? %>
-			<div class="locationButton">
-				<%= submit_tag 'Make home location' %>
+			<div class="locWithButton">
+				<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination", :title => "Enter a U.S. city"%>
+				<%= submit_tag 'Make home location', :class => 'locationButton' %><br>
+			</div>
+		<% else %>
+			<div class="locationSolo">
+				<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination", :title => "Enter a U.S. city"%><br>
 			</div>
 		<% end %>
-		<%= text_field_tag 'destination', nil, :class => 'input-text', :placeholder => "Destination", :title => "Enter a U.S. city"%><br>
+
 		<div id="compSalary">
 			<p class="compSalaryLabel"><%= "Comparable Salary: "%></p>
 			<p id="compSalaryDisplay" class="numbers">$40,000</p>

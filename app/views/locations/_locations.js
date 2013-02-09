@@ -39,7 +39,7 @@ $(function() {
   });
 
 	$('.locationButton').on('click', function(e) {
-		city = $(this).next().val();
+		city = $('#destination').val();
 		if (city !== "") {
 			var params = { location: city };
 			$.ajax({

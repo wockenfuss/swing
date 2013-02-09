@@ -179,22 +179,27 @@ div span {
 	}
 }
 
+.locWithButton {
+	#destination {
+		margin-left: 0;
+		width: 200px;
+	}
+}
+
 .locationButton {
-	margin: 5px 5px 10px 80px;
-	input {
-		text-align: center;
-		padding: 10px;
-		border: 0;
-		min-width: 100px;
-		color: #000;
-		border-radius: 5px;
-		font-family: $secondary-font;
-		background-color: #fff;
-		opacity: .7;
-		&:hover {
-			cursor: pointer;
-			opacity: 1;
-		}
+	margin: 5px;
+	text-align: center;
+	padding: 10px;
+	border: 0;
+	min-width: 75px;
+	color: #000;
+	border-radius: 5px;
+	font-family: $secondary-font;
+	background-color: #fff;
+	opacity: .7;
+	&:hover {
+		cursor: pointer;
+		opacity: 1;
 	}
 }
 
