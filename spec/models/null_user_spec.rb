@@ -5,7 +5,7 @@ describe NullUser do
 
 	it { should validate_presence_of :email }
 
-	it { should respond_to :email }
-	it { should respond_to :location }
-	
+[:email, :location, :salary].each do |attr|
+		it { should respond_to attr }
+	end	
 end

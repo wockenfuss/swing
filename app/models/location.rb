@@ -13,11 +13,7 @@ class Location < ActiveRecord::Base
 
 	def self.from_ip(ip_address)
 		@city = Geography::city_from_ip(ip_address)
-		if @city
-			return Location.find_or_create_by_city(@city)
-		else
-			return nil
-		end
+		return Location.find_or_create_by_city(@city)
 	end
 
 	def self.from_city(city)
