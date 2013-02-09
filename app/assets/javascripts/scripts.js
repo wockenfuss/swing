@@ -45,7 +45,6 @@ var newLocation = function(cityName, objectId) {
 				updateMap(result, objectId);
 				updateSalary();
 				updateText(result, objectId);
-				// updateLocationButton(result, objectId);
 			} else {
 				var name = '#' + objectId.slice(1,-4);
 				$(name).val('');
@@ -54,12 +53,6 @@ var newLocation = function(cityName, objectId) {
 		}
 	});
 };
-
-// var updateLocationButton = function(result, objectId) {
-// 	if ( objectId === "#destination-map" ) {
-// 		$('.locationButton').css('display', 'inline-block');
-// 	}
-// };
 
 var alertDisplay = function(message) {
 	$('#alerts').html("").append('<p>' + message + '</p>').fadeIn('slow', function() {
