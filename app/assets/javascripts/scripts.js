@@ -11,7 +11,7 @@ var updateSalary = function() {
 	var scalar = $( "#currentSalary" ).slider( "value" );
 	var salary = scalar * 2500;
 	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
-	var destSalary = ($('#destination-map').data().index === 0.0) ? "N/A" : relativeSalary(salary);
+	var destSalary = ($('#destination-map').data().composite === 0.0) ? "N/A" : relativeSalary(salary);
 	$('#compSalaryDisplay').text(destSalary);
 };
 	
@@ -20,8 +20,8 @@ var relativeSalary = function(salary) {
 };
 
 var salaryRatio = function() {
-	var origin = $('#origin-map').data().index;
-	var destination = $('#destination-map').data().index;
+	var origin = $('#origin-map').data().composite;
+	var destination = $('#destination-map').data().composite;
 	return destination / origin;
 };
 
@@ -41,7 +41,7 @@ var newLocation = function(cityName, objectId) {
 		data: params,
 		success: function(result) {
 			if (!!result.location) {
-				$(objectId).data( {index: result.cost_index.composite} );
+				$(objectId).data(result.cost_index);
 				updateMap(result, objectId);
 				updateSalary();
 				updateText(result, objectId);
@@ -77,15 +77,40 @@ var updateText = function(result, objectId) {
 	}
 	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
 	if ( cost !== "N/A") {
-		$(objectId + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
+		if (objectId === "#origin-map") {
+			originSecondaries(indices);
+		} else {
+			destinationSecondaries(indices);
+		}
+	}
+};
+
+var destinationSecondaries = function(indices) {
+	var originIndices = $('#origin-map').data();
+	$('#origin-map' + ' .secondaryIndices').empty();
+	$('#destination-map' + ' .secondaryIndices').empty().append(
+		'<p>Grocery: ' + destString(indices.grocery, originIndices.grocery) +
+		'<p>Housing: ' + destString(indices.housing, originIndices.housing) +
+		'<p>Utilities: ' + destString(indices.utilities, originIndices.utilities) +
+		'<p>Transportation: ' + destString(indices.transportation, originIndices.transportation) +
+		'<p>Health Care: ' + destString(indices.health, originIndices.health) +
+		'<p>Miscellaneous: ' + destString(indices.misc, originIndices.misc)
+		);
+};
+
+var destString = function(index, originIndex) {
+	return Math.round((index / originIndex) * 100) + '%</p>';
+};
+
+var originSecondaries = function(indices) {
+	$('#origin-map' + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
 								'<p>Housing: ' + indices.housing + '</p>' +
 								'<p>Utilities: ' + indices.utilities + '</p>' +
 								'<p>Transportation: ' + indices.transportation + '</p>' +
 								'<p>Health Care: ' + indices.health + '</p>' +
 								'<p>Miscellaneous: ' + indices.misc + '</p>');
-	}
-	
 };
+
 
 var updateMap = function(result, objectId) {
 	$(objectId).css('background-image', locationUrl(result));
