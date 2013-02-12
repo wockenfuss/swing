@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130206014255) do
+ActiveRecord::Schema.define(:version => 20130212011444) do
 
   create_table "cost_indices", :force => true do |t|
     t.float    "composite",      :null => false
@@ -56,7 +56,13 @@ ActiveRecord::Schema.define(:version => 20130206014255) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.integer  "salary",          :default => 0
+    t.integer  "salary"
+    t.integer  "housing"
+    t.integer  "grocery"
+    t.integer  "misc"
+    t.integer  "transportation"
+    t.integer  "utilities"
+    t.integer  "health"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
