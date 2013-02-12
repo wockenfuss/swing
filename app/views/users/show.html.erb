@@ -3,7 +3,7 @@
 <div id="user-background">
 	<div class="user-container ">
 		<h2><%= @user.email %></h2>
-		<p>Current Location: 
+		<p id="currentLocation">Current Location: 
 			<!--<#%= text_field_tag 'user-location', @user.location.city, :class => 'user-input', :placeholder => 'None set' %>-->
 			<span><%= @user.location ? @user.location.city : "None set." %></span>
 		</p>
@@ -12,7 +12,7 @@
 
 
 			<p>Current Salary: 
-			<%= text_field_tag 'salary', @user.salary, :class => 'user-input', :placeholder => 'None set' %>
+			<%= text_field_tag 'salary', @user.salary, :class => 'user-input', :placeholder => 'None set', :id => 'curSalary' %>
 			<%= button_tag('Update', :class => 'updateButton') %></p>
 
 

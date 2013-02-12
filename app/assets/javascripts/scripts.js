@@ -71,7 +71,7 @@ var updateText = function(result, objectId) {
 	$(name).val(result.location.city);
 	var indices = result.cost_index;
 	var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
-	if ($('#salaryDisplay').text() === "$0" ) {
+	if ($('#salaryDisplay').text() === "$0" && result.salary ) {
 		$('#salaryDisplay').text(result.salary.formatMoney(0, '.', ','));
 		$('#currentSalary').slider("value", (result.salary / 2500 ));
 	}
