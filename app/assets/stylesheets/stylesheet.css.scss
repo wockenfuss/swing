@@ -342,9 +342,10 @@ p > span {
 }
 
 .updateButton {
-		display: inline;
+		/*display: inline;*/
 		text-align: center;
 		padding: 5px;
+		margin: 25px 0 10px 75px;
 		border: 0;
 		min-width: 75px;
 		color: #fff;
@@ -355,5 +356,13 @@ p > span {
 			cursor: pointer;
 			background-color: lighten($background-color, 10%);
 		}
-	
 }
+
+#monthlies {
+	width: 250px;
+	text-align: right;
+	p {
+		margin: 0;
+	}
+}
+

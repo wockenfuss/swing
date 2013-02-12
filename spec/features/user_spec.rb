@@ -5,6 +5,9 @@ describe "Users", :js => true do
 
   describe 'users#show' do
   	let(:user) { FactoryGirl.create(:user) }
+  	let(:sub_indices) { [ :housing, :grocery, :misc, 
+  												:transportation, :health, :utilities ] }
+
   	context 'when a user is not signed in' do
   		it 'requires the user to sign in' do
   			visit user_path(user)
@@ -43,16 +46,42 @@ describe "Users", :js => true do
 
   		it 'allows the user to update salary' do
   			visit user_path(user)
-  			fill_in('salary', :with => 50000)
+  			page.fill_in('curSalary', :with => 50000)
   			click_button('Update')
   			visit user_path(user)
   			page.find('#curSalary').value.should eq '50000' 
   		end
 
-  		# it 'displays user housing expenses if set' do
-  		# 	user.update_attributes(:housing => 1700)
-  		# 	page.should have_text '1700'
-  		# end
+  		it 'displays monthly expenses if set' do
+  			sub_indices.each do |attr|
+	  			user.update_attributes(attr => 1700)
+	  			visit user_path(user)
+	  			selector = "user_#{attr}"
+	  			page.find_field( selector ).value.should eq '1700'
+	  		end
+  		end
+
+  		it 'does not display monthly expenses if not set' do
+				visit user_path(user)
+  			sub_indices.each do |attr|
+  				selector = "user_#{attr}"
+	  			page.find_field( selector ).value.should eq ''
+  			end
+  		end
+
+  		it 'allows user to update monthly expenses' do
+  			visit user_path(user)
+  			sub_indices.each do |attr|
+  				selector = "user_#{attr}"
+  				fill_in(selector, :with => 1000)
+  			end
+  			click_button('Update')
+  			visit user_path(user)
+  			sub_indices.each do |attr|
+  				selector = "user_#{attr}"
+	  			page.find_field( selector ).value.should eq '1000'
+  			end
+  		end
   	end
 
   end
