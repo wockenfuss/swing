@@ -1,0 +1,36 @@
+<%= form_for(@user, { :method => :put, :remote => true}) do |f| %>
+	<p>Current Salary: 
+		<%= f.text_field 'salary', :class => 'user-input', :placeholder => 'None set', :id => 'curSalary' %>
+	</p>
+	<p>
+		Monthly Expenditures
+	</p>
+	<div id="monthlies">
+		<p>
+			Grocery: 
+			<%= f.text_field 'grocery', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+		<p>
+			Housing: 
+			<%= f.text_field 'housing', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+		<p>
+			Utilities: 
+			<%= f.text_field 'utilities', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+		<p>
+			Transportation: 
+			<%= f.text_field 'transportation', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+		<p>
+			Health Care: 
+			<%= f.text_field 'health', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+		<p>
+			Miscellaneous: 
+			<%= f.text_field 'misc', :class => 'user-input', :placeholder => 'None set'%>
+		</p>
+	</div>
+
+	<%= f.submit('Update', :class => 'updateButton') %>
+<% end %>

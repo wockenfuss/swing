@@ -1,5 +1,7 @@
 class NullUser < ActiveRecord::Base
-  attr_accessible :email, :location
+  attr_accessible :email, :location, :health, 
+  								:grocery, :housing, :misc, :transportation,
+  								:utilities
 
   validates :email, :presence => true
 

@@ -71,50 +71,77 @@ var updateText = function(result, objectId) {
 	$(name).val(result.location.city);
 	var indices = result.cost_index;
 	var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
-	if ($('#salaryDisplay').text() === "$0" && result.salary ) {
-		$('#salaryDisplay').text(result.salary.formatMoney(0, '.', ','));
-		$('#currentSalary').slider("value", (result.salary / 2500 ));
+	if ($('#salaryDisplay').text() === "$0" && result.user.salary ) {
+		$('#salaryDisplay').text(result.user.salary.formatMoney(0, '.', ','));
+		$('#currentSalary').slider("value", (result.user.salary / 2500 ));
 	}
 	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
+	var categories = ["grocery", "housing", "utilities", "transportation", "health", "misc"];
+
 	if ( cost !== "N/A") {
 		if (objectId === "#origin-map") {
-			originSecondaries(indices);
+			originSecondaries(result, categories);
 		} else {
-			destinationSecondaries(indices);
+			destinationSecondaries(result, categories);
 		}
 	}
 };
 
-var destinationSecondaries = function(indices) {
-	var originIndices = $('#origin-map').data();
-	$('#origin-map' + ' .secondaryIndices').empty();
-	$('#destination-map' + ' .secondaryIndices').empty().append(
-		'<p>Grocery: ' + destString(indices.grocery, originIndices.grocery) +
-		'<p>Housing: ' + destString(indices.housing, originIndices.housing) +
-		'<p>Utilities: ' + destString(indices.utilities, originIndices.utilities) +
-		'<p>Transportation: ' + destString(indices.transportation, originIndices.transportation) +
-		'<p>Health Care: ' + destString(indices.health, originIndices.health) +
-		'<p>Miscellaneous: ' + destString(indices.misc, originIndices.misc)
-		);
+var destinationSecondaries = function(result, categories) {
+	// $('#origin-map' + ' .secondaryIndices').empty();
+	var indicesHTML = buildIndicesHTML(result, categories);
+	$('#destination-map' + ' .secondaryIndices').empty().append(indicesHTML);
 };
 
-var destString = function(index, originIndex) {
-	return Math.round((index / originIndex) * 100) + '%</p>';
+var buildIndicesHTML = function(result, categories) {
+	var HTML = '';
+	if ( result.user.email !== "none" ) {
+		HTML = "<p>Estimated monthly expenses:</p>";
+	}
+	for (var i = 0, length = categories.length; i < length; i++ ) {
+		HTML += destString(categories[i], result);
+	}
+	return HTML;
 };
 
-var originSecondaries = function(indices) {
-	$('#origin-map' + ' .secondaryIndices').empty().append('<p>Grocery: ' + indices.grocery + '</p>' +
-								'<p>Housing: ' + indices.housing + '</p>' +
-								'<p>Utilities: ' + indices.utilities + '</p>' +
-								'<p>Transportation: ' + indices.transportation + '</p>' +
-								'<p>Health Care: ' + indices.health + '</p>' +
-								'<p>Miscellaneous: ' + indices.misc + '</p>');
+var capitalize = function(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
+var destString = function(property, result) {
+	var originIndex = $('#origin-map').data()[property];
+	var index = result.cost_index[property];
+	var percentage = index / originIndex;
+	var userValue = result.user[property];
+	if ( result.user[property]) {
+		return '<p>' + capitalize(property) + ': $' + Math.round(percentage * userValue) + '</p>';
+	} else {
+		return '<p>' + capitalize(property) + ': ' + Math.round(percentage * 100) + '%</p>';
+	}
+};
+
+var originSecondaries = function(result, categories) {
+	var originHTML = buildOriginHTML(result, categories);
+	$('#origin-map' + ' .secondaryIndices').empty().append(originHTML);
+};
+
+var buildOriginHTML = function(result, categories) {
+	var HTML = '';
+	if ( result.user.email === "none" ) {
+		for ( var i = 0; i < categories.length; i++ ) {
+			HTML += '<p>' + capitalize(categories[i]) + ': ' + result.cost_index[categories[i]] + '</p>';
+		}
+	} else {
+		HTML = '<p>Current monthly expenses: </p>';
+		for ( var j = 0; j < categories.length; j++ ) {
+			var index = result.user[categories[j]] || 'Not set (' + result.cost_index[categories[j]] + ' index)';
+			HTML += '<p>' + capitalize(categories[j]) + ': ' + index + '</p>';
+		}
+	}
+	return HTML;
+};
 
 var updateMap = function(result, objectId) {
 	$(objectId).css('background-image', locationUrl(result));
 	$(objectId).css('background-position', 'center');
 };
-
-

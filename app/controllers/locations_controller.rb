@@ -16,11 +16,11 @@ def show
 	def as_json(user, location)
 		key = Rails.env.production? ? ENV['SM_KEY'] : File.read(static_map_path)
 		cost_index = location.cost_index if location
-		salary = user.salary
+		# salary = user.salary
 		return { :location => location,
 						:key => key,
 						:cost_index => cost_index,
-						:salary => salary
+						:user => user
 						}
 	end
 
