@@ -3,33 +3,14 @@ $(function() {
 
 	$( document ).tooltip();
 
-	$('input[name="origin"]').on({
-		// 'blur': function(e) {
-		//	parseLocation(this);
-		// },
+	$('input[name="origin"], input[name="destination"]').on({
 		'keypress': function(e) {
 			code = (e.keyCode ? e.keyCode : e.which);
-				if (code == 13) {
+				if (code === 13) {
 				parseLocation(this);
 			}
 		}
 	});
-
-	// $('input[name="destination"], input[name="origin"]').on('focus', function() {
-	// 	$(this).val('');
-	// });
-
-	$('input[name="destination"]').on({
-		'keypress': function(e) {
-			code = (e.keyCode ? e.keyCode : e.which);
-			if (code == 13) {
-				parseLocation(this);
-			}
-		}
-		// 'blur': function(e) {
-		//	parseLocation(this);
-		// }
-  });
 
   $('#currentSalary').slider({
     orientation: "horizontal",

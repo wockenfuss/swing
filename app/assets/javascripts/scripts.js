@@ -7,29 +7,10 @@ Number.prototype.formatMoney = function(c, d, t){
    return '$' + s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
  };
 
-var updateSalary = function() {
-	var scalar = $( "#currentSalary" ).slider( "value" );
-	var salary = scalar * 2500;
-	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
-	var destSalary = ($('#destination-map').data().composite === 0.0) ? "N/A" : relativeSalary(salary);
-	$('#compSalaryDisplay').text(destSalary);
-};
-	
-var relativeSalary = function(salary) {
-	return (salary * salaryRatio()).formatMoney(0, '.', ',');
-};
-
-var salaryRatio = function() {
-	var origin = $('#origin-map').data().composite;
-	var destination = $('#destination-map').data().composite;
-	return destination / origin;
-};
-
-var locationUrl = function(data) {
-	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' +
-				data.location.latitude + ',' + data.location.longitude +
-				'&zoom=10&size=1200x1200&scale=2&format=jpg&maptype=satellite&sensor=false&key=' +
-				data.key + ')';
+var parseLocation = function(input) {
+	var objectId = '#' + input.id + '-map';
+	var cityName = $(input).val();
+	newLocation(cityName, objectId);
 };
 
 var newLocation = function(cityName, objectId) {
@@ -60,24 +41,42 @@ var alertDisplay = function(message) {
 	});
 };
 
-var parseLocation = function(input) {
-	var objectId = '#' + input.id + '-map';
-	var cityName = $(input).val();
-	newLocation(cityName, objectId);
+
+var updateSalary = function() {
+	var scalar = $( "#currentSalary" ).slider( "value" );
+	var salary = scalar * 2500;
+	$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
+	var destSalary = ($('#destination-map').data().composite === 0.0) ? "N/A" : relativeSalary(salary);
+	$('#compSalaryDisplay').text(destSalary);
+};
+	
+var relativeSalary = function(salary) {
+	return (salary * salaryRatio()).formatMoney(0, '.', ',');
+};
+
+var salaryRatio = function() {
+	var origin = $('#origin-map').data().composite;
+	var destination = $('#destination-map').data().composite;
+	return destination / origin;
 };
 
 var updateText = function(result, objectId) {
 	var name = '#' + objectId.slice(1,-4);
-	$(name).val(result.location.city);
+	$(name).val(result.location.city);//set text field value to city and state
 	var indices = result.cost_index;
 	var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
+
+	//load user's salary setting and the slider position unless it's already displayed
 	if ($('#salaryDisplay').text() === "$0" && result.user.salary ) {
 		$('#salaryDisplay').text(result.user.salary.formatMoney(0, '.', ','));
 		$('#currentSalary').slider("value", (result.user.salary / 2500 ));
 	}
-	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
-	var categories = ["grocery", "housing", "utilities", "transportation", "health", "misc"];
 
+	//display composite cost of living index
+	$(objectId + ' .costIndex').text("Cost of living index: " + cost);
+
+	//display secondary indices if they exist	
+	var categories = ["grocery", "housing", "utilities", "transportation", "health", "misc"];
 	if ( cost !== "N/A") {
 		if (objectId === "#origin-map") {
 			originSecondaries(result, categories);
@@ -95,7 +94,7 @@ var destinationSecondaries = function(result, categories) {
 
 var buildIndicesHTML = function(result, categories) {
 	var HTML = '';
-	if ( result.user.email !== "none" ) {
+	if ( result.user.email !== "none" ) {			//if there's a logged in user
 		HTML = "<p>Estimated monthly expenses:</p>";
 	}
 	for (var i = 0, length = categories.length; i < length; i++ ) {
@@ -113,9 +112,10 @@ var destString = function(property, result) {
 	var index = result.cost_index[property];
 	var percentage = index / originIndex;
 	var userValue = result.user[property];
-	if ( result.user[property]) {
+	//if the user has set a value for category, display as dollar figure
+	if ( userValue ) {
 		return '<p>' + capitalize(property) + ': $' + Math.round(percentage * userValue) + '</p>';
-	} else {
+	} else {			//otherwise display as a percentage
 		return '<p>' + capitalize(property) + ': ' + Math.round(percentage * 100) + '%</p>';
 	}
 };
@@ -127,11 +127,11 @@ var originSecondaries = function(result, categories) {
 
 var buildOriginHTML = function(result, categories) {
 	var HTML = '';
-	if ( result.user.email === "none" ) {
+	if ( result.user.email === "none" ) {				//if there's no logged in user
 		for ( var i = 0; i < categories.length; i++ ) {
 			HTML += '<p>' + capitalize(categories[i]) + ': ' + result.cost_index[categories[i]] + '</p>';
 		}
-	} else {
+	} else {																		//if there's a logged in user
 		HTML = '<p>Current monthly expenses: </p>';
 		for ( var j = 0; j < categories.length; j++ ) {
 			var index = result.user[categories[j]] || 'Not set (' + result.cost_index[categories[j]] + ' index)';
@@ -144,4 +144,11 @@ var buildOriginHTML = function(result, categories) {
 var updateMap = function(result, objectId) {
 	$(objectId).css('background-image', locationUrl(result));
 	$(objectId).css('background-position', 'center');
+};
+
+var locationUrl = function(data) {
+	return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' +
+				data.location.latitude + ',' + data.location.longitude +
+				'&zoom=10&size=1200x1200&scale=2&format=jpg&maptype=satellite&sensor=false&key=' +
+				data.key + ')';
 };

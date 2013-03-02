@@ -5,8 +5,7 @@ $(function() {
 
 var homeLocation = function(input) {
 	var objectId = '#user-background';
-	var cityName = input.textContent;
-	var params = { city: cityName };
+	var params = { city: input.textContent };
 	$.ajax({
 		url: '/',
 		type: 'get',

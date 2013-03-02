@@ -10,7 +10,7 @@ def show
 		end
 		location_info = as_json(@user, location)
 		respond_with(location_info)
-	end
+end
 
 	private
 	def as_json(user, location)
