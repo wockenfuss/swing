@@ -7,13 +7,7 @@
 
 	function bind() {
 		$('input[name="origin"], input[name="destination"]').on({
-			'keypress': function(e) {
-				code = (e.keyCode ? e.keyCode : e.which);
-				if (code === 13) {
-					// console.log(this);
-					myApp.parseLocation(this);
-				}
-			}
+			'keypress': myApp.setLocation
 		});
 
 		$('#currentSalary').slider({
@@ -23,7 +17,16 @@
 			slide: myApp.updateSalary
 		});
 
-		$('.locationButton').on('click', function(e) {
+		$('.locationButton').on('click', myApp.setUserLocation);
+		$( document ).tooltip();
+		$("div[id^='flash']").fadeOut(3000);
+	}
+
+	$.extend(myApp, {
+
+		categories: ["grocery", "housing", "utilities", "transportation", "health", "misc"],
+
+		setUserLocation: function(e) {
 			city = $('#destination').val();
 			if (city !== "") {
 				var params = { location: city };
@@ -36,19 +39,18 @@
 			} else {
 				myApp.alertDisplay("Please enter a city");
 			}
-		});
-
-		$( document ).tooltip();
-		$("div[id^='flash']").fadeOut(3000);
-		
-	}
-
-	$.extend(myApp, {
+		},
+		setLocation: function(e) {
+			code = (e.keyCode ? e.keyCode : e.which);
+			if (code === 13) {
+				myApp.parseLocation(e.target);
+			}
+		},
 
 		parseLocation: function(input) {
-			var objectId = '#' + input.id + '-map';
-			var cityName = $(input).val();
-			var params = { city: cityName };
+			var target = input.id;
+			// var cityName = $(input).val();
+			var params = { city: $(input).val()};
 			$.ajax({
 				url: '/',
 				type: 'get',
@@ -56,26 +58,23 @@
 				data: params,
 				success: function(result) {
 					if (!!result.location) {
-						myApp.location = myApp.locationFactory(result);
-						myApp.updateMap(result, objectId);
+						myApp.user = result.user;
+						myApp[target] = myApp.locationFactory(result);
+						myApp.updateMap(target);//result, objectId);
 						myApp.updateSalary();
-						myApp.updateText(result, objectId);
+						myApp.updateText(target);//result, objectId);
 					} else {
-						var selector = '#' + objectId.slice(1,-4);
-						$(selector).val('');
+						$(input).val('');
 						myApp.alertDisplay('City not found.');
 					}
-			// this.origin = this.locationFactory(cityName);
-			// console.log(origin);
 				}
 			});
 		},
 
 		locationFactory: function(result) {
-			
 			var name = result.location.city,
 					indices = result.cost_index,
-					map = myApp.locationUrl(result);
+					map = myApp.staticMapAddress(result);
 			updateName = function(newName) {
 				this.name = newName;
 			};
@@ -89,58 +88,11 @@
 				updateName: myApp.updateName,
 				updateIndices: myApp.updateIndices
 			};
-		},
-
-		newLocation: function(cityName, objectId) {
-			var params = { city: cityName };
-			$.ajax({
-				url: '/',
-				type: 'get',
-				dataType: 'json',
-				data: params,
-				success: function(result) {
-					if (!!result.location) {
-						$(objectId).data(result.cost_index);
-						myApp.updateMap(result, objectId);
-						myApp.updateSalary();
-						myApp.updateText(result, objectId);
-					} else {
-						var name = '#' + objectId.slice(1,-4);
-						$(name).val('');
-						myApp.alertDisplay('City not found.');
-					}
-				}
-			});
 		}
-
-
-
 	});
-
-
-// $.extend(myApp, app);
-
-console.log(myApp);
-
-// $.extend(myApp, {
-// 	blab: "blab"
-// });
 
 }(window.myApp = window.myApp || {}, jQuery));
 
-
-
-	//define origin location
-
-	//create location object. instantiate origin location, then destination location.
-
-
-
-
-
-	
-// });//document loaded
-	
 //.extend, .proxy jquery
 
 
