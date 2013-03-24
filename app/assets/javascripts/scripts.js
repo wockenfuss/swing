@@ -9,9 +9,16 @@
 	};
 
 	$.extend(myApp, {
+		categories: ["grocery",
+									"housing",
+									"utilities",
+									"transportation",
+									"health",
+									"misc"],
+
 		alertDisplay: function(message) {
 			$('#alerts').html("").append('<p>' + message + '</p>').fadeIn('slow', function() {
-			$(this).fadeOut(2000);
+				$(this).fadeOut(2000);
 			});
 		},
 
@@ -21,12 +28,13 @@
 			var destSalary = '$0';
 			$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
 			if ( myApp.destination) {
-				destSalary = (myApp.destination.indices.composite === 0.0) ? "N/A" : myApp.relativeSalary(salary);
+				destSalary = (myApp.destination.indices.composite === 0.0 || myApp.origin.indices.composite === 0.0) ? "N/A" : myApp.comparableSalary(salary);
 			}
 			$('#compSalaryDisplay').text(destSalary);
+			myApp.updateUserSalary();
 		},
 			
-		relativeSalary: function(salary) {
+		comparableSalary: function(salary) {
 			return (salary * myApp.salaryRatio()).formatMoney(0, '.', ',');
 		},
 
@@ -36,50 +44,139 @@
 			return destination / origin;
 		},
 
-		updateText: function(target, objectId) {
-			var name = '#' + target;
-			$(name).val(myApp[target].name);//set text field value to city and state
-			
-			var indices = myApp[target].indices;
-			var cost = (indices.composite === 0.0) ? "N/A" : indices.composite;
+		updateCityName: function(target) {
+			$('#' + target).val(myApp[target].name);//set text field value to city and state
+		},
 
-			//load user's salary setting and the slider position unless it's already displayed
+		updateCostOfLiving: function(target) {
+			var indices = myApp[target].indices;
+			var costOfLiving = (indices.composite === 0.0) ? "N/A" : indices.composite;
+			$('#' + target + '-map' + ' .costIndex').text("Cost of living index: " + costOfLiving);
+		},
+
+		updateIndices: function() {
+			// console.log(myApp.origin);
+			if ( myApp.origin.indices.composite === 0.0 ) {
+				console.log("na");
+				$('#origin-map .secondaryIndices').empty().append('');
+				$('#destination-map .secondaryIndices').empty().append('');
+			} else {
+				console.log('indices');
+				myApp.originIndices();
+				myApp.destinationIndices();
+			}
+			
+			//display secondary indices if they exist
+			// if ( myApp[target].indices.composite !== 0.0 ) {
+			// 	if (target === "origin") {
+			// 		myApp.originIndices();
+			// 	} else {
+			// 		myApp.destinationIndices();
+			// 	}
+			// } else {
+			// 	$('#' + target + '-map .secondaryIndices').empty().append('');
+			// }
+		},
+
+		updateMap: function(target) {
+			$('#' + target + '-map').css('background-image', myApp[target].map)
+							.css('background-position', 'center');
+		},
+
+		updateUserSalary: function() {
 			if ($('#salaryDisplay').text() === "$0" && myApp.user.salary ) {
 				$('#salaryDisplay').text(myApp.user.salary.formatMoney(0, '.', ','));
 				$('#currentSalary').slider("value", (myApp.user.salary / 2500 ));
 			}
+		},
 
-			//display composite cost of living index
-			$(name + '-map' + ' .costIndex').text("Cost of living index: " + cost);
+		staticMapAddress: function(data) {
+			return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' +
+						data.location.latitude + ',' + data.location.longitude +
+						'&zoom=10&size=1200x1200&scale=2&format=jpg&maptype=satellite&sensor=false&key=' +
+						data.key + ')';
+		},
 
-			//display secondary indices if they exist
-			// var categories = ["grocery", "housing", "utilities", "transportation", "health", "misc"];
-			if ( cost !== "N/A") {
-				if (target === "origin") {
-					myApp.originSecondaries();
-				} else {
-					myApp.destinationSecondaries();
-				}
+		locationFactory: function(result) {
+			var name = result.location.city,
+					indices = result.cost_index,
+					map = myApp.staticMapAddress(result);
+			// updateName = function(newName) {
+			// 	this.name = newName;
+			// };
+			// updateIndices = function(newIndices) {
+			// 	this.indices = newIndices;
+			// };
+			return {
+				name: name,
+				indices: indices,
+				map: map
+				// updateName: updateName,
+				// updateIndices: updateIndices
+			};
+		},
+
+		saveUserLocation: function(e) {
+			city = $('#destination').val();
+			if (city !== "") {
+				var params = { location: city };
+				$.ajax({
+					url: '/users/update',
+					type: 'put',
+					dataType: 'script',
+					data: params
+				});
 			} else {
-				$('#' + target + '-map .secondaryIndices').empty().append('');
+				myApp.alertDisplay("Please enter a city");
 			}
 		},
 
-		destinationSecondaries: function() {
-			// $('#origin-map' + ' .secondaryIndices').empty();
-			var indicesHTML = myApp.buildIndicesHTML();
+		setLocation: function(e) {
+			code = (e.keyCode ? e.keyCode : e.which);
+			if (code === 13) {
+				myApp.parseLocation(e.target);
+			}
+		},
+
+		parseLocation: function(input) {
+			var target = input.id;
+			var params = { city: $(input).val()};
+			$.ajax({
+				url: '/',
+				type: 'get',
+				dataType: 'json',
+				data: params,
+				success: function(result) {
+					if (!!result.location) {
+						myApp.user = result.user;
+						myApp[target] = myApp.locationFactory(result);
+						myApp.updateMap(target);
+						myApp.updateSalary();
+						myApp.updateCityName(target);
+						myApp.updateCostOfLiving(target);
+						myApp.updateIndices(target);
+					} else {
+						$(input).val('');
+						myApp.alertDisplay('City not found.');
+					}
+				}
+			});
+		},
+
+		destinationIndices: function() {
+			var indicesHTML = myApp.destinationIndicesToHTML();
 			$('#destination-map' + ' .secondaryIndices').empty().append(indicesHTML);
 		},
 
-		buildIndicesHTML: function() {
+		destinationIndicesToHTML: function() {
 			var HTML = '';
-			if ( myApp.destination.indices.composite !== 0 ) {
+			if ( myApp.destination && myApp.destination.indices.composite !== 0 ) {
 				var categories = myApp.categories;
 				if ( myApp.user.email !== "none" ) {			//if there's a logged in user
 					HTML = "<p>Estimated monthly expenses:</p>";
 				}
 				for (var i = 0, length = categories.length; i < length; i++ ) {
-					HTML += myApp.destString(categories[i]);
+					HTML += myApp.destinationIndicesToString(categories[i]);
 				}
 			}
 			return HTML;
@@ -89,7 +186,7 @@
 			return string.charAt(0).toUpperCase() + string.slice(1);
 		},
 
-		destString: function(property, result) {
+		destinationIndicesToString: function(property) {
 			var originIndex = myApp.origin.indices[property];
 			var index = myApp.destination.indices[property];
 			var percentage = index / originIndex;
@@ -102,12 +199,12 @@
 			}
 		},
 
-		originSecondaries: function() {
-			var originHTML = myApp.buildOriginHTML();
+		originIndices: function() {
+			var originHTML = myApp.originIndicesToHTML();
 			$('#origin-map' + ' .secondaryIndices').empty().append(originHTML);
 		},
 
-		buildOriginHTML: function() {
+		originIndicesToHTML: function() {
 			var HTML = '';
 			var cost_indices = myApp.origin.indices;
 			var categories = myApp.categories;
@@ -123,18 +220,6 @@
 				}
 			}
 			return HTML;
-		},
-
-		updateMap: function(target) {
-			$('#' + target + '-map').css('background-image', myApp[target].map)
-							.css('background-position', 'center');
-		},
-
-		staticMapAddress: function(data) {
-			return 'url(http://maps.googleapis.com/maps/api/staticmap?center=' +
-						data.location.latitude + ',' + data.location.longitude +
-						'&zoom=10&size=1200x1200&scale=2&format=jpg&maptype=satellite&sensor=false&key=' +
-						data.key + ')';
 		}
 	});
 	

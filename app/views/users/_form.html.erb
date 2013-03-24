@@ -1,4 +1,8 @@
 <%= form_for(@user, { :method => :put, :remote => true}) do |f| %>
+
+	<!--<p>Current Location: 
+		<#%= f.text_field  'location',:value => @user.location.city, :class => 'user-input', :placeholder => 'None set', :id => 'curLocation' %>
+	</p>-->
 	<p>Current Salary: 
 		<%= f.text_field 'salary', :class => 'user-input', :placeholder => 'None set', :id => 'curSalary' %>
 	</p>
@@ -32,5 +36,5 @@
 		</p>
 	</div>
 
-	<%= f.submit('Update', :class => 'updateButton') %>
+	<%= f.submit('Update', :class => 'updateButton', :type => 'button') %>
 <% end %>

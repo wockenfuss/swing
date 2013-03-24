@@ -1,8 +1,19 @@
 (function(myApp, $, undefined){
-	console.log(myApp);
 	$(document).ready(function() {
+		// bind();
 		myApp.homeLocation($('.user-container p span'));
 	});
+
+	// function bind() {
+	// 		$('input[name="user[location]"]').on({
+	// 		'keypress': function(e) {
+	// 			console.log(e.keyCode);
+	// 			myApp.setLocation(e);
+	// 		}
+
+	// 		//myApp.setLocation
+	// 	});
+	// }
 
 	$.extend(myApp, {
 		homeLocation: function(input) {
@@ -14,15 +25,16 @@
 				dataType: 'json',
 				data: params,
 				success: function(result) {
-					myApp.updateMap(objectId);
+					myApp.origin = myApp.locationFactory(result);
+					myApp.locationMap();
 				}
 			});
+		},
+		locationMap: function() {
+			$('#user-background-map').css('background-image', myApp.origin.map)
+							.css('background-position', 'center');
 		}
 	});
-	
-
-
-	
 
 }(window.myApp = window.myApp || {}, jQuery));
 
