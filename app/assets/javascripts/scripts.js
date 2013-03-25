@@ -55,13 +55,10 @@
 		},
 
 		updateIndices: function() {
-			// console.log(myApp.origin);
 			if ( myApp.origin.indices.composite === 0.0 ) {
-				console.log("na");
 				$('#origin-map .secondaryIndices').empty().append('');
 				$('#destination-map .secondaryIndices').empty().append('');
 			} else {
-				console.log('indices');
 				myApp.originIndices();
 				myApp.destinationIndices();
 			}
@@ -78,10 +75,10 @@
 			// }
 		},
 
-		updateMap: function(target) {
-			$('#' + target + '-map').css('background-image', myApp[target].map)
-							.css('background-position', 'center');
-		},
+		// updateMap: function(target) {
+		// 	$('#' + target + '-map').css('background-image', myApp[target].map)
+		// 					.css('background-position', 'center');
+		// },
 
 		updateUserSalary: function() {
 			if ($('#salaryDisplay').text() === "$0" && myApp.user.salary ) {
@@ -97,20 +94,23 @@
 						data.key + ')';
 		},
 
-		locationFactory: function(result) {
+		locationFactory: function(result, target) {
 			var name = result.location.city,
 					indices = result.cost_index,
-					map = myApp.staticMapAddress(result);
-			// updateName = function(newName) {
-			// 	this.name = newName;
-			// };
+					map = myApp.staticMapAddress(result),
+					locationTarget = target;
+			updateMap = function() {
+				$('#' + locationTarget + '-map').css('background-image', map)
+							.css('background-position', 'center');
+			};
 			// updateIndices = function(newIndices) {
 			// 	this.indices = newIndices;
 			// };
 			return {
 				name: name,
 				indices: indices,
-				map: map
+				// map: map,
+				updateMap: updateMap
 				// updateName: updateName,
 				// updateIndices: updateIndices
 			};
@@ -149,8 +149,12 @@
 				success: function(result) {
 					if (!!result.location) {
 						myApp.user = result.user;
-						myApp[target] = myApp.locationFactory(result);
-						myApp.updateMap(target);
+						//myApp.originSalary = myApp.salaryFactory(result);
+						//myApp.comparableSalary = myApp.salaryFactory(result);
+						//myApp.indices = myApp.indicesFactory(result);
+						myApp[target] = myApp.locationFactory(result, target);
+						myApp[target].updateMap();
+						// myApp.updateMap(target);
 						myApp.updateSalary();
 						myApp.updateCityName(target);
 						myApp.updateCostOfLiving(target);
