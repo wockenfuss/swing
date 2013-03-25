@@ -39,9 +39,9 @@ describe "Users", :js => true do
   			page.find('#curSalary').value.should eq '100000'  			
   		end
 
-  		it 'does not display a salary if one is not set' do
+  		it 'displays \'0\' if salary is not set' do
   			visit user_path(user)
-  			page.find('#curSalary').value.should eq ''
+  			page.find('#curSalary').value.should eq '0'
   		end
 
   		it 'allows the user to update salary' do
