@@ -1,11 +1,8 @@
-// $(document).ready(function () {
-//   $("div[id^='flash']").fadeOut(3000);
-// });
-
 (function(myApp, $, undefined){
-	Number.prototype.formatMoney = function(c, d, t){
-		var n = this, c = isNaN(c = Math.abs(c)) ? 2 : c, d = d == undefined ? "," : d, t = t == undefined ? "." : t, s = n < 0 ? "-" : "", i = parseInt(n = Math.abs(+n || 0).toFixed(c)) + "", j = (j = i.length) > 3 ? j % 3 : 0;
-	   return '$' + s + (j ? i.substr(0, j) + t : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + t) + (c ? d + Math.abs(n - i).toFixed(c).slice(2) : "");
+	Number.prototype.formatMoney = function(){
+		i = parseInt(this.toFixed(0), 0) + "",
+		j = (j = i.length) > 3 ? j % 3 : 0;
+		return '$' + (j ? i.substr(0, j) + "," : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + ",");
 	};
 
 	$.extend(myApp, {
@@ -22,30 +19,29 @@
 			});
 		},
 
-		updateSalary: function() {
-			var scalar = $( "#currentSalary" ).slider( "value" );
-			var salary = scalar * 2500;
-			var destSalary = '$0';
-			$('#salaryDisplay').text(salary.formatMoney(0, '.', ','));
-			if ( myApp.destination) {
-				destSalary = (myApp.destination.indices.composite === 0.0 || myApp.origin.indices.composite === 0.0) ? "N/A" : myApp.comparableSalary(salary);
+		updateSalaries: function() {
+			var scalar = $( "#currentSalary" ).slider( "value" ),
+					salary = scalar * 2500,
+					destSalary = '$0';
+			$('#salaryDisplay').text(salary.formatMoney());
+			if ( myApp.destination ) {
+				destSalary = myApp.missingIndices() ? 'N/A' : myApp.comparableSalary(salary);
 			}
 			$('#compSalaryDisplay').text(destSalary);
-			myApp.updateUserSalary();
 		},
-			
+
+		missingIndices: function() {
+			return myApp.destination.indices.composite === 0.0 || myApp.origin.indices.composite === 0.0;
+		},
+
 		comparableSalary: function(salary) {
-			return (salary * myApp.salaryRatio()).formatMoney(0, '.', ',');
+			return (salary * myApp.salaryRatio()).formatMoney();
 		},
 
 		salaryRatio: function() {
 			var origin = myApp.origin.indices.composite;
 			var destination = myApp.destination.indices.composite;
 			return destination / origin;
-		},
-
-		updateCityName: function(target) {
-			$('#' + target).val(myApp[target].name);//set text field value to city and state
 		},
 
 		updateCostOfLiving: function(target) {
@@ -62,28 +58,12 @@
 				myApp.originIndices();
 				myApp.destinationIndices();
 			}
-			
-			//display secondary indices if they exist
-			// if ( myApp[target].indices.composite !== 0.0 ) {
-			// 	if (target === "origin") {
-			// 		myApp.originIndices();
-			// 	} else {
-			// 		myApp.destinationIndices();
-			// 	}
-			// } else {
-			// 	$('#' + target + '-map .secondaryIndices').empty().append('');
-			// }
 		},
 
-		// updateMap: function(target) {
-		// 	$('#' + target + '-map').css('background-image', myApp[target].map)
-		// 					.css('background-position', 'center');
-		// },
-
 		updateUserSalary: function() {
-			if ($('#salaryDisplay').text() === "$0" && myApp.user.salary ) {
-				$('#salaryDisplay').text(myApp.user.salary.formatMoney(0, '.', ','));
-				$('#currentSalary').slider("value", (myApp.user.salary / 2500 ));
+			if ($('#salaryDisplay').text() === "$0" ) {
+				$('#salaryDisplay').text(myApp.userSalary.formatMoney());
+				$('#currentSalary').slider("value", (myApp.userSalary / 2500 ));
 			}
 		},
 
@@ -99,20 +79,13 @@
 					indices = result.cost_index,
 					map = myApp.staticMapAddress(result),
 					locationTarget = target;
-			updateMap = function() {
-				$('#' + locationTarget + '-map').css('background-image', map)
+
+			$('#' + locationTarget).val(name);//set text field value to city and state
+			$('#' + locationTarget + '-map').css('background-image', map)
 							.css('background-position', 'center');
-			};
-			// updateIndices = function(newIndices) {
-			// 	this.indices = newIndices;
-			// };
 			return {
 				name: name,
-				indices: indices,
-				// map: map,
-				updateMap: updateMap
-				// updateName: updateName,
-				// updateIndices: updateIndices
+				indices: indices
 			};
 		},
 
@@ -148,15 +121,12 @@
 				data: params,
 				success: function(result) {
 					if (!!result.location) {
+						myApp.loggedInUser = (result.user.email === "none" ) ? false : true;
+						myApp.userSalary = result.user.salary;
 						myApp.user = result.user;
-						//myApp.originSalary = myApp.salaryFactory(result);
-						//myApp.comparableSalary = myApp.salaryFactory(result);
-						//myApp.indices = myApp.indicesFactory(result);
 						myApp[target] = myApp.locationFactory(result, target);
-						myApp[target].updateMap();
-						// myApp.updateMap(target);
-						myApp.updateSalary();
-						myApp.updateCityName(target);
+						myApp.updateSalaries();
+						myApp.updateUserSalary();
 						myApp.updateCostOfLiving(target);
 						myApp.updateIndices(target);
 					} else {
@@ -176,7 +146,7 @@
 			var HTML = '';
 			if ( myApp.destination && myApp.destination.indices.composite !== 0 ) {
 				var categories = myApp.categories;
-				if ( myApp.user.email !== "none" ) {			//if there's a logged in user
+				if ( myApp.loggedInUser ) {			//if there's a logged in user
 					HTML = "<p>Estimated monthly expenses:</p>";
 				}
 				for (var i = 0, length = categories.length; i < length; i++ ) {
@@ -212,21 +182,21 @@
 			var HTML = '';
 			var cost_indices = myApp.origin.indices;
 			var categories = myApp.categories;
-			if ( myApp.user.email === "none" ) {				//if there's no logged in user
-				for ( var i = 0; i < categories.length; i++ ) {
-					HTML += '<p>' + myApp.capitalize(categories[i]) + ': ' + cost_indices[categories[i]] + '</p>';
-				}
-			} else {																		//if there's a logged in user
+			if ( myApp.loggedInUser ) {							//if there's a logged in user
 				HTML = '<p>Current monthly expenses: </p>';
 				for ( var j = 0; j < categories.length; j++ ) {
 					var index = myApp.user[categories[j]] || 'Not set (' + cost_indices[categories[j]] + ' index)';
 					HTML += '<p>' + myApp.capitalize(categories[j]) + ': ' + index + '</p>';
 				}
+			} else {						//if there's no logged in user
+				for ( var i = 0; i < categories.length; i++ ) {
+					HTML += '<p>' + myApp.capitalize(categories[i]) + ': ' + cost_indices[categories[i]] + '</p>';
+				}
 			}
 			return HTML;
 		}
 	});
-	
+
 
 }(window.myApp = window.myApp || {}, jQuery));
 

@@ -14,7 +14,7 @@
 			orientation: "horizontal",
 			range: "min",
 			max: 100,
-			slide: myApp.updateSalary
+			slide: myApp.updateSalaries
 		});
 
 		$('.locationButton').on('click', myApp.saveUserLocation);

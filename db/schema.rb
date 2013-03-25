@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130212011444) do
+ActiveRecord::Schema.define(:version => 20130325161824) do
 
   create_table "cost_indices", :force => true do |t|
     t.float    "composite",      :null => false
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20130212011444) do
     t.string   "encrypted_password", :default => "none", :null => false
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.integer  "salary",             :default => 0
   end
 
   create_table "users", :force => true do |t|
@@ -56,7 +57,7 @@ ActiveRecord::Schema.define(:version => 20130212011444) do
     t.datetime "last_sign_in_at"
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
-    t.integer  "salary"
+    t.integer  "salary",                 :default => 0
     t.integer  "housing"
     t.integer  "grocery"
     t.integer  "misc"

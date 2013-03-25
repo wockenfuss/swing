@@ -1,19 +1,7 @@
 (function(myApp, $, undefined){
 	$(document).ready(function() {
-		// bind();
 		myApp.homeLocation($('.user-container p span'));
 	});
-
-	// function bind() {
-	// 		$('input[name="user[location]"]').on({
-	// 		'keypress': function(e) {
-	// 			console.log(e.keyCode);
-	// 			myApp.setLocation(e);
-	// 		}
-
-	// 		//myApp.setLocation
-	// 	});
-	// }
 
 	$.extend(myApp, {
 		homeLocation: function(input) {
@@ -25,14 +13,10 @@
 				dataType: 'json',
 				data: params,
 				success: function(result) {
-					myApp.origin = myApp.locationFactory(result);
-					myApp.locationMap();
+					console.log(result);
+					myApp.origin = myApp.locationFactory(result, objectId);
 				}
 			});
-		},
-		locationMap: function() {
-			$('#user-background-map').css('background-image', myApp.origin.map)
-							.css('background-position', 'center');
 		}
 	});
 
