@@ -79,10 +79,12 @@
 					indices = result.cost_index,
 					map = myApp.staticMapAddress(result),
 					locationTarget = target;
-
-			$('#' + locationTarget).val(name);//set text field value to city and state
-			$('#' + locationTarget + '-map').css('background-image', map)
+			(function init() {
+				$('#' + locationTarget).val(name);//set text field value to city and state
+				$('#' + locationTarget + '-map').css('background-image', map)
 							.css('background-position', 'center');
+			})();
+
 			return {
 				name: name,
 				indices: indices
